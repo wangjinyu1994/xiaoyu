@@ -1,0 +1,62 @@
+
+#端口号
+server:
+  port: 8004
+#服务名
+spring:
+  application:
+    name: spring-cloud-alibaba-seata-account-8007
+  #name: provider-test
+  cloud:
+    nacos:
+      discovery:
+        server-addr: http://localhost:8850/nacos
+        group: SEATA_GROUP
+  ###################################### MyBatis 连接 ######################################
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: WangJinYu1994@
+    url: jdbc:mysql://127.0.0.1:3306/spring_cloud_db3?serverTimezone=GMT&allowPublicKeyRetrieval=true&useSSL=false&characterEncoding=utf-8
+
+#springboot监控暴漏端口
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+###################################### MyBatis 配置 ######################################
+mybatis:
+  mapper-locations: classpath:mybatis/mapper/*.xml
+  #扫描实体类的位置,在此处指明扫描实体类的包，在 mapper.xml 中就可以不写实体类的全路径名
+  type-aliases-package: com.xiaoyu.provider.entity
+  configuration:
+    map-underscore-to-camel-case: true #默认开启驼峰命名法，可以不用设置该属性
+
+info:
+  app.name: micro-service-cloud-provider-dept
+  company.name: com.xiaoyu
+  build.aetifactId: @project.artifactId@
+  build.version: @project.version@
+
+seata:
+  application-id: ${spring.application.name}
+  tx-service-group: my_test_tx_group
+  service:
+    grouplist:
+      seata-server:  http://127.0.0.1:8091
+    vgroup-mapping:
+      my_test_tx_group: default
+  registry:
+    type: nacos
+    nacos:
+      server-addr: http://localhost:8850/nacos
+      group: SEATA_GROUP
+  config:
+    type: nacos
+    nacos:
+      server-addr: http://localhost:8850/nacos
+      group: SEATA_GROUP
+feign:
+  sentinel:
+    enabled: true #开启 OpenFeign 功能
