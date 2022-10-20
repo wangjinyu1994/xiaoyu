@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.xiaoyu.provider.dao.ex.XtryxxbMapperEx" >
+
+    <insert id="insertXtryxxb" useGeneratedKeys="true" parameterType="com.xiaoyu.provider.base.entity.Xtryxxb"
+            keyProperty="data.zj" keyColumn="ZJ">
+        insert into `xtryxxb`
+        (
+          `RYNC`,
+          `RYWYDM`,
+          `RYBH`,
+          `RYDLZH`,
+          `RYDLMM`,
+          `RYLX`,
+          `RYXB`,
+          `RYTX`,
+          `RYSR`,
+          `GXQM`,
+          `GRSM`,
+          `RYOPENID`,
+          `RYSZJD`,
+          `RYSZWD`,
+          `RYXX`,
+          `PX`,
+          `RYSHZT`,
+          `SHRZJ`,
+          `SHSJ`,
+          `RYSFDLG`,
+          `ZHYCDLSJ`,
+          `CJRZJ`,
+          `CJSJ`,
+          `XGSJ`,
+          `XGRZJ`,
+          `SCBZ`,
+          `BZ`
+        )
+        values
+        (
+          #{data.rync},
+          #{data.rywydm},
+          #{data.rybh},
+          #{data.rydlzh},
+          #{data.rydlmm},
+          #{data.rylx},
+          #{data.ryxb},
+          #{data.rytx},
+          #{data.rysr},
+          #{data.gxqm},
+          #{data.grsm},
+          #{data.ryopenid},
+          #{data.ryszjd},
+          #{data.ryszwd},
+          #{data.ryxx},
+          #{data.px},
+          #{data.ryshzt},
+          #{data.shrzj},
+          #{data.shsj},
+          #{data.rysfdlg},
+          #{data.zhycdlsj},
+          #{data.cjrzj},
+          #{data.cjsj},
+          #{data.xgsj},
+          #{data.xgrzj},
+          #{data.scbz},
+          #{data.bz}
+        )
+    </insert>
+</mapper>

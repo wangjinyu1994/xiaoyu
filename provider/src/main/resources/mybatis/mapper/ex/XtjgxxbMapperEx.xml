@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+        <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.xiaoyu.provider.dao.ex.XtjgxxbMapperEx" >
+
+        <insert id="insertXtjgxxb" useGeneratedKeys="true" parameterType="com.xiaoyu.provider.base.entity.Xtjgxxb"
+         keyProperty="data.zj" keyColumn="ZJ">
+                insert into `xtjgxxb`
+                (
+                  `JGMC`,
+                  `JGQC`,
+                  `JGBM`,
+                  `SJJGZJ`,
+                  `JGJB`,
+                  `PX`,
+                  `JGJJ`,
+                  `JGTP`,
+                  `JGSZSFBM`,
+                  `JGSZCSBM`,
+                  `JGSZQYBM`,
+                  `JGSZJD`,
+                  `JGSZWD`,
+                  `JGDH`,
+                  `JGYX`,
+                  `JGCZ`,
+                  `JGFZRXM`,
+                  `JGFZRDH`,
+                  `JGLXRXM`,
+                  `JGLXRDH`,
+                  `CJRZJ`,
+                  `CJSJ`,
+                  `XGSJ`,
+                  `XGRZJ`,
+                  `SCBZ`,
+                  `BZ`
+                )
+                values
+                (
+                #{data.jgmc},
+                #{data.jgqc},
+                #{data.jgbm},
+                #{data.sjjgzj},
+                #{data.jgjb},
+                #{data.px},
+                #{data.jgjj},
+                #{data.jgtp},
+                #{data.jgszsfbm},
+                #{data.jgszcsbm},
+                #{data.jgszqybm},
+                #{data.jgszjd},
+                #{data.jgszwd},
+                #{data.jgdh},
+                #{data.jgyx},
+                #{data.jgcz},
+                #{data.jgfzrxm},
+                #{data.jgfzrdh},
+                #{data.jglxrxm},
+                #{data.jglxrdh},
+                #{data.cjrzj},
+                #{data.cjsj},
+                #{data.xgsj},
+                #{data.xgrzj},
+                #{data.scbz},
+                #{data.bz}
+                )
+        </insert>
+</mapper>

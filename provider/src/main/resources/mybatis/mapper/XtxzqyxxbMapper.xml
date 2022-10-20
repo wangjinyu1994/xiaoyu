@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.xiaoyu.provider.dao.XtxzqyxxbMapper" >
+  <resultMap id="BaseResultMap" type="com.xiaoyu.provider.base.entity.Xtxzqyxxb" >
+    <id column="ZJ" property="zj" jdbcType="BIGINT" />
+    <result column="XZQYMC" property="xzqymc" jdbcType="BIGINT" />
+    <result column="XZQYJC" property="xzqyjc" jdbcType="VARCHAR" />
+    <result column="XZQYDM" property="xzqydm" jdbcType="VARCHAR" />
+    <result column="FJXZQYDM" property="fjxzqydm" jdbcType="VARCHAR" />
+    <result column="XZQYLX" property="xzqylx" jdbcType="VARCHAR" />
+    <result column="XZQYSZJD" property="xzqyszjd" jdbcType="VARCHAR" />
+    <result column="XZQYSZWD" property="xzqyszwd" jdbcType="VARCHAR" />
+    <result column="CJRZJ" property="cjrzj" jdbcType="BIGINT" />
+    <result column="CJSJ" property="cjsj" jdbcType="TIMESTAMP" />
+    <result column="XGSJ" property="xgsj" jdbcType="TIMESTAMP" />
+    <result column="XGRZJ" property="xgrzj" jdbcType="BIGINT" />
+    <result column="SCBZ" property="scbz" jdbcType="VARCHAR" />
+  </resultMap>
+  <resultMap id="ResultMapWithBLOBs" type="com.xiaoyu.provider.base.entity.Xtxzqyxxb" extends="BaseResultMap" >
+    <result column="BZ" property="bz" jdbcType="LONGVARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    ZJ, XZQYMC, XZQYJC, XZQYDM, FJXZQYDM, XZQYLX, XZQYSZJD, XZQYSZWD, CJRZJ, CJSJ, XGSJ, 
+    XGRZJ, SCBZ
+  </sql>
+  <sql id="Blob_Column_List" >
+    BZ
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="ResultMapWithBLOBs" parameterType="java.lang.Long" >
+    select 
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    from xtxzqyxxb
+    where ZJ = #{zj,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
+    delete from xtxzqyxxb
+    where ZJ = #{zj,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="com.xiaoyu.provider.base.entity.Xtxzqyxxb" >
+    insert into xtxzqyxxb (ZJ, XZQYMC, XZQYJC, 
+      XZQYDM, FJXZQYDM, XZQYLX, 
+      XZQYSZJD, XZQYSZWD, CJRZJ, 
+      CJSJ, XGSJ, XGRZJ, 
+      SCBZ, BZ)
+    values (#{zj,jdbcType=BIGINT}, #{xzqymc,jdbcType=BIGINT}, #{xzqyjc,jdbcType=VARCHAR}, 
+      #{xzqydm,jdbcType=VARCHAR}, #{fjxzqydm,jdbcType=VARCHAR}, #{xzqylx,jdbcType=VARCHAR}, 
+      #{xzqyszjd,jdbcType=VARCHAR}, #{xzqyszwd,jdbcType=VARCHAR}, #{cjrzj,jdbcType=BIGINT}, 
+      #{cjsj,jdbcType=TIMESTAMP}, #{xgsj,jdbcType=TIMESTAMP}, #{xgrzj,jdbcType=BIGINT}, 
+      #{scbz,jdbcType=VARCHAR}, #{bz,jdbcType=LONGVARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.xiaoyu.provider.base.entity.Xtxzqyxxb" >
+    insert into xtxzqyxxb
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="zj != null" >
+        ZJ,
+      </if>
+      <if test="xzqymc != null" >
+        XZQYMC,
+      </if>
+      <if test="xzqyjc != null" >
+        XZQYJC,
+      </if>
+      <if test="xzqydm != null" >
+        XZQYDM,
+      </if>
+      <if test="fjxzqydm != null" >
+        FJXZQYDM,
+      </if>
+      <if test="xzqylx != null" >
+        XZQYLX,
+      </if>
+      <if test="xzqyszjd != null" >
+        XZQYSZJD,
+      </if>
+      <if test="xzqyszwd != null" >
+        XZQYSZWD,
+      </if>
+      <if test="cjrzj != null" >
+        CJRZJ,
+      </if>
+      <if test="cjsj != null" >
+        CJSJ,
+      </if>
+      <if test="xgsj != null" >
+        XGSJ,
+      </if>
+      <if test="xgrzj != null" >
+        XGRZJ,
+      </if>
+      <if test="scbz != null" >
+        SCBZ,
+      </if>
+      <if test="bz != null" >
+        BZ,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="zj != null" >
+        #{zj,jdbcType=BIGINT},
+      </if>
+      <if test="xzqymc != null" >
+        #{xzqymc,jdbcType=BIGINT},
+      </if>
+      <if test="xzqyjc != null" >
+        #{xzqyjc,jdbcType=VARCHAR},
+      </if>
+      <if test="xzqydm != null" >
+        #{xzqydm,jdbcType=VARCHAR},
+      </if>
+      <if test="fjxzqydm != null" >
+        #{fjxzqydm,jdbcType=VARCHAR},
+      </if>
+      <if test="xzqylx != null" >
+        #{xzqylx,jdbcType=VARCHAR},
+      </if>
+      <if test="xzqyszjd != null" >
+        #{xzqyszjd,jdbcType=VARCHAR},
+      </if>
+      <if test="xzqyszwd != null" >
+        #{xzqyszwd,jdbcType=VARCHAR},
+      </if>
+      <if test="cjrzj != null" >
+        #{cjrzj,jdbcType=BIGINT},
+      </if>
+      <if test="cjsj != null" >
+        #{cjsj,jdbcType=TIMESTAMP},
+      </if>
+      <if test="xgsj != null" >
+        #{xgsj,jdbcType=TIMESTAMP},
+      </if>
+      <if test="xgrzj != null" >
+        #{xgrzj,jdbcType=BIGINT},
+      </if>
+      <if test="scbz != null" >
+        #{scbz,jdbcType=VARCHAR},
+      </if>
+      <if test="bz != null" >
+        #{bz,jdbcType=LONGVARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.xiaoyu.provider.base.entity.Xtxzqyxxb" >
+    update xtxzqyxxb
+    <set >
+      <if test="xzqymc != null" >
+        XZQYMC = #{xzqymc,jdbcType=BIGINT},
+      </if>
+      <if test="xzqyjc != null" >
+        XZQYJC = #{xzqyjc,jdbcType=VARCHAR},
+      </if>
+      <if test="xzqydm != null" >
+        XZQYDM = #{xzqydm,jdbcType=VARCHAR},
+      </if>
+      <if test="fjxzqydm != null" >
+        FJXZQYDM = #{fjxzqydm,jdbcType=VARCHAR},
+      </if>
+      <if test="xzqylx != null" >
+        XZQYLX = #{xzqylx,jdbcType=VARCHAR},
+      </if>
+      <if test="xzqyszjd != null" >
+        XZQYSZJD = #{xzqyszjd,jdbcType=VARCHAR},
+      </if>
+      <if test="xzqyszwd != null" >
+        XZQYSZWD = #{xzqyszwd,jdbcType=VARCHAR},
+      </if>
+      <if test="cjrzj != null" >
+        CJRZJ = #{cjrzj,jdbcType=BIGINT},
+      </if>
+      <if test="cjsj != null" >
+        CJSJ = #{cjsj,jdbcType=TIMESTAMP},
+      </if>
+      <if test="xgsj != null" >
+        XGSJ = #{xgsj,jdbcType=TIMESTAMP},
+      </if>
+      <if test="xgrzj != null" >
+        XGRZJ = #{xgrzj,jdbcType=BIGINT},
+      </if>
+      <if test="scbz != null" >
+        SCBZ = #{scbz,jdbcType=VARCHAR},
+      </if>
+      <if test="bz != null" >
+        BZ = #{bz,jdbcType=LONGVARCHAR},
+      </if>
+    </set>
+    where ZJ = #{zj,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKeyWithBLOBs" parameterType="com.xiaoyu.provider.base.entity.Xtxzqyxxb" >
+    update xtxzqyxxb
+    set XZQYMC = #{xzqymc,jdbcType=BIGINT},
+      XZQYJC = #{xzqyjc,jdbcType=VARCHAR},
+      XZQYDM = #{xzqydm,jdbcType=VARCHAR},
+      FJXZQYDM = #{fjxzqydm,jdbcType=VARCHAR},
+      XZQYLX = #{xzqylx,jdbcType=VARCHAR},
+      XZQYSZJD = #{xzqyszjd,jdbcType=VARCHAR},
+      XZQYSZWD = #{xzqyszwd,jdbcType=VARCHAR},
+      CJRZJ = #{cjrzj,jdbcType=BIGINT},
+      CJSJ = #{cjsj,jdbcType=TIMESTAMP},
+      XGSJ = #{xgsj,jdbcType=TIMESTAMP},
+      XGRZJ = #{xgrzj,jdbcType=BIGINT},
+      SCBZ = #{scbz,jdbcType=VARCHAR},
+      BZ = #{bz,jdbcType=LONGVARCHAR}
+    where ZJ = #{zj,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.xiaoyu.provider.base.entity.Xtxzqyxxb" >
+    update xtxzqyxxb
+    set XZQYMC = #{xzqymc,jdbcType=BIGINT},
+      XZQYJC = #{xzqyjc,jdbcType=VARCHAR},
+      XZQYDM = #{xzqydm,jdbcType=VARCHAR},
+      FJXZQYDM = #{fjxzqydm,jdbcType=VARCHAR},
+      XZQYLX = #{xzqylx,jdbcType=VARCHAR},
+      XZQYSZJD = #{xzqyszjd,jdbcType=VARCHAR},
+      XZQYSZWD = #{xzqyszwd,jdbcType=VARCHAR},
+      CJRZJ = #{cjrzj,jdbcType=BIGINT},
+      CJSJ = #{cjsj,jdbcType=TIMESTAMP},
+      XGSJ = #{xgsj,jdbcType=TIMESTAMP},
+      XGRZJ = #{xgrzj,jdbcType=BIGINT},
+      SCBZ = #{scbz,jdbcType=VARCHAR}
+    where ZJ = #{zj,jdbcType=BIGINT}
+  </update>
+</mapper>

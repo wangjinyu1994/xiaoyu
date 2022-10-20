@@ -12,16 +12,14 @@
     <artifactId>oss</artifactId>
     <properties>
         <alicloud.oss.version>2.2.0.RELEASE</alicloud.oss.version>
+        <mybatis.spring.boot.version>2.2.0</mybatis.spring.boot.version>
+        <mysql.connector.version>5.1.49</mysql.connector.version>
+        <druid.version>1.1.12</druid.version>
     </properties>
     <dependencies>
         <dependency>
             <groupId>com.xiaoyu</groupId>
             <artifactId>api</artifactId>
-            <version>${project.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.xiaoyu</groupId>
-            <artifactId>common</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
@@ -75,7 +73,23 @@
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
         </dependency>
-
+        <!--mysql 驱动-->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>${mysql.connector.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid</artifactId>
+            <version>${druid.version}</version>
+        </dependency>
+        <!--整合 mybatis -->
+        <dependency>
+            <groupId>org.mybatis.spring.boot</groupId>
+            <artifactId>mybatis-spring-boot-starter</artifactId>
+            <version>${mybatis.spring.boot.version}</version>
+        </dependency>
 
     </dependencies>
 </project>

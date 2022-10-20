@@ -1,0 +1,18 @@
+#服务名
+spring:
+  application:
+    name: xiaoyu-feign
+  cloud:
+    nacos:
+      discovery:
+        server-addr: http://localhost:8850/nacos
+
+#springboot监控暴漏端口
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+logging:
+  level:
+    com.xiaoyu.feign.service.DeptFeignService: debug

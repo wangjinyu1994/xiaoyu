@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: provider-express
+  cloud:
+    nacos:
+      discovery:
+        server-addr: http://localhost:8850/nacos
+
+#springboot监控暴漏端口
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

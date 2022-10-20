@@ -14,8 +14,9 @@
         <java.version>1.8</java.version>
         <springloaded.version>1.2.8.RELEASE</springloaded.version>
         <alibaba.seata.version>2021.1</alibaba.seata.version>
-        <mybatis.spring.boot.starter.version>2.2.0</mybatis.spring.boot.starter.version>
-        <mysql.connector.java.version>5.1.49</mysql.connector.java.version>
+        <mybatis.spring.boot.version>2.2.0</mybatis.spring.boot.version>
+        <mysql.connector.version>8.0.22</mysql.connector.version>
+        <druid.version>1.1.12</druid.version>
         <junit.version>4.12</junit.version>
     </properties>
     <dependencies>
@@ -47,29 +48,6 @@
             <groupId>com.xiaoyu</groupId>
             <artifactId>api</artifactId>
             <version>${project.version}</version>
-        </dependency>
-        <!--junit 测试-->
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>${junit.version}</version>
-        </dependency>
-        <!--mysql 驱动-->
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <version>${mysql.connector.java.version}</version>
-        </dependency>
-        <!--logback 日志-->
-        <dependency>
-            <groupId>ch.qos.logback</groupId>
-            <artifactId>logback-core</artifactId>
-        </dependency>
-        <!--整合 mybatis -->
-        <dependency>
-            <groupId>org.mybatis.spring.boot</groupId>
-            <artifactId>mybatis-spring-boot-starter</artifactId>
-            <version>${mybatis.spring.boot.starter.version}</version>
         </dependency>
         <!-- 修改后立即生效，热部署 -->
         <dependency>
@@ -111,6 +89,23 @@
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
+        </dependency>
+        <!--mysql 驱动-->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>${mysql.connector.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid</artifactId>
+            <version>${druid.version}</version>
+        </dependency>
+        <!--整合 mybatis -->
+        <dependency>
+            <groupId>org.mybatis.spring.boot</groupId>
+            <artifactId>mybatis-spring-boot-starter</artifactId>
+            <version>${mybatis.spring.boot.version}</version>
         </dependency>
     </dependencies>
     <build>
