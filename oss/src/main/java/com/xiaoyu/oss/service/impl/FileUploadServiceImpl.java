@@ -1,7 +1,7 @@
 package com.xiaoyu.oss.service.impl;
 
 import com.aliyun.oss.OSS;
-import com.xiaoyu.api.util.DateUtil;
+import com.xiaoyu.common.base.util.DateUtil;
 import com.xiaoyu.api.util.FileUtil;
 import com.xiaoyu.api.util.UUIDUtil;
 import com.xiaoyu.common.base.constants.SymbolEnum;

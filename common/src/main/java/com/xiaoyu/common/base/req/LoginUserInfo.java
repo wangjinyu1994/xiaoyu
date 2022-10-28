@@ -1,4 +1,4 @@
-package com.xiaoyu.gateway.entity;
+package com.xiaoyu.common.base.req;
 
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
@@ -15,7 +15,7 @@ public class LoginUserInfo implements Serializable {
     private static final long serialVersionUID = -2858488512445215415L;
 
     @ApiModelProperty(value = "登录的用户表主键", name = "userId")
-    private String userId;
+    private Long userId;
 
     @ApiModelProperty(value = "登录的用户姓名", name = "userName")
     private String userName;

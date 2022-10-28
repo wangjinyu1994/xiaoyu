@@ -1,4 +1,4 @@
-package com.xiaoyu.api.util;
+package com.xiaoyu.common.base.util;
 
 import com.alibaba.fastjson.JSON;
 import com.google.common.collect.Lists;

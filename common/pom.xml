@@ -21,6 +21,7 @@
         <commons.lang3.version>3.12.0</commons.lang3.version>
         <jwt.version>0.11.5</jwt.version>
         <commons.net.version>3.6</commons.net.version>
+        <codec.version>1.13</codec.version>
     </properties>
     <dependencies>
         <dependency>
@@ -95,6 +96,11 @@
             <version>${commons.lang3.version}</version>
         </dependency>
         <dependency>
+            <groupId>commons-codec</groupId>
+            <artifactId>commons-codec</artifactId>
+            <version>${codec.version}</version>
+        </dependency>
+        <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-pool2</artifactId>
         </dependency>
@@ -139,7 +145,19 @@
             <groupId>ch.qos.logback</groupId>
             <artifactId>logback-core</artifactId>
         </dependency>
-
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
     </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>

@@ -1,10 +1,8 @@
-package com.xiaoyu.gateway.util;
+package com.xiaoyu.common.base.util;
 
 
 import com.alibaba.fastjson.JSON;
-import com.xiaoyu.api.util.DateUtil;
-import com.xiaoyu.common.base.util.SecretUtil;
-import com.xiaoyu.gateway.entity.LoginUserInfo;
+import com.xiaoyu.common.base.req.LoginUserInfo;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
@@ -42,7 +40,7 @@ public class JwtUtil {
 
     public static void main(String[] args) throws Exception {
         LoginUserInfo loginUserInfo = new LoginUserInfo();
-        loginUserInfo.setUserId("1");
+        loginUserInfo.setUserId(1L);
         loginUserInfo.setUserName("aaa");
         loginUserInfo.setUserType("1");
         String token = createToken(loginUserInfo);

@@ -1,6 +1,7 @@
 package com.xiaoyu.provider.controller;
 
 import com.xiaoyu.common.base.resp.CommonResult;
+import com.xiaoyu.common.base.util.RedisUtils;
 import com.xiaoyu.provider.service.TestService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,6 +22,8 @@ public class DeptController {
 
     @Autowired
     private TestService testService;
+    @Autowired
+    private RedisUtils redisUtils;
 
     @GetMapping(value = "/dept/nacos/{id}")
     public String getPayment(@PathVariable("id") Integer id) {
@@ -29,6 +32,9 @@ public class DeptController {
 
     @GetMapping(value = "/test")
     public CommonResult test(){
+        redisUtils.set("jay","123456");
+
+        System.out.println(redisUtils.get("jay"));
         return testService.testInsert();
     }
 }
