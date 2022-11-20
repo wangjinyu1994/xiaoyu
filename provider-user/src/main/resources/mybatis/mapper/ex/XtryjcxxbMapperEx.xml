@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.xiaoyu.provider.user.dao.ex.XtryjcxxbMapperEx" >
+
+    <!--根据人员主键查询人员基础信息请求接口-->
+    <select id="selectSysUserBaseById" resultType="com.xiaoyu.provider.user.resp.SysUserBaseByIdResp">
+      select tab1.`XM` as `name`,tab1.`HYZK` as marriage,tab2.`ZDMC` as education,
+      tab3.`ZDMC` as politicalOutlook,tab1.`SFZH` as sfzId,tab1.`SJH` as phone,
+      tab1.`YX` as email,tab4.`ZDMC` as occupation,tab5.`XZQYMC` as province,
+      tab6.`XZQYMC` as city,tab7.`XZQYMC` as region,tab1.`DQGS` as company,
+      tab1.`GSDZ` as companyAddr,tab1.`JZDZ` as residential,tab1.`SFZDZ` as sfzAddress,
+      tab1.`ZJ` as zj,tab1.`ZGXL` as educationId,tab1.`ZZMM` as politicalOutlookId,
+      tab1.`ZY` as occupationId,tab1.`RYSZSFBM` as provinceDm,tab1.`RYSZCSBM` as cityDm,
+      tab1.`RYSZQYBM` as regionDm
+      from `xtryjcxxb` tab1
+      left join `xtsjzdxxb` tab2 on tab1.`ZGXL` = tab2.`ZJ`
+      left join `xtsjzdxxb` tab3 on tab1.`ZZMM` = tab3.`ZJ`
+      left join `xtsjzdxxb` tab4 on tab1.`ZY` = tab4.`ZJ`
+      left join `xtxzqyxxb` tab5 on tab1.`RYSZSFBM` = tab5.`XZQYDM`
+      left join `xtxzqyxxb` tab6 on tab1.`RYSZCSBM` = tab6.`XZQYDM`
+      left join `xtxzqyxxb` tab7 on tab1.`RYSZQYBM` = tab7.`XZQYDM`
+      where tab1.`SCBZ` = ${@com.xiaoyu.common.base.constants.DeleteFlagEnum@NOT_DELETE.delFlagCode}
+      and tab1.`XTRYZJ` = #{data}
+  </select>
+
+    <insert id="insertXtryjcxxb" useGeneratedKeys="true" parameterType="com.xiaoyu.provider.user.entity.Xtryjcxxb"
+            keyColumn="ZJ" keyProperty="data.zj">
+        insert into `xtryjcxxb`
+        (
+        `XTRYZJ`,
+        `XM`,
+        `HYZK`,
+        `ZGXL`,
+        `ZZMM`,
+        `SFZH`,
+        `SJH`,
+        `YX`,
+        `ZY`,
+        `RYSZSFBM`,
+        `RYSZCSBM`,
+        `RYSZQYBM`,
+        `DQGS`,
+        `GSDZ`,
+        `JZDZ`,
+        `SFZDZ`,
+        `CJRZJ`,
+        `CJSJ`,
+        `XGSJ`,
+        `XGRZJ`,
+        `SCBZ`,
+        `BZ`
+        )
+        values
+        (
+        #{data.xtryzj},
+        #{data.xm},
+        #{data.hyzk},
+        #{data.zgxl},
+        #{data.zzmm},
+        #{data.sfzh},
+        #{data.sjh},
+        #{data.yx},
+        #{data.zy},
+        #{data.ryszsfbm},
+        #{data.ryszcsbm},
+        #{data.ryszqybm},
+        #{data.dqgs},
+        #{data.gsdz},
+        #{data.jzdz},
+        #{data.sfzdz},
+        #{data.cjrzj},
+        #{data.cjsj},
+        #{data.xgsj},
+        #{data.xgrzj},
+        #{data.scbz},
+        #{data.bz}
+        )
+    </insert>
+</mapper>

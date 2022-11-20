@@ -4,7 +4,6 @@ import com.xiaoyu.common.base.constants.ResponseEnum;
 import com.xiaoyu.common.base.exception.CommonServiceException;
 import com.xiaoyu.common.base.req.LoginUserInfo;
 import com.xiaoyu.common.base.resp.CommonResult;
-import com.xiaoyu.provider.util.HttpServletRequestUtil;
 import com.xiaoyu.common.base.util.SecretUtil;
 import com.xiaoyu.provider.base.entity.Xtryxxb;
 import com.xiaoyu.provider.dao.XtryxxbMapper;

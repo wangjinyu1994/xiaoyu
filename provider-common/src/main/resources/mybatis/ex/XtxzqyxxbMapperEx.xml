@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.xiaoyu.provider.common.dao.ex.XtxzqyxxbMapperEx" >
+
+      <!--根据行政区域主键获取下级行政区域请求接口-->
+      <select id="selectSublevelAdministrativeRegionById" resultType="com.xiaoyu.provider.common.resp.SelectSublevelAdministrativeRegionByIdResp">
+            select tab1.`ZJ` as zj,tab1.`XZQYMC` as `name`,tab1.`XZQYDM` as `code`,
+            tab1.`XZQYJC` as abbreviation,tab1.`XZQYLX` as `level`,tab1.`FJXZQYDM` as parentCode,
+            tab2.`ZJ` as parentZj
+            from `xtxzqyxxb` tab1
+            left join `xtxzqyxxb` tab2 on tab1.`FJXZQYDM` = tab2.`XZQYDM`
+            where tab1.`SCBZ` = ${@com.xiaoyu.common.base.constants.DeleteFlagEnum@NOT_DELETE.delFlagCode}
+            and tab2.`ZJ` = #{data.zj}
+      </select>
+
+      <!--根据行政区域编码获取下级行政区域请求接口-->
+      <select id="selectSublevelAdministrativeRegionByCode" resultType="com.xiaoyu.provider.common.resp.SelectSublevelAdministrativeRegionByCodeResp">
+            select `ZJ` as zj,`XZQYMC` as `name`,`XZQYDM` as `code`,
+            `XZQYJC` as abbreviation,`XZQYLX` as `level`,`FJXZQYDM` as parentCode
+            from `xtxzqyxxb`
+            where `SCBZ` = ${@com.xiaoyu.common.base.constants.DeleteFlagEnum@NOT_DELETE.delFlagCode}
+            and `FJXZQYDM` = #{data.code}
+      </select>
+
+      <!--根据行政区域等级获取行政区域请求接口-->
+      <select id="selectAdministrativeRegionByLevel" resultType="com.xiaoyu.provider.common.resp.SelectAdministrativeRegionByLevelResp">
+            select `ZJ` as zj,`XZQYMC` as `name`,`XZQYDM` as `code`,
+            `XZQYJC` as abbreviation,`XZQYLX` as `level`,`FJXZQYDM` as parentCode
+            from `xtxzqyxxb`
+            where `SCBZ` = ${@com.xiaoyu.common.base.constants.DeleteFlagEnum@NOT_DELETE.delFlagCode}
+            and `XZQYLX` = #{data.level}
+      </select>
+
+      <!--获取所有行政区域-->
+      <select id="selectAllAdministrativeRegion" resultType="com.xiaoyu.provider.common.resp.SelectAllAdministrativeRegionResp">
+            select tab1.`ZJ` as zj,tab1.`XZQYMC` as `name`,tab1.`XZQYDM` as `code`,
+            tab1.`XZQYJC` as abbreviation,tab1.`XZQYLX` as `level`,tab1.`FJXZQYDM` as parentCode,
+            tab2.`ZJ` as parentZj
+            from `xtxzqyxxb` tab1
+            left join `xtxzqyxxb` tab2 on tab1.`FJXZQYDM` = tab2.`XZQYDM`
+            where tab1.`SCBZ` = ${@com.xiaoyu.common.base.constants.DeleteFlagEnum@NOT_DELETE.delFlagCode}
+      </select>
+
+    <insert id="insertXtxzqyxxb" useGeneratedKeys="true" parameterType="com.xiaoyu.provider.common.entity.Xtxzqyxxb"
+            keyProperty="data.zj" keyColumn="ZJ">
+          insert into `xtxzqyxxb`
+          (
+          `XZQYMC`,
+          `XZQYJC`,
+          `XZQYDM`,
+          `FJXZQYDM`,
+          `XZQYLX`,
+          `XZQYSZJD`,
+          `XZQYSZWD`,
+          `CJRZJ`,
+          `CJSJ`,
+          `XGSJ`,
+          `XGRZJ`,
+          `SCBZ`,
+          `BZ`
+          )
+          values
+          (
+          #{data.xzqymc},
+          #{data.xzqyjc},
+          #{data.xzqydm},
+          #{data.fjxzqydm},
+          #{data.xzqylx},
+          #{data.xzqyszjd},
+          #{data.xzqyszwd},
+          #{data.cjrzj},
+          #{data.cjsj},
+          #{data.xgsj},
+          #{data.xgrzj},
+          #{data.scbz},
+          #{data.bz}
+          )
+    </insert>
+
+</mapper>

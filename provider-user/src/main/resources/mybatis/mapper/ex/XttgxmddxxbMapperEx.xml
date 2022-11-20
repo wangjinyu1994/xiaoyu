@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.xiaoyu.provider.user.dao.ex.XttgxmddxxbMapperEx" >
+
+    <insert id="insertXttgxmddxxb" useGeneratedKeys="true" parameterType="com.xiaoyu.provider.user.entity.Xttgxmddxxb"
+            keyColumn="ZJ" keyProperty="data.zj">
+        insert into `xttgxmddxxb`
+        (
+          `XTRYZJ`,
+          `TGXMZJ`,
+          `TGSL`,
+          `FKJE`,
+          `FKFS`,
+          `FKZT`,
+          `FHZT`,
+          `QSZT`,
+          `SHDZ`,
+          `CJRZJ`,
+          `CJSJ`,
+          `XGSJ`,
+          `XGRZJ`,
+          `SCBZ`,
+          `BZ`
+        )
+        values
+        (
+          #{data.xtryzj},
+          #{data.tgxmzj},
+          #{data.tgsl},
+          #{data.fkje},
+          #{data.fkfs},
+          #{data.fkzt},
+          #{data.fhzt},
+          #{data.qszt},
+          #{data.shdz},
+          #{data.cjrzj},
+          #{data.cjsj},
+          #{data.xgsj},
+          #{data.xgrzj},
+          #{data.scbz},
+          #{data.bz}
+        )
+    </insert>
+</mapper>

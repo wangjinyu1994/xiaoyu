@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.xiaoyu.provider.common.dao.ex.XtsjzdxxbMapperEx" >
+
+    <!--根据数据字典主键获取子级数据字典请求接口-->
+    <select id="selectSublevelDictionaryById" resultType="com.xiaoyu.provider.common.resp.SelectSublevelDictionaryByIdResp">
+        select `ZJ` as zj,`ZDMC` as `name`,`ZDSM` as `explain`,
+        `ZDDM` as `code`,`ZDLXZJ` as typeId,`FLZJ` as parentZj
+        from `xtsjzdxxb`
+        where `SCBZ` = ${@com.xiaoyu.common.base.constants.DeleteFlagEnum@NOT_DELETE.delFlagCode}
+        and `FLZJ` = #{data.zj}
+        <if test="data.level != null and data.level != ''">
+            and `ZDDJ` = #{data.level}
+        </if>
+    </select>
+
+    <!--根据数据字典类型主键获取数据字典请求接口-->
+    <select id="selectDictionaryByTypeId" resultType="com.xiaoyu.provider.common.resp.SelectDictionaryByTypeIdResp">
+        select `ZJ` as zj,`ZDMC` as `name`,`ZDSM` as `explain`,
+        `ZDDM` as `code`,`ZDLXZJ` as typeId,`FLZJ` as parentZj,
+        `ZDDJ` as `level`
+        from `xtsjzdxxb`
+        where `SCBZ` = ${@com.xiaoyu.common.base.constants.DeleteFlagEnum@NOT_DELETE.delFlagCode}
+        and `ZDLXZJ` = #{data.zj}
+    </select>
+
+    <insert id="insertXtsjzdxxb" useGeneratedKeys="true" parameterType="com.xiaoyu.provider.common.entity.Xtsjzdxxb"
+            keyProperty="data.zj" keyColumn="ZJ">
+        insert into `xtsjzdxxb`
+        (
+          `FLZJ`,
+          `ZDLXZJ`,
+          `ZDMC`,
+          `ZDDJ`,
+          `ZDSM`,
+          `ZDDM`,
+          `PX`,
+          `CJRZJ`,
+          `CJSJ`,
+          `XGSJ`,
+          `XGRZJ`,
+          `SCBZ`,
+          `BZ`
+        )
+        values
+        (
+          #{data.flzj},
+          #{data.zdlxzj},
+          #{data.zdmc},
+          #{data.zddj},
+          #{data.zdsm},
+          #{data.zddm},
+          #{data.px},
+          #{data.cjrzj},
+          #{data.cjsj},
+          #{data.xgsj},
+          #{data.xgrzj},
+          #{data.scbz},
+          #{data.bz}
+        )
+    </insert>
+</mapper>

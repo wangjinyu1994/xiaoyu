@@ -72,6 +72,14 @@ public class SecretUtil {
         return encodeBySHA256(userPwdSalt);
     }
 
+    /**
+     * 初始化人员密码
+     */
+    public static String encryptUserPwdInit(){
+        String userPwdSalt = USER_PWD_SALT_PREFIX + SysConstantsEnum.SYS_INIT_PASS.getValue() + USER_PWD_SALT_SUFFIX;
+        return encodeBySHA256(userPwdSalt);
+    }
+
     public static void genKeyPair() throws NoSuchAlgorithmException {
         // KeyPairGenerator类用于生成公钥和私钥对，基于RSA算法生成对象
         KeyPairGenerator keyPairGen = KeyPairGenerator.getInstance("RSA");

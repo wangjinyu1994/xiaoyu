@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.xiaoyu.provider.user.dao.ex.XtrygzjlxxbMapperEx" >
+
+    <!--获取人员工作经历请求接口-->
+    <select id="selectSysUserWorkExperience" resultType="com.xiaoyu.provider.user.resp.SelectSysUserWorkExperienceResp">
+        select tab1.`ZJ` as zj,tab2.`ZDMC` as companyType,tab1.`GSLX` as companyTypeId,
+        tab1.`GSMC` as companyName,tab1.`GSDZ` as companyAddress,tab1.`SFZZ` as `status`,
+        DATE_FORMAT(tab1.`RZSJ`,'%Y-%m-%d %H:%i:%s') as enrollingDate,
+        DATE_FORMAT(tab1.`LZSJ`,'%Y-%m-%d %H:%i:%s') as quitDate
+        from `xtrygzjlxxb` tab1
+        left join `xtsjzdxxb` tab2 on tab1.`GSLX` = tab2.`ZJ`
+        where tab1.`SCBZ` = ${@com.xiaoyu.common.base.constants.DeleteFlagEnum@NOT_DELETE.delFlagCode}
+        and tab1.`XTRYZJ` = #{data}
+    </select>
+
+    <insert id="insertXtrygzjlxxb" parameterType="com.xiaoyu.provider.user.entity.Xtrygzjlxxb"
+            useGeneratedKeys="true" keyProperty="data.zj" keyColumn="ZJ">
+        insert into `xtrygzjlxxb`
+        (
+        `XTRYZJ`,
+        `GSLX`,
+        `SFZZ`,
+        `GSMC`,
+        `GSDZ`,
+        `RZSJ`,
+        `LZSJ`,
+        `CJRZJ`,
+        `CJSJ`,
+        `XGSJ`,
+        `XGRZJ`,
+        `SCBZ`,
+        `BZ`
+        )
+        values
+        (
+        #{data.xtryzj},
+        #{data.gslx},
+        #{data.sfzz},
+        #{data.gsmc},
+        #{data.gsdz},
+        #{data.rzsj},
+        #{data.lzsj},
+        #{data.cjrzj},
+        #{data.cjsj},
+        #{data.xgsj},
+        #{data.xgrzj},
+        #{data.scbz},
+        #{data.bz}
+        )
+    </insert>
+</mapper>

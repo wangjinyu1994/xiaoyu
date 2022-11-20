@@ -37,7 +37,7 @@ public class BaseReqBean implements Serializable {
     @ApiModelProperty(value = "更新人主键", name = "updateUser", hidden = true)
     private Long updateUser;
 
-    @ApiModelProperty(value = "系统的token", name = "xtdwytk")
-    private String xtdwytk;
+    @ApiModelProperty(value = "系统的token", name = "xiaoyu")
+    private String xiaoyu;
 
 }

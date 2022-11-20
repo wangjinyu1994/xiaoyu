@@ -19,6 +19,11 @@
         <module>common</module>
         <module>provider-express</module>
         <module>oss</module>
+        <module>provider-user</module>
+        <module>feign-user</module>
+        <module>provider-common</module>
+        <module>feign-common</module>
+        <module>provider-system</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

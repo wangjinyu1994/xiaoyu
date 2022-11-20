@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.xiaoyu.provider.common.dao.ex.XtsjzdlxxxbMapperEx" >
+
+    <!--获取数据字典类型请求接口-->
+    <select id="selectDictionaryType" resultType="com.xiaoyu.provider.common.resp.SelectDictionaryTypeResp">
+        select `ZJ` as zj,`ZDMC` as `name`,`ZDSM` as `explain`,
+        `ZDDM` as `code`
+        from `xtsjzdlxxxb`
+        where `SCBZ` = ${@com.xiaoyu.common.base.constants.DeleteFlagEnum@NOT_DELETE.delFlagCode}
+    </select>
+
+    <insert id="insertXtsjzdlxxxb" useGeneratedKeys="true" parameterType="com.xiaoyu.provider.common.entity.Xtsjzdlxxxb"
+            keyColumn="ZJ" keyProperty="data.zj">
+        insert into `xtsjzdlxxxb`
+        (
+          `ZDMC`,
+          `ZDSM`,
+          `ZDDM`,
+          `PX`,
+          `CJRZJ`,
+          `CJSJ`,
+          `XGSJ`,
+          `XGRZJ`,
+          `SCBZ`,
+          `BZ`
+        )
+        values
+        (
+          #{data.zdmc},
+          #{data.zdsm},
+          #{data.zddm},
+          #{data.px},
+          #{data.cjrzj},
+          #{data.cjsj},
+          #{data.xgsj},
+          #{data.xgrzj},
+          #{data.scbz},
+          #{data.bz}
+        )
+    </insert>
+</mapper>

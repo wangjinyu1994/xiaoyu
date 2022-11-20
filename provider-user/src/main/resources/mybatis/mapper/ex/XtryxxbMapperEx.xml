@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.xiaoyu.provider.user.dao.ex.XtryxxbMapperEx" >
+
+  <!--根据账号和人员类型查找用户-->
+  <select id="selectSysUserByLoginName" resultType="com.xiaoyu.provider.user.entity.Xtryxxb">
+      select
+      <include refid="com.xiaoyu.provider.user.dao.XtryxxbMapper.Base_Column_List" />
+      ,
+      <include refid="com.xiaoyu.provider.user.dao.XtryxxbMapper.Blob_Column_List" />
+      from `xtryxxb`
+      where `SCBZ` = ${@com.xiaoyu.common.base.constants.DeleteFlagEnum@NOT_DELETE.delFlagCode}
+      and `RYDLZH` = #{loginName}
+      and `RYLX` = #{userType}
+  </select>
+
+  <!--根据人员主键查询人员信息请求接口-->
+  <select id="selectSysUserById" resultType="com.xiaoyu.provider.user.resp.SysUserByIdResp">
+      select tab1.`RYNC` as nickname,tab1.`RYXB` as sex,tab1.`RYTX` as headImgAddress,
+      DATE_FORMAT(tab1.`RYSR`,'%Y-%m-%d %H:%i:%s') as birthday,
+      tab1.`GXQM` as autograph,tab1.`GRSM` as `explain`,tab1.`RYSZJD` as longitude,
+      tab1.`RYSZWD` as latitude,tab1.`RYXX` as bloodType,tab2.`ZDMC` as bloodTypeStr
+      from `xtryxxb` tab1
+      left join `xtsjzdxxb` tab2 on tab1.`RYXX` = tab2.`ZJ`
+      where tab1.`ZJ` = #{data}
+  </select>
+
+    <insert id="insertXtryxxb" useGeneratedKeys="true" parameterType="com.xiaoyu.provider.user.entity.Xtryxxb"
+            keyProperty="data.zj" keyColumn="ZJ">
+        insert into `xtryxxb`
+        (
+          `RYNC`,
+          `RYWYDM`,
+          `RYBH`,
+          `RYDLZH`,
+          `RYDLMM`,
+          `RYLX`,
+          `RYXB`,
+          `RYTX`,
+          `RYSR`,
+          `GXQM`,
+          `GRSM`,
+          `RYOPENID`,
+          `RYSZJD`,
+          `RYSZWD`,
+          `RYXX`,
+          `PX`,
+          `RYSHZT`,
+          `SHRZJ`,
+          `SHSJ`,
+          `RYSFDLG`,
+          `ZHYCDLSJ`,
+          `CJRZJ`,
+          `CJSJ`,
+          `XGSJ`,
+          `XGRZJ`,
+          `SCBZ`,
+          `BZ`
+        )
+        values
+        (
+          #{data.rync},
+          #{data.rywydm},
+          #{data.rybh},
+          #{data.rydlzh},
+          #{data.rydlmm},
+          #{data.rylx},
+          #{data.ryxb},
+          #{data.rytx},
+          #{data.rysr},
+          #{data.gxqm},
+          #{data.grsm},
+          #{data.ryopenid},
+          #{data.ryszjd},
+          #{data.ryszwd},
+          #{data.ryxx},
+          #{data.px},
+          #{data.ryshzt},
+          #{data.shrzj},
+          #{data.shsj},
+          #{data.rysfdlg},
+          #{data.zhycdlsj},
+          #{data.cjrzj},
+          #{data.cjsj},
+          #{data.xgsj},
+          #{data.xgrzj},
+          #{data.scbz},
+          #{data.bz}
+        )
+    </insert>
+</mapper>

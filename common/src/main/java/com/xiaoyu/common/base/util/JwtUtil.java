@@ -40,10 +40,11 @@ public class JwtUtil {
 
     public static void main(String[] args) throws Exception {
         LoginUserInfo loginUserInfo = new LoginUserInfo();
-        loginUserInfo.setUserId(1L);
+        loginUserInfo.setUserId(5L);
         loginUserInfo.setUserName("aaa");
         loginUserInfo.setUserType("1");
         String token = createToken(loginUserInfo);
+        System.out.println(token);
         LoginUserInfo reso = parseToken(token);
         System.out.println(JSON.toJSONString(reso));
         //System.out.println(createToken(loginUserInfo));

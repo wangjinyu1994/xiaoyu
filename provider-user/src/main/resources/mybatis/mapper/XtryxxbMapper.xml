@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.xiaoyu.provider.user.dao.XtryxxbMapper" >
+  <resultMap id="BaseResultMap" type="com.xiaoyu.provider.user.entity.Xtryxxb" >
+    <id column="ZJ" property="zj" jdbcType="BIGINT" />
+    <result column="RYNC" property="rync" jdbcType="VARCHAR" />
+    <result column="RYWYDM" property="rywydm" jdbcType="VARCHAR" />
+    <result column="RYBH" property="rybh" jdbcType="VARCHAR" />
+    <result column="RYDLZH" property="rydlzh" jdbcType="VARCHAR" />
+    <result column="RYDLMM" property="rydlmm" jdbcType="VARCHAR" />
+    <result column="RYLX" property="rylx" jdbcType="VARCHAR" />
+    <result column="RYXB" property="ryxb" jdbcType="VARCHAR" />
+    <result column="RYTX" property="rytx" jdbcType="VARCHAR" />
+    <result column="RYSR" property="rysr" jdbcType="TIMESTAMP" />
+    <result column="GXQM" property="gxqm" jdbcType="VARCHAR" />
+    <result column="GRSM" property="grsm" jdbcType="VARCHAR" />
+    <result column="RYOPENID" property="ryopenid" jdbcType="VARCHAR" />
+    <result column="RYSZJD" property="ryszjd" jdbcType="VARCHAR" />
+    <result column="RYSZWD" property="ryszwd" jdbcType="VARCHAR" />
+    <result column="RYXX" property="ryxx" jdbcType="BIGINT" />
+    <result column="PX" property="px" jdbcType="INTEGER" />
+    <result column="RYSHZT" property="ryshzt" jdbcType="VARCHAR" />
+    <result column="SHRZJ" property="shrzj" jdbcType="BIGINT" />
+    <result column="SHSJ" property="shsj" jdbcType="BIGINT" />
+    <result column="RYSFDLG" property="rysfdlg" jdbcType="VARCHAR" />
+    <result column="ZHYCDLSJ" property="zhycdlsj" jdbcType="BIGINT" />
+    <result column="CJRZJ" property="cjrzj" jdbcType="BIGINT" />
+    <result column="CJSJ" property="cjsj" jdbcType="TIMESTAMP" />
+    <result column="XGSJ" property="xgsj" jdbcType="TIMESTAMP" />
+    <result column="XGRZJ" property="xgrzj" jdbcType="BIGINT" />
+    <result column="SCBZ" property="scbz" jdbcType="VARCHAR" />
+  </resultMap>
+  <resultMap id="ResultMapWithBLOBs" type="com.xiaoyu.provider.user.entity.Xtryxxb" extends="BaseResultMap" >
+    <result column="BZ" property="bz" jdbcType="LONGVARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    ZJ, RYNC, RYWYDM, RYBH, RYDLZH, RYDLMM, RYLX, RYXB, RYTX, RYSR, GXQM, GRSM, RYOPENID, 
+    RYSZJD, RYSZWD, RYXX, PX, RYSHZT, SHRZJ, SHSJ, RYSFDLG, ZHYCDLSJ, CJRZJ, CJSJ, XGSJ, 
+    XGRZJ, SCBZ
+  </sql>
+  <sql id="Blob_Column_List" >
+    BZ
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="ResultMapWithBLOBs" parameterType="java.lang.Long" >
+    select 
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    from xtryxxb
+    where ZJ = #{zj,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
+    delete from xtryxxb
+    where ZJ = #{zj,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="com.xiaoyu.provider.user.entity.Xtryxxb" >
+    insert into xtryxxb (ZJ, RYNC, RYWYDM, 
+      RYBH, RYDLZH, RYDLMM, 
+      RYLX, RYXB, RYTX, RYSR, 
+      GXQM, GRSM, RYOPENID, 
+      RYSZJD, RYSZWD, RYXX, 
+      PX, RYSHZT, SHRZJ, SHSJ, 
+      RYSFDLG, ZHYCDLSJ, CJRZJ, 
+      CJSJ, XGSJ, XGRZJ, 
+      SCBZ, BZ)
+    values (#{zj,jdbcType=BIGINT}, #{rync,jdbcType=VARCHAR}, #{rywydm,jdbcType=VARCHAR}, 
+      #{rybh,jdbcType=VARCHAR}, #{rydlzh,jdbcType=VARCHAR}, #{rydlmm,jdbcType=VARCHAR}, 
+      #{rylx,jdbcType=VARCHAR}, #{ryxb,jdbcType=VARCHAR}, #{rytx,jdbcType=VARCHAR}, #{rysr,jdbcType=TIMESTAMP}, 
+      #{gxqm,jdbcType=VARCHAR}, #{grsm,jdbcType=VARCHAR}, #{ryopenid,jdbcType=VARCHAR}, 
+      #{ryszjd,jdbcType=VARCHAR}, #{ryszwd,jdbcType=VARCHAR}, #{ryxx,jdbcType=BIGINT}, 
+      #{px,jdbcType=INTEGER}, #{ryshzt,jdbcType=VARCHAR}, #{shrzj,jdbcType=BIGINT}, #{shsj,jdbcType=BIGINT}, 
+      #{rysfdlg,jdbcType=VARCHAR}, #{zhycdlsj,jdbcType=BIGINT}, #{cjrzj,jdbcType=BIGINT}, 
+      #{cjsj,jdbcType=TIMESTAMP}, #{xgsj,jdbcType=TIMESTAMP}, #{xgrzj,jdbcType=BIGINT}, 
+      #{scbz,jdbcType=VARCHAR}, #{bz,jdbcType=LONGVARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.xiaoyu.provider.user.entity.Xtryxxb" >
+    insert into xtryxxb
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="zj != null" >
+        ZJ,
+      </if>
+      <if test="rync != null" >
+        RYNC,
+      </if>
+      <if test="rywydm != null" >
+        RYWYDM,
+      </if>
+      <if test="rybh != null" >
+        RYBH,
+      </if>
+      <if test="rydlzh != null" >
+        RYDLZH,
+      </if>
+      <if test="rydlmm != null" >
+        RYDLMM,
+      </if>
+      <if test="rylx != null" >
+        RYLX,
+      </if>
+      <if test="ryxb != null" >
+        RYXB,
+      </if>
+      <if test="rytx != null" >
+        RYTX,
+      </if>
+      <if test="rysr != null" >
+        RYSR,
+      </if>
+      <if test="gxqm != null" >
+        GXQM,
+      </if>
+      <if test="grsm != null" >
+        GRSM,
+      </if>
+      <if test="ryopenid != null" >
+        RYOPENID,
+      </if>
+      <if test="ryszjd != null" >
+        RYSZJD,
+      </if>
+      <if test="ryszwd != null" >
+        RYSZWD,
+      </if>
+      <if test="ryxx != null" >
+        RYXX,
+      </if>
+      <if test="px != null" >
+        PX,
+      </if>
+      <if test="ryshzt != null" >
+        RYSHZT,
+      </if>
+      <if test="shrzj != null" >
+        SHRZJ,
+      </if>
+      <if test="shsj != null" >
+        SHSJ,
+      </if>
+      <if test="rysfdlg != null" >
+        RYSFDLG,
+      </if>
+      <if test="zhycdlsj != null" >
+        ZHYCDLSJ,
+      </if>
+      <if test="cjrzj != null" >
+        CJRZJ,
+      </if>
+      <if test="cjsj != null" >
+        CJSJ,
+      </if>
+      <if test="xgsj != null" >
+        XGSJ,
+      </if>
+      <if test="xgrzj != null" >
+        XGRZJ,
+      </if>
+      <if test="scbz != null" >
+        SCBZ,
+      </if>
+      <if test="bz != null" >
+        BZ,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="zj != null" >
+        #{zj,jdbcType=BIGINT},
+      </if>
+      <if test="rync != null" >
+        #{rync,jdbcType=VARCHAR},
+      </if>
+      <if test="rywydm != null" >
+        #{rywydm,jdbcType=VARCHAR},
+      </if>
+      <if test="rybh != null" >
+        #{rybh,jdbcType=VARCHAR},
+      </if>
+      <if test="rydlzh != null" >
+        #{rydlzh,jdbcType=VARCHAR},
+      </if>
+      <if test="rydlmm != null" >
+        #{rydlmm,jdbcType=VARCHAR},
+      </if>
+      <if test="rylx != null" >
+        #{rylx,jdbcType=VARCHAR},
+      </if>
+      <if test="ryxb != null" >
+        #{ryxb,jdbcType=VARCHAR},
+      </if>
+      <if test="rytx != null" >
+        #{rytx,jdbcType=VARCHAR},
+      </if>
+      <if test="rysr != null" >
+        #{rysr,jdbcType=TIMESTAMP},
+      </if>
+      <if test="gxqm != null" >
+        #{gxqm,jdbcType=VARCHAR},
+      </if>
+      <if test="grsm != null" >
+        #{grsm,jdbcType=VARCHAR},
+      </if>
+      <if test="ryopenid != null" >
+        #{ryopenid,jdbcType=VARCHAR},
+      </if>
+      <if test="ryszjd != null" >
+        #{ryszjd,jdbcType=VARCHAR},
+      </if>
+      <if test="ryszwd != null" >
+        #{ryszwd,jdbcType=VARCHAR},
+      </if>
+      <if test="ryxx != null" >
+        #{ryxx,jdbcType=BIGINT},
+      </if>
+      <if test="px != null" >
+        #{px,jdbcType=INTEGER},
+      </if>
+      <if test="ryshzt != null" >
+        #{ryshzt,jdbcType=VARCHAR},
+      </if>
+      <if test="shrzj != null" >
+        #{shrzj,jdbcType=BIGINT},
+      </if>
+      <if test="shsj != null" >
+        #{shsj,jdbcType=BIGINT},
+      </if>
+      <if test="rysfdlg != null" >
+        #{rysfdlg,jdbcType=VARCHAR},
+      </if>
+      <if test="zhycdlsj != null" >
+        #{zhycdlsj,jdbcType=BIGINT},
+      </if>
+      <if test="cjrzj != null" >
+        #{cjrzj,jdbcType=BIGINT},
+      </if>
+      <if test="cjsj != null" >
+        #{cjsj,jdbcType=TIMESTAMP},
+      </if>
+      <if test="xgsj != null" >
+        #{xgsj,jdbcType=TIMESTAMP},
+      </if>
+      <if test="xgrzj != null" >
+        #{xgrzj,jdbcType=BIGINT},
+      </if>
+      <if test="scbz != null" >
+        #{scbz,jdbcType=VARCHAR},
+      </if>
+      <if test="bz != null" >
+        #{bz,jdbcType=LONGVARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.xiaoyu.provider.user.entity.Xtryxxb" >
+    update xtryxxb
+    <set >
+      <if test="rync != null" >
+        RYNC = #{rync,jdbcType=VARCHAR},
+      </if>
+      <if test="rywydm != null" >
+        RYWYDM = #{rywydm,jdbcType=VARCHAR},
+      </if>
+      <if test="rybh != null" >
+        RYBH = #{rybh,jdbcType=VARCHAR},
+      </if>
+      <if test="rydlzh != null" >
+        RYDLZH = #{rydlzh,jdbcType=VARCHAR},
+      </if>
+      <if test="rydlmm != null" >
+        RYDLMM = #{rydlmm,jdbcType=VARCHAR},
+      </if>
+      <if test="rylx != null" >
+        RYLX = #{rylx,jdbcType=VARCHAR},
+      </if>
+      <if test="ryxb != null" >
+        RYXB = #{ryxb,jdbcType=VARCHAR},
+      </if>
+      <if test="rytx != null" >
+        RYTX = #{rytx,jdbcType=VARCHAR},
+      </if>
+      <if test="rysr != null" >
+        RYSR = #{rysr,jdbcType=TIMESTAMP},
+      </if>
+      <if test="gxqm != null" >
+        GXQM = #{gxqm,jdbcType=VARCHAR},
+      </if>
+      <if test="grsm != null" >
+        GRSM = #{grsm,jdbcType=VARCHAR},
+      </if>
+      <if test="ryopenid != null" >
+        RYOPENID = #{ryopenid,jdbcType=VARCHAR},
+      </if>
+      <if test="ryszjd != null" >
+        RYSZJD = #{ryszjd,jdbcType=VARCHAR},
+      </if>
+      <if test="ryszwd != null" >
+        RYSZWD = #{ryszwd,jdbcType=VARCHAR},
+      </if>
+      <if test="ryxx != null" >
+        RYXX = #{ryxx,jdbcType=BIGINT},
+      </if>
+      <if test="px != null" >
+        PX = #{px,jdbcType=INTEGER},
+      </if>
+      <if test="ryshzt != null" >
+        RYSHZT = #{ryshzt,jdbcType=VARCHAR},
+      </if>
+      <if test="shrzj != null" >
+        SHRZJ = #{shrzj,jdbcType=BIGINT},
+      </if>
+      <if test="shsj != null" >
+        SHSJ = #{shsj,jdbcType=BIGINT},
+      </if>
+      <if test="rysfdlg != null" >
+        RYSFDLG = #{rysfdlg,jdbcType=VARCHAR},
+      </if>
+      <if test="zhycdlsj != null" >
+        ZHYCDLSJ = #{zhycdlsj,jdbcType=BIGINT},
+      </if>
+      <if test="cjrzj != null" >
+        CJRZJ = #{cjrzj,jdbcType=BIGINT},
+      </if>
+      <if test="cjsj != null" >
+        CJSJ = #{cjsj,jdbcType=TIMESTAMP},
+      </if>
+      <if test="xgsj != null" >
+        XGSJ = #{xgsj,jdbcType=TIMESTAMP},
+      </if>
+      <if test="xgrzj != null" >
+        XGRZJ = #{xgrzj,jdbcType=BIGINT},
+      </if>
+      <if test="scbz != null" >
+        SCBZ = #{scbz,jdbcType=VARCHAR},
+      </if>
+      <if test="bz != null" >
+        BZ = #{bz,jdbcType=LONGVARCHAR},
+      </if>
+    </set>
+    where ZJ = #{zj,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKeyWithBLOBs" parameterType="com.xiaoyu.provider.user.entity.Xtryxxb" >
+    update xtryxxb
+    set RYNC = #{rync,jdbcType=VARCHAR},
+      RYWYDM = #{rywydm,jdbcType=VARCHAR},
+      RYBH = #{rybh,jdbcType=VARCHAR},
+      RYDLZH = #{rydlzh,jdbcType=VARCHAR},
+      RYDLMM = #{rydlmm,jdbcType=VARCHAR},
+      RYLX = #{rylx,jdbcType=VARCHAR},
+      RYXB = #{ryxb,jdbcType=VARCHAR},
+      RYTX = #{rytx,jdbcType=VARCHAR},
+      RYSR = #{rysr,jdbcType=TIMESTAMP},
+      GXQM = #{gxqm,jdbcType=VARCHAR},
+      GRSM = #{grsm,jdbcType=VARCHAR},
+      RYOPENID = #{ryopenid,jdbcType=VARCHAR},
+      RYSZJD = #{ryszjd,jdbcType=VARCHAR},
+      RYSZWD = #{ryszwd,jdbcType=VARCHAR},
+      RYXX = #{ryxx,jdbcType=BIGINT},
+      PX = #{px,jdbcType=INTEGER},
+      RYSHZT = #{ryshzt,jdbcType=VARCHAR},
+      SHRZJ = #{shrzj,jdbcType=BIGINT},
+      SHSJ = #{shsj,jdbcType=BIGINT},
+      RYSFDLG = #{rysfdlg,jdbcType=VARCHAR},
+      ZHYCDLSJ = #{zhycdlsj,jdbcType=BIGINT},
+      CJRZJ = #{cjrzj,jdbcType=BIGINT},
+      CJSJ = #{cjsj,jdbcType=TIMESTAMP},
+      XGSJ = #{xgsj,jdbcType=TIMESTAMP},
+      XGRZJ = #{xgrzj,jdbcType=BIGINT},
+      SCBZ = #{scbz,jdbcType=VARCHAR},
+      BZ = #{bz,jdbcType=LONGVARCHAR}
+    where ZJ = #{zj,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.xiaoyu.provider.user.entity.Xtryxxb" >
+    update xtryxxb
+    set RYNC = #{rync,jdbcType=VARCHAR},
+      RYWYDM = #{rywydm,jdbcType=VARCHAR},
+      RYBH = #{rybh,jdbcType=VARCHAR},
+      RYDLZH = #{rydlzh,jdbcType=VARCHAR},
+      RYDLMM = #{rydlmm,jdbcType=VARCHAR},
+      RYLX = #{rylx,jdbcType=VARCHAR},
+      RYXB = #{ryxb,jdbcType=VARCHAR},
+      RYTX = #{rytx,jdbcType=VARCHAR},
+      RYSR = #{rysr,jdbcType=TIMESTAMP},
+      GXQM = #{gxqm,jdbcType=VARCHAR},
+      GRSM = #{grsm,jdbcType=VARCHAR},
+      RYOPENID = #{ryopenid,jdbcType=VARCHAR},
+      RYSZJD = #{ryszjd,jdbcType=VARCHAR},
+      RYSZWD = #{ryszwd,jdbcType=VARCHAR},
+      RYXX = #{ryxx,jdbcType=BIGINT},
+      PX = #{px,jdbcType=INTEGER},
+      RYSHZT = #{ryshzt,jdbcType=VARCHAR},
+      SHRZJ = #{shrzj,jdbcType=BIGINT},
+      SHSJ = #{shsj,jdbcType=BIGINT},
+      RYSFDLG = #{rysfdlg,jdbcType=VARCHAR},
+      ZHYCDLSJ = #{zhycdlsj,jdbcType=BIGINT},
+      CJRZJ = #{cjrzj,jdbcType=BIGINT},
+      CJSJ = #{cjsj,jdbcType=TIMESTAMP},
+      XGSJ = #{xgsj,jdbcType=TIMESTAMP},
+      XGRZJ = #{xgrzj,jdbcType=BIGINT},
+      SCBZ = #{scbz,jdbcType=VARCHAR}
+    where ZJ = #{zj,jdbcType=BIGINT}
+  </update>
+</mapper>

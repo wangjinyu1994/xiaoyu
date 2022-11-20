@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.xiaoyu.provider.system.dao.ex.XtdljkxxbMapperEx" >
+
+    <!--取所有登录放行请求接口分页 总数-->
+    <select id="countSelectLoginInterfacelistTable" resultType="java.lang.Integer">
+        select count(0)
+        from `xtdljkxxb`
+        where `SCBZ` = ${@com.xiaoyu.common.base.constants.DeleteFlagEnum@NOT_DELETE.delFlagCode}
+        and `JKZT` = ${@com.xiaoyu.common.base.constants.SysQyztEnum@HMD_QY.code}
+    </select>
+
+    <!--获取所有登录放行请求接口分页-->
+    <select id="selectLoginInterfacelistTable" resultType="com.xiaoyu.provider.system.resp.SelectLoginInterTableResp">
+        select tab1.`ZJ` as zj,tab1.`FWMC` as serviceName,tab1.`JKMC` as address,
+        tab1.`JKZT` as `status`,tab1.`SM` as `explain`,tab2.`RYNC` AS addUser,
+        DATE_FORMAT(tab2.`CJSJ`,'%Y-%m-%d %H:%i:%s') AS addTime
+        from `xtdljkxxb` tab1
+        left join `xtryxxb` tab2 on tab1.`CJRZJ` = tab2.`ZJ`
+        where tab1.`SCBZ` = ${@com.xiaoyu.common.base.constants.DeleteFlagEnum@NOT_DELETE.delFlagCode}
+        and tab1.`JKZT` = ${@com.xiaoyu.common.base.constants.SysQyztEnum@HMD_QY.code}
+        limit ${data.startIndex},${data.limit}
+    </select>
+
+    <!--获取所有登录放行请求接口-->
+    <select id="selectLoginInterfaceList" resultType="com.xiaoyu.provider.system.resp.SelectLoginInterlistListResp">
+        select tab1.`ZJ` as zj,tab1.`FWMC` as serviceName,tab1.`JKMC` as address,
+        tab1.`JKZT` as `status`,tab1.`SM` as `explain`,tab2.`RYNC` AS addUser,
+        DATE_FORMAT(tab2.`CJSJ`,'%Y-%m-%d %H:%i:%s') AS addTime
+        from `xtdljkxxb` tab1
+        left join `xtryxxb` tab2 on tab1.`CJRZJ` = tab2.`ZJ`
+        where tab1.`SCBZ` = ${@com.xiaoyu.common.base.constants.DeleteFlagEnum@NOT_DELETE.delFlagCode}
+        and tab1.`JKZT` = ${@com.xiaoyu.common.base.constants.SysQyztEnum@HMD_QY.code}
+    </select>
+
+    <select id="getXtdljkxxbInfo" resultType="java.lang.String">
+        select `JKMC`
+        from `xtdljkxxb`
+        where `SCBZ` = ${@com.xiaoyu.common.base.constants.DeleteFlagEnum@NOT_DELETE.delFlagCode}
+        and `JKZT` = ${@com.xiaoyu.common.base.constants.SysQyztEnum@HMD_QY.code}
+    </select>
+
+    <!--批量添加系统登录接口信息表-->
+    <insert id="insertXtdljkxxbBath">
+        insert into `xtdljkxxb`
+        (
+        `FWMC`,
+        `JKMC`,
+        `JKZT`,
+        `SM`,
+        `CJRZJ`,
+        `CJSJ`,
+        `XGSJ`,
+        `XGRZJ`,
+        `SCBZ`,
+        `BZ`
+        )
+        values
+        <foreach collection="data" item="data" separator=",">
+            (
+            #{data.fwmc},
+            #{data.jkmc},
+            #{data.jkzt},
+            #{data.sm},
+            #{data.cjrzj},
+            #{data.cjsj},
+            #{data.xgsj},
+            #{data.xgrzj},
+            #{data.scbz},
+            #{data.bz}
+            )
+        </foreach>
+    </insert>
+
+</mapper>
