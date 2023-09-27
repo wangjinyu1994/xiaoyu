@@ -2,12 +2,92 @@
         <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.xiaoyu.provider.user.dao.ex.XtjgxxbMapperEx" >
 
-        <insert id="insertXtjgxxb" useGeneratedKeys="true" parameterType="com.xiaoyu.provider.user.entity.Xtjgxxb"
+    <select id="selectOrgById" resultType="com.xiaoyu.provider.user.resp.SelectOrgByIdResp">
+        select tab1.`ZJ` as zj,tab1.`JGMC` as `name`,tab1.`JGQC` as fullName,
+        tab1.`JGDZ` as address,tab1.`JGBM` as `code`,tab1.`SJJGZJ` as parentId,
+        tab1.`JGJB` as orgLevel,tab1.`PX` as sx,tab1.`JGJJ` as briefIntroduction,
+        tab1.`JGTP` as photo,tab1.`JGSZSFBM` as provinceCode,tab2.`XZQYMC` as province,
+        tab1.`JGSZCSBM` as cityCode,tab3.`XZQYMC` as city,tab1.`JGSZQYBM` as areaCode,
+        tab4.`XZQYMC` as area,tab1.`JGSZJD` as longitude,tab1.`JGSZWD` as latitude,
+        tab1.`JGDH` as phone,tab1.`JGYX` as email,tab1.`JGCZ` as fax,
+        tab1.`JGFZRXM` as fzrName,tab1.`JGFZRDH` as fzrPhone,tab1.`JGLXRXM` as lxrName,
+        tab1.`JGLXRDH` as lxrPhone
+        from `xtjgxxb` tab1
+        left join `xtxzqyxxb` tab2 on tab1.`JGSZSFBM` = tab2.`XZQYDM`
+        left join `xtxzqyxxb` tab3 on tab1.`JGSZCSBM` = tab3.`XZQYDM`
+        left join `xtxzqyxxb` tab4 on tab1.`JGSZQYBM` = tab4.`XZQYDM`
+        where tab1.`SCBZ` = ${@com.xiaoyu.common.base.constants.DeleteFlagEnum@NOT_DELETE.delFlagCode}
+        and tab1.`ZJ` = #{data.zj}
+    </select>
+
+    <select id="selectAllOrgList" resultType="com.xiaoyu.provider.user.resp.SelectAllOrgResp">
+        select tab1.`ZJ` as zj,tab1.`JGMC` as `name`,tab1.`JGQC` as fullName,
+        tab1.`JGDZ` as address,tab1.`JGBM` as `code`,tab1.`SJJGZJ` as parentId,
+        tab1.`JGJB` as orgLevel,tab1.`PX` as sx,tab1.`JGJJ` as briefIntroduction,
+        tab1.`JGTP` as photo,tab1.`JGSZSFBM` as provinceCode,tab2.`XZQYMC` as province,
+        tab1.`JGSZCSBM` as cityCode,tab3.`XZQYMC` as city,tab1.`JGSZQYBM` as areaCode,
+        tab4.`XZQYMC` as area,tab1.`JGSZJD` as longitude,tab1.`JGSZWD` as latitude,
+        tab1.`JGDH` as phone,tab1.`JGYX` as email,tab1.`JGCZ` as fax,
+        tab1.`JGFZRXM` as fzrName,tab1.`JGFZRDH` as fzrPhone,tab1.`JGLXRXM` as lxrName,
+        tab1.`JGLXRDH` as lxrPhone
+        from `xtjgxxb` tab1
+        left join `xtxzqyxxb` tab2 on tab1.`JGSZSFBM` = tab2.`XZQYDM`
+        left join `xtxzqyxxb` tab3 on tab1.`JGSZCSBM` = tab3.`XZQYDM`
+        left join `xtxzqyxxb` tab4 on tab1.`JGSZQYBM` = tab4.`XZQYDM`
+        where tab1.`SCBZ` = ${@com.xiaoyu.common.base.constants.DeleteFlagEnum@NOT_DELETE.delFlagCode}
+        <if test="data.parentId != null">
+            and tab1.`SJJGZJ` = #{data.parentId}
+        </if>
+        <if test="data.orgLevel != null">
+            and tab1.`JGJB` = #{data.orgLevel}
+        </if>
+        order by tab1.`PX` desc
+    </select>
+
+    <select id="countSelectOrgTable" resultType="java.lang.Integer">
+        select count(0)
+        from `xtjgxxb` tab1
+        where tab1.`SCBZ` = ${@com.xiaoyu.common.base.constants.DeleteFlagEnum@NOT_DELETE.delFlagCode}
+        <if test="data.parentId != null">
+            and tab1.`SJJGZJ` = #{data.parentId}
+        </if>
+        <if test="data.orgLevel != null">
+            and tab1.`JGJB` = #{data.orgLevel}
+        </if>
+    </select>
+
+    <select id="selectOrgTable" resultType="com.xiaoyu.provider.user.resp.SelectOrgTableResp">
+        select tab1.`ZJ` as zj,tab1.`JGMC` as `name`,tab1.`JGQC` as fullName,
+        tab1.`JGDZ` as address,tab1.`JGBM` as `code`,tab1.`SJJGZJ` as parentId,
+        tab1.`JGJB` as orgLevel,tab1.`PX` as sx,tab1.`JGJJ` as briefIntroduction,
+        tab1.`JGTP` as photo,tab1.`JGSZSFBM` as provinceCode,tab2.`XZQYMC` as province,
+        tab1.`JGSZCSBM` as cityCode,tab3.`XZQYMC` as city,tab1.`JGSZQYBM` as areaCode,
+        tab4.`XZQYMC` as area,tab1.`JGSZJD` as longitude,tab1.`JGSZWD` as latitude,
+        tab1.`JGDH` as phone,tab1.`JGYX` as email,tab1.`JGCZ` as fax,
+        tab1.`JGFZRXM` as fzrName,tab1.`JGFZRDH` as fzrPhone,tab1.`JGLXRXM` as lxrName,
+        tab1.`JGLXRDH` as lxrPhone
+        from `xtjgxxb` tab1
+        left join `xtxzqyxxb` tab2 on tab1.`JGSZSFBM` = tab2.`XZQYDM`
+        left join `xtxzqyxxb` tab3 on tab1.`JGSZCSBM` = tab3.`XZQYDM`
+        left join `xtxzqyxxb` tab4 on tab1.`JGSZQYBM` = tab4.`XZQYDM`
+        where tab1.`SCBZ` = ${@com.xiaoyu.common.base.constants.DeleteFlagEnum@NOT_DELETE.delFlagCode}
+        <if test="data.parentId != null">
+            and tab1.`SJJGZJ` = #{data.parentId}
+        </if>
+        <if test="data.orgLevel != null">
+            and tab1.`JGJB` = #{data.orgLevel}
+        </if>
+        order by tab1.`PX` desc
+        limit ${data.startIndex},${data.limit}
+    </select>
+
+    <insert id="insertXtjgxxb" useGeneratedKeys="true" parameterType="com.xiaoyu.provider.user.entity.Xtjgxxb"
          keyProperty="data.zj" keyColumn="ZJ">
                 insert into `xtjgxxb`
                 (
                   `JGMC`,
                   `JGQC`,
+                  `JGDZ`,
                   `JGBM`,
                   `SJJGZJ`,
                   `JGJB`,
@@ -37,6 +117,7 @@
                 (
                 #{data.jgmc},
                 #{data.jgqc},
+                #{data.jgdz},
                 #{data.jgbm},
                 #{data.sjjgzj},
                 #{data.jgjb},

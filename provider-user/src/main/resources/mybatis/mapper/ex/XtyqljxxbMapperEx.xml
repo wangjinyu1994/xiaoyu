@@ -2,6 +2,29 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.xiaoyu.provider.user.dao.ex.XtyqljxxbMapperEx" >
 
+    <select id="countSelectLinksTable" resultType="java.lang.Integer">
+        select count(0)
+        from `xtyqljxxb`
+        where `SCBZ` = ${@com.xiaoyu.common.base.constants.DeleteFlagEnum@NOT_DELETE.delFlagCode}
+    </select>
+
+    <select id="selectLinksTable" resultType="com.xiaoyu.provider.user.resp.SelectLinksTableResp">
+        select `ZJ` as zj,`YQLJMC` as `name`,`YQLJDZ` as `address`,
+        `YQLJTPDZ` as tpAddress
+        from `xtyqljxxb`
+        where `SCBZ` = ${@com.xiaoyu.common.base.constants.DeleteFlagEnum@NOT_DELETE.delFlagCode}
+        order by `PX` desc
+        limit ${data.startIndex},${data.limit}
+    </select>
+
+    <select id="selectLinksInfo" resultType="com.xiaoyu.provider.user.resp.SelectLinksDataResp">
+        select `ZJ` as zj,`YQLJMC` as `name`,`YQLJDZ` as `address`,
+        `YQLJTPDZ` as tpAddress
+        from `xtyqljxxb`
+        where `SCBZ` = ${@com.xiaoyu.common.base.constants.DeleteFlagEnum@NOT_DELETE.delFlagCode}
+        order by `PX` desc
+    </select>
+
     <insert id="insertXtyqljxxb" useGeneratedKeys="true" parameterType="com.xiaoyu.provider.user.entity.Xtyqljxxb"
             keyColumn="ZJ" keyProperty="data.zj">
         insert into `xtyqljxxb`

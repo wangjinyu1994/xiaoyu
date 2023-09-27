@@ -2,6 +2,25 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.xiaoyu.provider.user.dao.ex.XtryjsxxbMapperEx" >
 
+    <select id="selectXtryjsxxbByUserIdAndJsId" resultType="com.xiaoyu.provider.user.entity.Xtryjsxxb">
+        select
+        <include refid="com.xiaoyu.provider.user.dao.XtryjsxxbMapper.Base_Column_List"/>
+        <include refid="com.xiaoyu.provider.user.dao.XtryjsxxbMapper.Blob_Column_List"/>
+        from `xtryjsxxb`
+        where `SCBZ` = ${@com.xiaoyu.common.base.constants.DeleteFlagEnum@NOT_DELETE.delFlagCode}
+        and `XTRYZJ` = #{userId}
+        and `XTJSZJ` = #{roleId}
+    </select>
+
+    <select id="selectUserRoleByUserId" resultType="com.xiaoyu.provider.user.resp.SelectUserRoleByUserIdResp">
+        select tab1.`ZJ` as zj,tab2.`RYNC` as userName,tab2.`ZJ` as userId
+        tab3.`JSMC` as roleName,tab3.`ZJ` as roleId
+        from `xtryjsxxb` tab1
+        left join `xtryxxb` tab2 on tab1.`XTRYZJ` = tab2.`ZJ`
+        left join `xtjsxxb` tab3 on tab1.`XTJSZJ` = tab3.`ZJ`
+        where tab1.`SCBZ` = ${@com.xiaoyu.common.base.constants.DeleteFlagEnum@NOT_DELETE.delFlagCode}
+    </select>
+
     <insert id="insertXtryjsxxb" useGeneratedKeys="true" parameterType="com.xiaoyu.provider.user.entity.Xtryjsxxb"
      keyColumn="ZJ" keyProperty="data.zj">
         insert into `xtryjsxxb`

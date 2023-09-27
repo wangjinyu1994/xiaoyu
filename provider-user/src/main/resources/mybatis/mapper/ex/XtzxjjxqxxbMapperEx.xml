@@ -2,6 +2,26 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.xiaoyu.provider.user.dao.ex.XtzxjjxqxxbMapperEx" >
 
+    <select id="selectCoreContentById" resultType="com.xiaoyu.provider.user.resp.SelectCoreContentInfoResp">
+        select `NR` as `content`,`ZXJJZJ` as zxjjzj,`ZJ` as zj
+        from `xtzxjjxqxxb`
+        where `SCBZ` = ${@com.xiaoyu.common.base.constants.DeleteFlagEnum@NOT_DELETE.delFlagCode}
+        and `ZJ` = #{data.zj}
+    </select>
+
+    <select id="selectAllCoreInfo" resultType="com.xiaoyu.provider.user.resp.SelectCoreInfoResp">
+        select `NR` as `content`,`ZXJJZJ` as zxjjzj,`ZJ` as zj
+        from `xtzxjjxqxxb`
+        where `SCBZ` = ${@com.xiaoyu.common.base.constants.DeleteFlagEnum@NOT_DELETE.delFlagCode}
+    </select>
+
+    <select id="selectCoreInfo" resultType="com.xiaoyu.provider.user.resp.SelectCoreInfoResp">
+        select `NR` as `content`
+        from `xtzxjjxqxxb`
+        where `SCBZ` = ${@com.xiaoyu.common.base.constants.DeleteFlagEnum@NOT_DELETE.delFlagCode}
+        and `ZXJJZJ` = #{data} limit 1
+    </select>
+
     <insert id="insertXtzxjjxqxxb" useGeneratedKeys="true" parameterType="com.xiaoyu.provider.user.entity.Xtzxjjxqxxb"
             keyProperty="data.zj" keyColumn="ZJ">
         insert into `xtzxjjxqxxb`

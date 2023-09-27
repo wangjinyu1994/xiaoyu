@@ -2,6 +2,29 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.xiaoyu.provider.user.dao.ex.XtzxjjxxbMapperEx" >
 
+    <select id="selectCoreDetailsById" resultType="com.xiaoyu.provider.user.resp.SelectCoreDetailsInfoResp">
+        select  `MC` as `name`,`DH` as phone,`DZ` as `address`,
+        `QQDZ` as qq,`WXDZ` as vx,`ZJ` as zj
+        from `xtzxjjxxb`
+        where `SCBZ` = ${@com.xiaoyu.common.base.constants.DeleteFlagEnum@NOT_DELETE.delFlagCode}
+        and `ZJ` = #{data.zj}
+    </select>
+
+    <select id="countSelectCoreDataInfo" resultType="java.lang.Integer">
+        select  count(0)
+        from `xtzxjjxxb`
+        where `SCBZ` = ${@com.xiaoyu.common.base.constants.DeleteFlagEnum@NOT_DELETE.delFlagCode}
+    </select>
+
+    <select id="selectCoreDataInfo" resultType="com.xiaoyu.provider.user.resp.SelectCoreDataResp">
+        select  `MC` as `name`,`DH` as phone,`DZ` as `address`,
+        `QQDZ` as qq,`WXDZ` as vx,`ZJ` as zj
+        from `xtzxjjxxb`
+        where `SCBZ` = ${@com.xiaoyu.common.base.constants.DeleteFlagEnum@NOT_DELETE.delFlagCode}
+        order by `PX` desc
+        limit ${data.startIndex},${data.limit}
+    </select>
+
     <insert id="insertXtzxjjxxb" useGeneratedKeys="true" parameterType="com.xiaoyu.provider.user.entity.Xtzxjjxxb"
             keyColumn="ZJ" keyProperty="data.zj">
         insert into `xtzxjjxxb`

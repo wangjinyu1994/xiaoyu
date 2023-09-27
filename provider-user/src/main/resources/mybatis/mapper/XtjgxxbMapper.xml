@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.xiaoyu.provider.user.dao.XtjgxxbMapper" >
+<mapper namespace="com.xiaoyu.provider.dao.XtjgxxbMapper" >
   <resultMap id="BaseResultMap" type="com.xiaoyu.provider.user.entity.Xtjgxxb" >
     <id column="ZJ" property="zj" jdbcType="BIGINT" />
     <result column="JGMC" property="jgmc" jdbcType="VARCHAR" />
     <result column="JGQC" property="jgqc" jdbcType="VARCHAR" />
+    <result column="JGDZ" property="jgdz" jdbcType="VARCHAR" />
     <result column="JGBM" property="jgbm" jdbcType="VARCHAR" />
     <result column="SJJGZJ" property="sjjgzj" jdbcType="BIGINT" />
     <result column="JGJB" property="jgjb" jdbcType="VARCHAR" />
@@ -33,7 +34,7 @@
     <result column="BZ" property="bz" jdbcType="LONGVARCHAR" />
   </resultMap>
   <sql id="Base_Column_List" >
-    ZJ, JGMC, JGQC, JGBM, SJJGZJ, JGJB, PX, JGJJ, JGTP, JGSZSFBM, JGSZCSBM, JGSZQYBM, 
+    ZJ, JGMC, JGQC, JGDZ, JGBM, SJJGZJ, JGJB, PX, JGJJ, JGTP, JGSZSFBM, JGSZCSBM, JGSZQYBM, 
     JGSZJD, JGSZWD, JGDH, JGYX, JGCZ, JGFZRXM, JGFZRDH, JGLXRXM, JGLXRDH, CJRZJ, CJSJ, 
     XGSJ, XGRZJ, SCBZ
   </sql>
@@ -54,23 +55,23 @@
   </delete>
   <insert id="insert" parameterType="com.xiaoyu.provider.user.entity.Xtjgxxb" >
     insert into xtjgxxb (ZJ, JGMC, JGQC, 
-      JGBM, SJJGZJ, JGJB, 
-      PX, JGJJ, JGTP, JGSZSFBM, 
-      JGSZCSBM, JGSZQYBM, JGSZJD, 
-      JGSZWD, JGDH, JGYX, 
-      JGCZ, JGFZRXM, JGFZRDH, 
-      JGLXRXM, JGLXRDH, CJRZJ, 
-      CJSJ, XGSJ, XGRZJ, 
-      SCBZ, BZ)
+      JGDZ, JGBM, SJJGZJ, 
+      JGJB, PX, JGJJ, JGTP, 
+      JGSZSFBM, JGSZCSBM, JGSZQYBM, 
+      JGSZJD, JGSZWD, JGDH, 
+      JGYX, JGCZ, JGFZRXM, 
+      JGFZRDH, JGLXRXM, JGLXRDH, 
+      CJRZJ, CJSJ, XGSJ, 
+      XGRZJ, SCBZ, BZ)
     values (#{zj,jdbcType=BIGINT}, #{jgmc,jdbcType=VARCHAR}, #{jgqc,jdbcType=VARCHAR}, 
-      #{jgbm,jdbcType=VARCHAR}, #{sjjgzj,jdbcType=BIGINT}, #{jgjb,jdbcType=VARCHAR}, 
-      #{px,jdbcType=INTEGER}, #{jgjj,jdbcType=VARCHAR}, #{jgtp,jdbcType=VARCHAR}, #{jgszsfbm,jdbcType=VARCHAR}, 
-      #{jgszcsbm,jdbcType=VARCHAR}, #{jgszqybm,jdbcType=VARCHAR}, #{jgszjd,jdbcType=VARCHAR}, 
-      #{jgszwd,jdbcType=VARCHAR}, #{jgdh,jdbcType=VARCHAR}, #{jgyx,jdbcType=VARCHAR}, 
-      #{jgcz,jdbcType=VARCHAR}, #{jgfzrxm,jdbcType=VARCHAR}, #{jgfzrdh,jdbcType=VARCHAR}, 
-      #{jglxrxm,jdbcType=VARCHAR}, #{jglxrdh,jdbcType=VARCHAR}, #{cjrzj,jdbcType=BIGINT}, 
-      #{cjsj,jdbcType=TIMESTAMP}, #{xgsj,jdbcType=TIMESTAMP}, #{xgrzj,jdbcType=BIGINT}, 
-      #{scbz,jdbcType=VARCHAR}, #{bz,jdbcType=LONGVARCHAR})
+      #{jgdz,jdbcType=VARCHAR}, #{jgbm,jdbcType=VARCHAR}, #{sjjgzj,jdbcType=BIGINT}, 
+      #{jgjb,jdbcType=VARCHAR}, #{px,jdbcType=INTEGER}, #{jgjj,jdbcType=VARCHAR}, #{jgtp,jdbcType=VARCHAR}, 
+      #{jgszsfbm,jdbcType=VARCHAR}, #{jgszcsbm,jdbcType=VARCHAR}, #{jgszqybm,jdbcType=VARCHAR}, 
+      #{jgszjd,jdbcType=VARCHAR}, #{jgszwd,jdbcType=VARCHAR}, #{jgdh,jdbcType=VARCHAR}, 
+      #{jgyx,jdbcType=VARCHAR}, #{jgcz,jdbcType=VARCHAR}, #{jgfzrxm,jdbcType=VARCHAR}, 
+      #{jgfzrdh,jdbcType=VARCHAR}, #{jglxrxm,jdbcType=VARCHAR}, #{jglxrdh,jdbcType=VARCHAR}, 
+      #{cjrzj,jdbcType=BIGINT}, #{cjsj,jdbcType=TIMESTAMP}, #{xgsj,jdbcType=TIMESTAMP}, 
+      #{xgrzj,jdbcType=BIGINT}, #{scbz,jdbcType=VARCHAR}, #{bz,jdbcType=LONGVARCHAR})
   </insert>
   <insert id="insertSelective" parameterType="com.xiaoyu.provider.user.entity.Xtjgxxb" >
     insert into xtjgxxb
@@ -83,6 +84,9 @@
       </if>
       <if test="jgqc != null" >
         JGQC,
+      </if>
+      <if test="jgdz != null" >
+        JGDZ,
       </if>
       <if test="jgbm != null" >
         JGBM,
@@ -167,6 +171,9 @@
       <if test="jgqc != null" >
         #{jgqc,jdbcType=VARCHAR},
       </if>
+      <if test="jgdz != null" >
+        #{jgdz,jdbcType=VARCHAR},
+      </if>
       <if test="jgbm != null" >
         #{jgbm,jdbcType=VARCHAR},
       </if>
@@ -250,6 +257,9 @@
       <if test="jgqc != null" >
         JGQC = #{jgqc,jdbcType=VARCHAR},
       </if>
+      <if test="jgdz != null" >
+        JGDZ = #{jgdz,jdbcType=VARCHAR},
+      </if>
       <if test="jgbm != null" >
         JGBM = #{jgbm,jdbcType=VARCHAR},
       </if>
@@ -329,6 +339,7 @@
     update xtjgxxb
     set JGMC = #{jgmc,jdbcType=VARCHAR},
       JGQC = #{jgqc,jdbcType=VARCHAR},
+      JGDZ = #{jgdz,jdbcType=VARCHAR},
       JGBM = #{jgbm,jdbcType=VARCHAR},
       SJJGZJ = #{sjjgzj,jdbcType=BIGINT},
       JGJB = #{jgjb,jdbcType=VARCHAR},
@@ -359,6 +370,7 @@
     update xtjgxxb
     set JGMC = #{jgmc,jdbcType=VARCHAR},
       JGQC = #{jgqc,jdbcType=VARCHAR},
+      JGDZ = #{jgdz,jdbcType=VARCHAR},
       JGBM = #{jgbm,jdbcType=VARCHAR},
       SJJGZJ = #{sjjgzj,jdbcType=BIGINT},
       JGJB = #{jgjb,jdbcType=VARCHAR},

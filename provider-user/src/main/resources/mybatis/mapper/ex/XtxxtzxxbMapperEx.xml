@@ -2,6 +2,52 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.xiaoyu.provider.user.dao.ex.XtxxtzxxbMapperEx" >
 
+    <select id="selectNoticById" resultType="com.xiaoyu.provider.user.resp.SelectNoticByIdResp">
+        select tab1.`ZJ` as zj,tab1.`XXLX` as `typeZj`,tab2.`ZDMC` as typeStr,
+        tab1.`BT` as title,tab1.`summary` as ZY,tab1.`NR` as content,
+        tab1.`FBJGMC` as orgName,tab1.`FBJGZJ` as orgId,tab1.`LY` as source,
+        tab1.`FWL` as visits,DATE_FORMAT(tab1.`FBSJ`,'%Y-%m-%d %H:%i:%s') as releaseDate
+        from `xtxxtzxxb` tab1
+        left join `xtsjzdxxb` tab2 on tab1.`XXLX` = tab2.`ZJ`
+        where tab1.`SCBZ` = ${@com.xiaoyu.common.base.constants.DeleteFlagEnum@NOT_DELETE.delFlagCode}
+        and tab1.`ZJ` = #{data.zj}
+    </select>
+
+    <select id="selectNoticIndex" resultType="com.xiaoyu.provider.user.resp.SelectNoticIndexResp">
+        select tab1.`ZJ` as zj,tab1.`XXLX` as `typeZj`,tab2.`ZDMC` as typeStr,
+        tab1.`BT` as title,tab1.`summary` as ZY,tab1.`NR` as content,
+        tab1.`FBJGMC` as orgName,tab1.`FBJGZJ` as orgId,tab1.`LY` as source,
+        tab1.`FWL` as visits,DATE_FORMAT(tab1.`FBSJ`,'%Y-%m-%d %H:%i:%s') as releaseDate
+        from `xtxxtzxxb` tab1
+        left join `xtsjzdxxb` tab2 on tab1.`XXLX` = tab2.`ZJ`
+        where tab1.`SCBZ` = ${@com.xiaoyu.common.base.constants.DeleteFlagEnum@NOT_DELETE.delFlagCode}
+        order by tab1.`PX` desc
+    </select>
+
+    <select id="countSelectNoticTable" resultType="java.lang.Integer">
+        select count(0)
+        from `xtxxtzxxb`
+        where `SCBZ` = ${@com.xiaoyu.common.base.constants.DeleteFlagEnum@NOT_DELETE.delFlagCode}
+        <if test="data.typeZj != null">
+            and `XXLX` = #{data.typeZj}
+        </if>
+    </select>
+
+    <select id="selectNoticTable" resultType="com.xiaoyu.provider.user.resp.SelectNoticTableResp">
+        select tab1.`ZJ` as zj,tab1.`XXLX` as `typeZj`,tab2.`ZDMC` as typeStr,
+        tab1.`BT` as title,tab1.`summary` as ZY,tab1.`NR` as content,
+        tab1.`FBJGMC` as orgName,tab1.`FBJGZJ` as orgId,tab1.`LY` as source,
+        tab1.`FWL` as visits,DATE_FORMAT(tab1.`FBSJ`,'%Y-%m-%d %H:%i:%s') as releaseDate
+        from `xtxxtzxxb` tab1
+        left join `xtsjzdxxb` tab2 on tab1.`XXLX` = tab2.`ZJ`
+        where tab1.`SCBZ` = ${@com.xiaoyu.common.base.constants.DeleteFlagEnum@NOT_DELETE.delFlagCode}
+        <if test="data.typeZj != null">
+            and tab1.`XXLX` = #{data.typeZj}
+        </if>
+        group by tab1.`ZJ` order by tab1.`PX` desc
+        limit ${data.startIndex},${data.limit}
+    </select>
+
     <insert id="insertXtxxtzxxb" useGeneratedKeys="true" parameterType="com.xiaoyu.provider.user.entity.Xtxxtzxxb"
             keyColumn="ZJ" keyProperty="data.zj">
         insert into `xtxxtzxxb`

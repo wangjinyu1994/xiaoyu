@@ -8,6 +8,7 @@ package com.xiaoyu.common.base.constants;
 public enum SysDisableIpSigEnum {
 
     XIAOYU_HMD("XIAOYU_HMD", "黑名单"),
+    XIAOYU_BMD("XIAOYU_BMD", "白名单"),
     XIAOYU_DLJK("XIAOYU_DLJK", "登录接口"),
     ;
 

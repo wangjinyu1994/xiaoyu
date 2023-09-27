@@ -24,6 +24,10 @@
         <module>provider-common</module>
         <module>feign-common</module>
         <module>provider-system</module>
+        <module>feign-system</module>
+        <module>provider-order</module>
+        <module>feign-order</module>
+        <module>feign-express</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

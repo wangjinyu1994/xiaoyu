@@ -1,0 +1,8 @@
+
+#端口号
+server:
+  port: 8863
+
+spring:
+  profiles:
+    active: dev

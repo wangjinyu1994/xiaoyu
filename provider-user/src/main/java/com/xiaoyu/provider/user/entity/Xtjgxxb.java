@@ -24,6 +24,9 @@ public class Xtjgxxb implements Serializable {
     @ApiModelProperty(value = "机构全称", name="jgqc")
     private String jgqc;
 
+    @ApiModelProperty(value = "机构地址", name="jgdz")
+    private String jgdz;
+
     @ApiModelProperty(value = "机构编码", name="jgbm")
     private String jgbm;
 

@@ -2,6 +2,37 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.xiaoyu.provider.user.dao.ex.XtjsxxbMapperEx" >
 
+    <select id="selectRoleById" resultType="com.xiaoyu.provider.user.resp.SelectRoleByIdResp">
+      select `ZJ` as zj,`JSSSJGZJ` as orgId,`JSMC` as `name`,
+      `JSMS` as `describe`,`JSDM` as `code`,`PX` as sx
+      from `xtjsxxb`
+      where `SCBZ` = ${@com.xiaoyu.common.base.constants.DeleteFlagEnum@NOT_DELETE.delFlagCode}
+      and `ZJ` = #{data.zj}
+    </select>
+
+    <select id="selectAllRoleList" resultType="com.xiaoyu.provider.user.req.SelectAllRoleResp">
+      select `ZJ` as zj,`JSSSJGZJ` as orgId,`JSMC` as `name`,
+      `JSMS` as `describe`,`JSDM` as `code`,`PX` as sx
+      from `xtjsxxb`
+      where `SCBZ` = ${@com.xiaoyu.common.base.constants.DeleteFlagEnum@NOT_DELETE.delFlagCode}
+      order by `PX` desc
+    </select>
+
+    <select id="countSelectRoleTable" resultType="java.lang.Integer">
+      select count(0)
+      from `xtjsxxb`
+      where `SCBZ` = ${@com.xiaoyu.common.base.constants.DeleteFlagEnum@NOT_DELETE.delFlagCode}
+    </select>
+
+    <select id="selectRoleTable" resultType="com.xiaoyu.provider.user.resp.SelectRoleTableResp">
+      select `ZJ` as zj,`JSSSJGZJ` as orgId,`JSMC` as `name`,
+      `JSMS` as `describe`,`JSDM` as `code`,`PX` as sx
+      from `xtjsxxb`
+      where `SCBZ` = ${@com.xiaoyu.common.base.constants.DeleteFlagEnum@NOT_DELETE.delFlagCode}
+      order by `PX` desc
+      limit ${data.startIndex},${data.limit}
+    </select>
+
     <insert id="insertXtjsxxb" useGeneratedKeys="true" parameterType="com.xiaoyu.provider.user.entity.Xtjsxxb"
      keyColumn="ZJ" keyProperty="data.zj">
         insert into `xtjsxxb`
@@ -10,6 +41,7 @@
         `JSMC`,
         `JSMS`,
         `JSDM`,
+        `PX`,
         `CJRZJ`,
         `CJSJ`,
         `XGSJ`,
@@ -23,6 +55,7 @@
         #{data.jsmc},
         #{data.jsms},
         #{data.jsdm},
+        #{data.px},
         #{data.cjrzj},
         #{data.cjsj},
         #{data.xgsj},

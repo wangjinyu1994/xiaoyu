@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.xiaoyu.provider.user.dao.XtjsxxbMapper" >
+<mapper namespace="com.xiaoyu.provider.dao.XtjsxxbMapper" >
   <resultMap id="BaseResultMap" type="com.xiaoyu.provider.user.entity.Xtjsxxb" >
     <id column="ZJ" property="zj" jdbcType="BIGINT" />
     <result column="JSSSJGZJ" property="jsssjgzj" jdbcType="BIGINT" />
     <result column="JSMC" property="jsmc" jdbcType="VARCHAR" />
     <result column="JSMS" property="jsms" jdbcType="VARCHAR" />
+    <result column="PX" property="px" jdbcType="INTEGER" />
     <result column="JSDM" property="jsdm" jdbcType="VARCHAR" />
     <result column="CJRZJ" property="cjrzj" jdbcType="BIGINT" />
     <result column="CJSJ" property="cjsj" jdbcType="TIMESTAMP" />
@@ -17,7 +18,7 @@
     <result column="BZ" property="bz" jdbcType="LONGVARCHAR" />
   </resultMap>
   <sql id="Base_Column_List" >
-    ZJ, JSSSJGZJ, JSMC, JSMS, JSDM, CJRZJ, CJSJ, XGSJ, XGRZJ, SCBZ
+    ZJ, JSSSJGZJ, JSMC, JSMS, PX, JSDM, CJRZJ, CJSJ, XGSJ, XGRZJ, SCBZ
   </sql>
   <sql id="Blob_Column_List" >
     BZ
@@ -36,13 +37,13 @@
   </delete>
   <insert id="insert" parameterType="com.xiaoyu.provider.user.entity.Xtjsxxb" >
     insert into xtjsxxb (ZJ, JSSSJGZJ, JSMC, 
-      JSMS, JSDM, CJRZJ, CJSJ, 
-      XGSJ, XGRZJ, SCBZ, 
-      BZ)
+      JSMS, PX, JSDM, CJRZJ, 
+      CJSJ, XGSJ, XGRZJ, 
+      SCBZ, BZ)
     values (#{zj,jdbcType=BIGINT}, #{jsssjgzj,jdbcType=BIGINT}, #{jsmc,jdbcType=VARCHAR}, 
-      #{jsms,jdbcType=VARCHAR}, #{jsdm,jdbcType=VARCHAR}, #{cjrzj,jdbcType=BIGINT}, #{cjsj,jdbcType=TIMESTAMP}, 
-      #{xgsj,jdbcType=TIMESTAMP}, #{xgrzj,jdbcType=BIGINT}, #{scbz,jdbcType=VARCHAR}, 
-      #{bz,jdbcType=LONGVARCHAR})
+      #{jsms,jdbcType=VARCHAR}, #{px,jdbcType=INTEGER}, #{jsdm,jdbcType=VARCHAR}, #{cjrzj,jdbcType=BIGINT}, 
+      #{cjsj,jdbcType=TIMESTAMP}, #{xgsj,jdbcType=TIMESTAMP}, #{xgrzj,jdbcType=BIGINT}, 
+      #{scbz,jdbcType=VARCHAR}, #{bz,jdbcType=LONGVARCHAR})
   </insert>
   <insert id="insertSelective" parameterType="com.xiaoyu.provider.user.entity.Xtjsxxb" >
     insert into xtjsxxb
@@ -58,6 +59,9 @@
       </if>
       <if test="jsms != null" >
         JSMS,
+      </if>
+      <if test="px != null" >
+        PX,
       </if>
       <if test="jsdm != null" >
         JSDM,
@@ -94,6 +98,9 @@
       <if test="jsms != null" >
         #{jsms,jdbcType=VARCHAR},
       </if>
+      <if test="px != null" >
+        #{px,jdbcType=INTEGER},
+      </if>
       <if test="jsdm != null" >
         #{jsdm,jdbcType=VARCHAR},
       </if>
@@ -129,6 +136,9 @@
       <if test="jsms != null" >
         JSMS = #{jsms,jdbcType=VARCHAR},
       </if>
+      <if test="px != null" >
+        PX = #{px,jdbcType=INTEGER},
+      </if>
       <if test="jsdm != null" >
         JSDM = #{jsdm,jdbcType=VARCHAR},
       </if>
@@ -158,6 +168,7 @@
     set JSSSJGZJ = #{jsssjgzj,jdbcType=BIGINT},
       JSMC = #{jsmc,jdbcType=VARCHAR},
       JSMS = #{jsms,jdbcType=VARCHAR},
+      PX = #{px,jdbcType=INTEGER},
       JSDM = #{jsdm,jdbcType=VARCHAR},
       CJRZJ = #{cjrzj,jdbcType=BIGINT},
       CJSJ = #{cjsj,jdbcType=TIMESTAMP},
@@ -172,6 +183,7 @@
     set JSSSJGZJ = #{jsssjgzj,jdbcType=BIGINT},
       JSMC = #{jsmc,jdbcType=VARCHAR},
       JSMS = #{jsms,jdbcType=VARCHAR},
+      PX = #{px,jdbcType=INTEGER},
       JSDM = #{jsdm,jdbcType=VARCHAR},
       CJRZJ = #{cjrzj,jdbcType=BIGINT},
       CJSJ = #{cjsj,jdbcType=TIMESTAMP},

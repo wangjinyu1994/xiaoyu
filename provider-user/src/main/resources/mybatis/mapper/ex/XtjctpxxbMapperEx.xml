@@ -2,6 +2,40 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.xiaoyu.provider.user.dao.ex.XtjctpxxbMapperEx" >
 
+    <select id="selectPicturesById" resultType="com.xiaoyu.provider.user.resp.SelectPicturesByIdResp">
+        select tab1.`ZJ` as zj,tab2.`ZDMC` as typeStr,tab1.`TPLX` as typeZj,
+        tab1.`TPMC` as `name`,tab1.`TPDZ` as address,tab1.`PX` as sx
+        from `xtjctpxxb` tab1
+        left join `xtsjzdxxb` tab2 on tab1.`TPLX` = tab2.`ZJ`
+        where tab1.`SCBZ` = ${@com.xiaoyu.common.base.constants.DeleteFlagEnum@NOT_DELETE.delFlagCode}
+        and tab1.`ZJ` = #{data.zj}
+    </select>
+
+    <select id="selectAllPicturesList" resultType="com.xiaoyu.provider.user.resp.SelectPicturesResp">
+        select tab1.`ZJ` as zj,tab2.`ZDMC` as typeStr,tab1.`TPLX` as typeZj,
+        tab1.`TPMC` as `name`,tab1.`TPDZ` as address,tab1.`PX` as sx
+        from `xtjctpxxb` tab1
+        left join `xtsjzdxxb` tab2 on tab1.`TPLX` = tab2.`ZJ`
+        where tab1.`SCBZ` = ${@com.xiaoyu.common.base.constants.DeleteFlagEnum@NOT_DELETE.delFlagCode}
+        order by tab1.`PX` desc
+    </select>
+
+    <select id="countSelectPicturesTable" resultType="java.lang.Integer">
+        select count(0)
+        from `xtjctpxxb`
+        where `SCBZ` = ${@com.xiaoyu.common.base.constants.DeleteFlagEnum@NOT_DELETE.delFlagCode}
+    </select>
+
+    <select id="selectPicturesTable" resultType="com.xiaoyu.provider.user.resp.SelectPicturesTableResp">
+        select tab1.`ZJ` as zj,tab2.`ZDMC` as typeStr,tab1.`TPLX` as typeZj,
+        tab1.`TPMC` as `name`,tab1.`TPDZ` as address,tab1.`PX` as sx
+        from `xtjctpxxb` tab1
+        left join `xtsjzdxxb` tab2 on tab1.`TPLX` = tab2.`ZJ`
+        where tab1.`SCBZ` = ${@com.xiaoyu.common.base.constants.DeleteFlagEnum@NOT_DELETE.delFlagCode}
+        order by tab1.`PX` desc
+        limit ${data.startIndex},${data.limit}
+    </select>
+
     <insert id="insertXtjctpxxb" useGeneratedKeys="true" parameterType="com.xiaoyu.provider.user.entity.Xtjctpxxb"
      keyColumn="ZJ" keyProperty="data.zj">
         insert into `xtjctpxxb`

@@ -6,6 +6,7 @@ import com.xiaoyu.common.base.constants.SysConstantsEnum;
 import com.xiaoyu.common.base.constants.SysDisableIpSigEnum;
 import com.xiaoyu.common.base.exception.CommonServiceException;
 import com.xiaoyu.common.base.req.LoginUserInfo;
+import com.xiaoyu.common.base.util.HttpServletRequestUtil;
 import com.xiaoyu.common.base.util.JwtUtil;
 import com.xiaoyu.common.base.util.RedisUtils;
 import io.jsonwebtoken.ExpiredJwtException;

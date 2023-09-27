@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.xiaoyu.provider.system.dao.ex.XthbmdxxbMapperEx" >
+
+    <select id="getXthbmdxxbInfo" resultType="java.lang.String">
+        select `DZ`
+        from `xthbmdxxb`
+        where `SCBZ` = ${@com.xiaoyu.common.base.constants.DeleteFlagEnum@NOT_DELETE.delFlagCode}
+        and `QYZT` = ${@com.xiaoyu.common.base.constants.SysQyztEnum@HMD_QY.code}
+    </select>
+
+    <!--获取所有黑名单请求接口分页总数-->
+    <select id="countSelectBlacklistTable" resultType="java.lang.Integer">
+        select count(0)
+        from `xthbmdxxb`
+        where `SCBZ` = ${@com.xiaoyu.common.base.constants.DeleteFlagEnum@NOT_DELETE.delFlagCode}
+        and `QYZT` = ${@com.xiaoyu.common.base.constants.SysQyztEnum@HMD_QY.code}
+        and `LX` = ${@com.xiaoyu.common.base.constants.SysHmdLxEnum@HMD.code}
+    </select>
+
+    <!--获取所有黑名单请求接口分页-->
+    <select id="selectBlacklistTable" resultType="com.xiaoyu.provider.system.resp.SelectBlacklistTableResp">
+        select tab1.`ZJ` AS zj,tab1.`LX` AS `type`,tab1.`DZ` AS `address`,
+        tab1.`QYZT` AS `status`,tab2.`RYNC` AS addUser,DATE_FORMAT(tab2.`CJSJ`,'%Y-%m-%d %H:%i:%s') AS addTime
+        from `xthbmdxxb` tab1
+        left join `xtryxxb` tab2 on tab1.`CJRZJ` = tab2.`ZJ`
+        where tab1.`SCBZ` = ${@com.xiaoyu.common.base.constants.DeleteFlagEnum@NOT_DELETE.delFlagCode}
+        and tab1.`QYZT` = ${@com.xiaoyu.common.base.constants.SysQyztEnum@HMD_QY.code}
+        and tab1.`LX` = ${@com.xiaoyu.common.base.constants.SysHmdLxEnum@HMD.code}
+        limit ${data.startIndex},${data.limit}
+    </select>
+
+    <!--获取所有黑名单请求接口-->
+    <select id="selectDictionaryType" resultType="com.xiaoyu.provider.system.resp.SelectBlacklistListResp">
+        select tab1.`ZJ` AS zj,tab1.`LX` AS `type`,tab1.`DZ` AS `address`,
+        tab1.`QYZT` AS `status`,tab2.`RYNC` AS addUser,DATE_FORMAT(tab2.`CJSJ`,'%Y-%m-%d %H:%i:%s') AS addTime
+        from `xthbmdxxb` tab1
+        left join `xtryxxb` tab2 on tab1.`CJRZJ` = tab2.`ZJ`
+        where tab1.`SCBZ` = ${@com.xiaoyu.common.base.constants.DeleteFlagEnum@NOT_DELETE.delFlagCode}
+        and tab1.`QYZT` = ${@com.xiaoyu.common.base.constants.SysQyztEnum@HMD_QY.code}
+        and tab1.`LX` = ${@com.xiaoyu.common.base.constants.SysHmdLxEnum@HMD.code}
+    </select>
+
+    <!--批量添加黑白名单信息-->
+    <insert id="insertXthbmdxxbBath">
+        insert into `xthbmdxxb`
+        (
+        `LX`,
+        `DZ`,
+        `QYZT`,
+        `SM`,
+        `CJRZJ`,
+        `CJSJ`,
+        `XGSJ`,
+        `XGRZJ`,
+        `SCBZ`,
+        `BZ`
+        )
+        values
+        <foreach collection="data" separator="," item="data">
+            (
+            #{data.lx},
+            #{data.dz},
+            #{data.qyzt},
+            #{data.sm},
+            #{data.cjrzj},
+            #{data.cjsj},
+            #{data.xgsj},
+            #{data.xgrzj},
+            #{data.scbz},
+            #{data.bz}
+            )
+        </foreach>
+    </insert>
+
+</mapper>

@@ -35,6 +35,11 @@ public class MyGlobalFilter implements GlobalFilter, Ordered {
     public Mono<Void> filter(ServerWebExchange exchange, GatewayFilterChain chain) {
         ServerHttpRequest serverHttpRequest = exchange.getRequest();
         String ipaddiress = ServerHttpRequestUtil.getIpAddress(serverHttpRequest);
+        List<String> bmd = strToList((String) redisUtils.get(SysDisableIpSigEnum.XIAOYU_BMD.getCode()));
+        if (bmd.contains(ipaddiress)){
+            log.info("该IP在白名单中直接放行");
+            return chain.filter(exchange);
+        }
         List<String> hmd = strToList((String) redisUtils.get(SysDisableIpSigEnum.XIAOYU_HMD.getCode()));
         if (hmd.contains(ipaddiress)){
             log.info("该IP在黑名单中不可放行");
@@ -57,6 +62,8 @@ public class MyGlobalFilter implements GlobalFilter, Ordered {
             exchange.getResponse().setStatusCode(HttpStatus.NO_CONTENT);
             return exchange.getResponse().setComplete();
         }
+        // 解析请求头
+
         return chain.filter(exchange);
     }
 
@@ -68,7 +75,7 @@ public class MyGlobalFilter implements GlobalFilter, Ordered {
         if (StringUtils.isEmpty(data)){
             return list;
         }
-        return list = JSONObject.parseArray(data,String.class);
+        return JSONObject.parseArray(data,String.class);
     }
 
     @Override

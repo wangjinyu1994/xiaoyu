@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.xiaoyu.provider.order.dao.ex.XttgxmddxxbMapperEx" >
+
+  <select id="selectOrderById" resultType="com.xiaoyu.provider.order.resp.SelectOrderByIdResp">
+      select tab3.`JGMC` as orgName,tab1.`JGZJ` as orgId,tab1.`ZJ` as zj,
+      tab1.`LSH` as serialNumber,tab4.`RYNC` as userName,tab1.`TGXMZJ` as projectId,
+      tab2.`XMMC` as projectName,tab1.`TGSL` as `number`,tab1.`FKJE` as money,
+      tab1.`FKFS` as payMethod,tab1.`FKZT` as payStatus,tab1.`SHZT` as examStatus,
+      tab1.`SHDZ` as address,DATE_FORMAT(tab1.`SHSJ`,'%Y-%m-%d %H:%i:%s') as examDate,
+      tab5.`RYNC` as examName,tab1.`FHZT` as transportStatus,tab1.`QSZT` as sigStatus,
+      DATE_FORMAT(tab1.`QSSJ`,'%Y-%m-%d %H:%i:%s') as sigDate
+      from `xttgxmddxxb` tab1
+      left join `xttgxmxxb` tab2 on tab1.`TGXMZJ` = tab2.`ZJ`
+      left join `xtjgxxb` tab3 on tab1.`JGZJ` = tab3.`ZJ`
+      left join `xtryxxb` tab4 on tab1.`XTRYZJ` = tab4.`ZJ`
+      left join `xtryxxb` tab5 on tab1.`SHRZJ` = tab5.`ZJ`
+      where tab1.`ZJ` = #{data.zj}
+  </select>
+
+  <select id="countSelectOrderTable" resultType="java.lang.Integer">
+    select count(0)
+    from `xttgxmddxxb` tab1
+    left join `xttgxmxxb` tab2 on tab1.`TGXMZJ` = tab2.`ZJ`
+    left join `xtjgxxb` tab3 on tab1.`JGZJ` = tab3.`ZJ`
+    left join `xtryxxb` tab4 on tab1.`XTRYZJ` = tab4.`ZJ`
+    left join `xtryxxb` tab5 on tab1.`SHRZJ` = tab5.`ZJ`
+    where tab1.`SCBZ` = ${@com.xiaoyu.common.base.constants.DeleteFlagEnum@NOT_DELETE.delFlagCode}
+    <if test="data.orgId != null">
+      and tab1.`JGZJ` = #{data.orgId}
+    </if>
+    <if test="data.serialNumber != null">
+      and tab1.`LSH` = #{data.serialNumber}
+    </if>
+    <if test="data.likeName != null and data.likeName != ''">
+      and tab4.`RYNC` like concat('%' ,#{data.likeName} , '%')
+    </if>
+  </select>
+
+  <select id="selectOrderTable" resultType="com.xiaoyu.provider.order.resp.SelectOrderTableResp">
+      select tab3.`JGMC` as orgName,tab1.`JGZJ` as orgId,tab1.`ZJ` as zj,
+      tab1.`LSH` as serialNumber,tab4.`RYNC` as userName,tab1.`TGXMZJ` as projectId,
+      tab2.`XMMC` as projectName,tab1.`TGSL` as `number`,tab1.`FKJE` as money,
+      tab1.`FKFS` as payMethod,tab1.`FKZT` as payStatus,tab1.`SHZT` as examStatus,
+      tab1.`SHDZ` as address,DATE_FORMAT(tab1.`SHSJ`,'%Y-%m-%d %H:%i:%s') as examDate,
+      tab5.`RYNC` as examName,tab1.`FHZT` as transportStatus,tab1.`QSZT` as sigStatus,
+      DATE_FORMAT(tab1.`QSSJ`,'%Y-%m-%d %H:%i:%s') as sigDate
+      from `xttgxmddxxb` tab1
+      left join `xttgxmxxb` tab2 on tab1.`TGXMZJ` = tab2.`ZJ`
+      left join `xtjgxxb` tab3 on tab1.`JGZJ` = tab3.`ZJ`
+      left join `xtryxxb` tab4 on tab1.`XTRYZJ` = tab4.`ZJ`
+      left join `xtryxxb` tab5 on tab1.`SHRZJ` = tab5.`ZJ`
+      where tab1.`SCBZ` = ${@com.xiaoyu.common.base.constants.DeleteFlagEnum@NOT_DELETE.delFlagCode}
+      <if test="data.orgId != null">
+        and tab1.`JGZJ` = #{data.orgId}
+      </if>
+      <if test="data.serialNumber != null">
+        and tab1.`LSH` = #{data.serialNumber}
+      </if>
+      <if test="data.likeName != null and data.likeName != ''">
+        and tab4.`RYNC` like concat('%' ,#{data.likeName} , '%')
+      </if>
+      order by tab1.`CJSJ` desc
+  </select>
+
+    <insert id="insertXttgxmddxxb" useGeneratedKeys="true" parameterType="com.xiaoyu.provider.order.entity.Xttgxmddxxb"
+            keyColumn="ZJ" keyProperty="data.zj">
+        insert into `xttgxmddxxb`
+        (
+          `XTRYZJ`,
+          `JGZJ`,
+          `TGXMZJ`,
+          `TGSL`,
+          `FKJE`,
+          `LSH`,
+          `SHZT`,
+          `SHRZJ`,
+          `SHSJ`,
+          `FKFS`,
+          `FKZT`,
+          `FHZT`,
+          `QSZT`,
+          `QSSJ`,
+          `SHDZ`,
+          `CJRZJ`,
+          `CJSJ`,
+          `XGSJ`,
+          `XGRZJ`,
+          `SCBZ`,
+          `BZ`
+        )
+        values
+        (
+          #{data.xtryzj},
+          #{data.jgzj},
+          #{data.tgxmzj},
+          #{data.tgsl},
+          #{data.fkje},
+          #{data.lsh},
+          #{data.shzt},
+          #{data.shrzj},
+          #{data.shsj}
+          #{data.fkfs},
+          #{data.fkzt},
+          #{data.fhzt},
+          #{data.qszt},
+          #{data.qssj},
+          #{data.shdz},
+          #{data.cjrzj},
+          #{data.cjsj},
+          #{data.xgsj},
+          #{data.xgrzj},
+          #{data.scbz},
+          #{data.bz}
+        )
+    </insert>
+</mapper>

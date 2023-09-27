@@ -59,7 +59,7 @@ public class BlacklistController {
         return blacklistService.addBlackInfo(req,request);
     }
 
-    @PostMapping(value = "/addBlackInfo")
+    @PostMapping(value = "/addBlackListInfo")
     @ApiOperation(value = "批量添加黑名单请求接口", httpMethod = "POST",notes = "批量添加黑名单请求接口")
     public CommonResult<AddBlackListInfoResp> addBlackListInfo(@RequestBody @Valid AddBlackListInfoReq req, HttpServletRequest request, HttpServletResponse response){
         return blacklistService.addBlackListInfo(req,request);

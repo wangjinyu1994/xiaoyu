@@ -2,6 +2,24 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.xiaoyu.provider.user.dao.ex.XtryjgxxbMapperEx" >
 
+    <select id="countSelectUserByOrgIdResp" resultType="java.lang.Integer">
+        select count(0)
+        from `xtryjgxxb` tab1
+        left join `xtryxxb` tab2 on tab1.`XTRYZJ` = tab2.`ZJ`
+        where tab1.`SCBZ` = ${@com.xiaoyu.common.base.constants.DeleteFlagEnum@NOT_DELETE.delFlagCode}
+        and tab1.`XTJGZJ` = #{data.orgId}
+    </select>
+
+    <select id="selectUserByOrgIdResp" resultType="com.xiaoyu.provider.user.resp.SelectUserByOrgIdResp">
+        select tab2.`ZJ` as userId,tab2.`RYNC` as userName
+        from `xtryjgxxb` tab1
+        left join `xtryxxb` tab2 on tab1.`XTRYZJ` = tab2.`ZJ`
+        where tab1.`SCBZ` = ${@com.xiaoyu.common.base.constants.DeleteFlagEnum@NOT_DELETE.delFlagCode}
+        and tab1.`XTJGZJ` = #{data.orgId}
+        order by tab1.`PX` desc
+        limit ${data.startIndex},${data.limit}
+    </select>
+
     <insert id="insertXtryjgxxb" useGeneratedKeys="true" parameterType="com.xiaoyu.provider.user.entity.Xtryjgxxb"
     keyProperty="data.zj" keyColumn="ZJ">
         insert into `xtryjgxxb`

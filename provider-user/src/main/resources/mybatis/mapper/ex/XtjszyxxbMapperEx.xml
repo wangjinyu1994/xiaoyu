@@ -2,6 +2,69 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.xiaoyu.provider.user.dao.ex.XtjszyxxbMapperEx" >
 
+    <select id="selectXtjszyxxbByRoleIdAndResourceId" resultType="com.xiaoyu.provider.user.entity.Xtjszyxxb">
+        select
+        <include refid="com.xiaoyu.provider.user.dao.XtjszyxxbMapper.Blob_Column_List"/>
+        <include refid="com.xiaoyu.provider.user.dao.XtjszyxxbMapper.Base_Column_List"/>
+        from `xtjszyxxb`
+        where `SCBZ` = ${@com.xiaoyu.common.base.constants.DeleteFlagEnum@NOT_DELETE.delFlagCode}
+        and `XTJSZJ` = #{roleId}
+        and `XTZYZJ` = #{resourceId}
+    </select>
+
+    <select id="selectRoleResourceById" resultType="com.xiaoyu.provider.user.resp.SelectRoleResourceByIdResp">
+      select tab1.`ZJ` as zj,tab1.`XTJSZJ` as roleId,tab1.`XTZYZJ` as resourceId,
+      tab2.`JSMC` as roleName,tab3.`ZYMC` as resourceName
+      from `xtjszyxxb` tab1
+      left join `xtjsxxb` tab2 on tab1.`XTJSZJ` = tab2.`ZJ`
+      left join `xtzyxxb` tab3 on tab1.`XTZYZJ` = tab3.`ZJ`
+      where tab1.`SCBZ` = ${@com.xiaoyu.common.base.constants.DeleteFlagEnum@NOT_DELETE.delFlagCode}
+      and tab1.`ZJ` = #{data.zj}
+    </select>
+
+    <select id="countSelectRoleResourceTable" resultType="java.lang.Integer">
+        select count(0)
+        from `xtjszyxxb` tab1
+        where tab1.`SCBZ` = ${@com.xiaoyu.common.base.constants.DeleteFlagEnum@NOT_DELETE.delFlagCode}
+        <if test="data.roleId != null">
+            and tab1.`XTJSZJ` = #{data.roleId}
+        </if>
+        <if test="data.resourceId != null">
+            and tab1.`XTZYZJ` = #{data.resourceId}
+        </if>
+    </select>
+
+    <select id="selectRoleResourceTable" resultType="com.xiaoyu.provider.user.resp.SelectRoleResourceTableResp">
+        select tab1.`ZJ` as zj,tab1.`XTJSZJ` as roleId,tab1.`XTZYZJ` as resourceId,
+        tab2.`JSMC` as roleName,tab3.`ZYMC` as resourceName
+        from `xtjszyxxb` tab1
+        left join `xtjsxxb` tab2 on tab1.`XTJSZJ` = tab2.`ZJ`
+        left join `xtzyxxb` tab3 on tab1.`XTZYZJ` = tab3.`ZJ`
+        where tab1.`SCBZ` = ${@com.xiaoyu.common.base.constants.DeleteFlagEnum@NOT_DELETE.delFlagCode}
+        <if test="data.roleId != null">
+          and tab1.`XTJSZJ` = #{data.roleId}
+        </if>
+        <if test="data.resourceId != null">
+            and tab1.`XTZYZJ` = #{data.resourceId}
+        </if>
+        limit ${data.startIndex},${data.limit}
+    </select>
+
+    <select id="selectRoleResourceList" resultType="com.xiaoyu.provider.user.resp.SelectRoleResourceResp">
+        select tab1.`ZJ` as zj,tab1.`XTJSZJ` as roleId,tab1.`XTZYZJ` as resourceId,
+        tab2.`JSMC` as roleName,tab3.`ZYMC` as resourceName
+        from `xtjszyxxb` tab1
+        left join `xtjsxxb` tab2 on tab1.`XTJSZJ` = tab2.`ZJ`
+        left join `xtzyxxb` tab3 on tab1.`XTZYZJ` = tab3.`ZJ`
+        where tab1.`SCBZ` = ${@com.xiaoyu.common.base.constants.DeleteFlagEnum@NOT_DELETE.delFlagCode}
+        <if test="data.roleId != null">
+            and tab1.`XTJSZJ` = #{data.roleId}
+        </if>
+        <if test="data.resourceId != null">
+            and tab1.`XTZYZJ` = #{data.resourceId}
+        </if>
+    </select>
+
     <insert id="insertXtjszyxxb" parameterType="com.xiaoyu.provider.user.entity.Xtjszyxxb"
             useGeneratedKeys="true" keyProperty="data.zj" keyColumn="zj">
         insert into `xtjszyxxb`

@@ -6,7 +6,6 @@ import com.xiaoyu.common.base.constants.SysDisableIpSigEnum;
 import com.xiaoyu.common.base.util.RedisUtils;
 import com.xiaoyu.provider.system.dao.ex.XtdljkxxbMapperEx;
 import com.xiaoyu.provider.system.dao.ex.XthbmdxxbMapperEx;
-import com.xiaoyu.provider.system.entity.Xthbmdxxb;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;

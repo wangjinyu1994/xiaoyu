@@ -21755,3 +21755,650 @@ Caused by: java.net.ConnectException: Connection refused: no further information
 	at org.apache.skywalking.apm.dependencies.io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.lang.Thread.run(Thread.java:748)
 
+INFO 2023-08-29 17:06:23:236 main AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-activemq-5.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:23:237 main AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-armeria-0.84.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:23:238 main AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-armeria-0.85.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:23:239 main AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-asynchttpclient-2.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:23:239 main AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-avro-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:23:240 main AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-canal-1.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:23:240 main AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-cassandra-java-driver-3.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:23:241 main AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-cxf-3.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:23:242 main AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-dubbo-2.7.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:23:242 main AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-dubbo-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:23:243 main AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-ehcache-2.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:23:243 main AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-elastic-job-2.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:23:244 main AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-elastic-job-3.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:23:244 main AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-elasticsearch-5.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:23:245 main AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-elasticsearch-6.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:23:246 main AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-elasticsearch-7.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:23:246 main AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-feign-default-http-9.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:23:247 main AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-finagle-6.25.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:23:248 main AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-grpc-1.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:23:248 main AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-h2-1.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:23:249 main AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-hbase-1.x-2.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:23:249 main AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-httpasyncclient-4.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:23:250 main AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-httpclient-3.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:23:251 main AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-httpClient-4.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:23:251 main AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-httpclient-commons-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:23:252 main AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-hystrix-1.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:23:253 main AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-influxdb-2.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:23:254 main AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-jdbc-commons-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:23:254 main AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-jedis-2.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:23:255 main AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-jetty-client-9.0-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:23:255 main AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-jetty-client-9.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:23:256 main AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-jetty-server-9.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:23:257 main AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-kafka-commons-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:23:257 main AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-kafka-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:23:258 main AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-lettuce-5.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:23:258 main AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-light4j-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:23:259 main AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-mariadb-2.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:23:260 main AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-mongodb-2.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:23:260 main AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-mongodb-3.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:23:261 main AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-mongodb-4.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:23:262 main AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-mssql-commons-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:23:262 main AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-mssql-jdbc-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:23:263 main AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-mssql-jtds-1.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:23:264 main AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-mysql-5.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:23:264 main AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-mysql-6.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:23:265 main AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-mysql-8.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:23:265 main AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-mysql-commons-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:23:266 main AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-netty-socketio-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:23:267 main AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-nutz-http-1.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:23:267 main AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-nutz-mvc-annotation-1.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:23:268 main AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-okhttp-3.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:23:269 main AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-okhttp-4.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:23:269 main AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-okhttp-common-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:23:270 main AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-play-2.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:23:271 main AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-postgresql-8.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:23:271 main AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-pulsar-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:23:272 main AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-quasar-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:23:273 main AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-rabbitmq-5.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:23:274 main AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-redisson-3.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:23:274 main AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-resttemplate-4.3.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:23:275 main AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-rocketmq-3.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:23:276 main AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-rocketmq-4.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:23:277 main AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-servicecomb-java-chassis-0.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:23:277 main AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-servicecomb-java-chassis-1.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:23:278 main AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-sharding-jdbc-1.5.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:23:279 main AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-sharding-sphere-3.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:23:280 main AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-sharding-sphere-4.1.0-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:23:280 main AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-sharding-sphere-4.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:23:281 main AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-sharding-sphere-4.x-rc3-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:23:282 main AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-shardingsphere-4.0.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:23:282 main AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-solrj-7.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:23:283 main AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-spring-async-annotation-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:23:284 main AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-spring-cloud-feign-1.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:23:284 main AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-spring-cloud-feign-2.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:23:285 main AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-spring-concurrent-util-4.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:23:286 main AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-spring-core-patch-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:23:286 main AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-spring-kafka-1.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:23:287 main AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-spring-kafka-2.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:23:287 main AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-spring-scheduled-annotation-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:23:288 main AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-springmvc-annotation-3.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:23:289 main AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-springmvc-annotation-4.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:23:290 main AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-springmvc-annotation-5.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:23:290 main AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-springmvc-annotation-commons-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:23:291 main AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-spymemcached-2.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:23:292 main AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-struts2-2.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:23:292 main AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-undertow-2.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:23:293 main AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-vertx-core-3.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:23:294 main AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-xmemcached-2.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:23:294 main AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-xxl-job-2.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:23:295 main AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\baidu-brpc-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:23:295 main AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\dbcp-2.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:23:296 main AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\dubbo-2.7.x-conflict-patch-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:23:297 main AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\dubbo-conflict-patch-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:23:297 main AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\graphql-12.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:23:298 main AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\graphql-8.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:23:299 main AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\graphql-9.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:23:299 main AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\jsonrpc4j-1.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:23:300 main AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\motan-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:23:301 main AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\resteasy-server-3.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:23:301 main AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\sofa-rpc-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:23:302 main AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\spring-commons-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:23:302 main AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\spring-webflux-5.x-webclient-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:23:303 main AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\thrift-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:23:304 main AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\tomcat-7.x-8.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:23:304 main AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\activations\apm-toolkit-kafka-activation-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:23:305 main AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\activations\apm-toolkit-log4j-1.x-activation-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:23:306 main AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\activations\apm-toolkit-log4j-2.x-activation-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:23:307 main AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\activations\apm-toolkit-logback-1.x-activation-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:23:307 main AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\activations\apm-toolkit-logging-common-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:23:308 main AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\activations\apm-toolkit-meter-activation-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:23:309 main AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\activations\apm-toolkit-opentracing-activation-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:23:309 main AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\activations\apm-toolkit-trace-activation-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:23:317 main PluginResourcesResolver : find skywalking plugin define in jar:file:D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-activemq-5.x-plugin-8.6.0.jar!/skywalking-plugin.def 
+INFO 2023-08-29 17:06:23:317 main PluginResourcesResolver : find skywalking plugin define in jar:file:D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-armeria-0.84.x-plugin-8.6.0.jar!/skywalking-plugin.def 
+INFO 2023-08-29 17:06:23:318 main PluginResourcesResolver : find skywalking plugin define in jar:file:D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-armeria-0.85.x-plugin-8.6.0.jar!/skywalking-plugin.def 
+INFO 2023-08-29 17:06:23:318 main PluginResourcesResolver : find skywalking plugin define in jar:file:D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-asynchttpclient-2.x-plugin-8.6.0.jar!/skywalking-plugin.def 
+INFO 2023-08-29 17:06:23:318 main PluginResourcesResolver : find skywalking plugin define in jar:file:D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-avro-plugin-8.6.0.jar!/skywalking-plugin.def 
+INFO 2023-08-29 17:06:23:318 main PluginResourcesResolver : find skywalking plugin define in jar:file:D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-canal-1.x-plugin-8.6.0.jar!/skywalking-plugin.def 
+INFO 2023-08-29 17:06:23:318 main PluginResourcesResolver : find skywalking plugin define in jar:file:D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-cassandra-java-driver-3.x-plugin-8.6.0.jar!/skywalking-plugin.def 
+INFO 2023-08-29 17:06:23:318 main PluginResourcesResolver : find skywalking plugin define in jar:file:D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-cxf-3.x-plugin-8.6.0.jar!/skywalking-plugin.def 
+INFO 2023-08-29 17:06:23:319 main PluginResourcesResolver : find skywalking plugin define in jar:file:D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-dubbo-2.7.x-plugin-8.6.0.jar!/skywalking-plugin.def 
+INFO 2023-08-29 17:06:23:319 main PluginResourcesResolver : find skywalking plugin define in jar:file:D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-dubbo-plugin-8.6.0.jar!/skywalking-plugin.def 
+INFO 2023-08-29 17:06:23:319 main PluginResourcesResolver : find skywalking plugin define in jar:file:D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-ehcache-2.x-plugin-8.6.0.jar!/skywalking-plugin.def 
+INFO 2023-08-29 17:06:23:319 main PluginResourcesResolver : find skywalking plugin define in jar:file:D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-elastic-job-2.x-plugin-8.6.0.jar!/skywalking-plugin.def 
+INFO 2023-08-29 17:06:23:319 main PluginResourcesResolver : find skywalking plugin define in jar:file:D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-elastic-job-3.x-plugin-8.6.0.jar!/skywalking-plugin.def 
+INFO 2023-08-29 17:06:23:320 main PluginResourcesResolver : find skywalking plugin define in jar:file:D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-elasticsearch-5.x-plugin-8.6.0.jar!/skywalking-plugin.def 
+INFO 2023-08-29 17:06:23:320 main PluginResourcesResolver : find skywalking plugin define in jar:file:D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-elasticsearch-6.x-plugin-8.6.0.jar!/skywalking-plugin.def 
+INFO 2023-08-29 17:06:23:320 main PluginResourcesResolver : find skywalking plugin define in jar:file:D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-elasticsearch-7.x-plugin-8.6.0.jar!/skywalking-plugin.def 
+INFO 2023-08-29 17:06:23:320 main PluginResourcesResolver : find skywalking plugin define in jar:file:D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-feign-default-http-9.x-plugin-8.6.0.jar!/skywalking-plugin.def 
+INFO 2023-08-29 17:06:23:320 main PluginResourcesResolver : find skywalking plugin define in jar:file:D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-finagle-6.25.x-plugin-8.6.0.jar!/skywalking-plugin.def 
+INFO 2023-08-29 17:06:23:321 main PluginResourcesResolver : find skywalking plugin define in jar:file:D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-grpc-1.x-plugin-8.6.0.jar!/skywalking-plugin.def 
+INFO 2023-08-29 17:06:23:321 main PluginResourcesResolver : find skywalking plugin define in jar:file:D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-h2-1.x-plugin-8.6.0.jar!/skywalking-plugin.def 
+INFO 2023-08-29 17:06:23:321 main PluginResourcesResolver : find skywalking plugin define in jar:file:D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-hbase-1.x-2.x-plugin-8.6.0.jar!/skywalking-plugin.def 
+INFO 2023-08-29 17:06:23:321 main PluginResourcesResolver : find skywalking plugin define in jar:file:D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-httpasyncclient-4.x-plugin-8.6.0.jar!/skywalking-plugin.def 
+INFO 2023-08-29 17:06:23:321 main PluginResourcesResolver : find skywalking plugin define in jar:file:D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-httpclient-3.x-plugin-8.6.0.jar!/skywalking-plugin.def 
+INFO 2023-08-29 17:06:23:321 main PluginResourcesResolver : find skywalking plugin define in jar:file:D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-httpClient-4.x-plugin-8.6.0.jar!/skywalking-plugin.def 
+INFO 2023-08-29 17:06:23:322 main PluginResourcesResolver : find skywalking plugin define in jar:file:D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-hystrix-1.x-plugin-8.6.0.jar!/skywalking-plugin.def 
+INFO 2023-08-29 17:06:23:322 main PluginResourcesResolver : find skywalking plugin define in jar:file:D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-influxdb-2.x-plugin-8.6.0.jar!/skywalking-plugin.def 
+INFO 2023-08-29 17:06:23:322 main PluginResourcesResolver : find skywalking plugin define in jar:file:D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-jedis-2.x-plugin-8.6.0.jar!/skywalking-plugin.def 
+INFO 2023-08-29 17:06:23:322 main PluginResourcesResolver : find skywalking plugin define in jar:file:D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-jetty-client-9.0-plugin-8.6.0.jar!/skywalking-plugin.def 
+INFO 2023-08-29 17:06:23:322 main PluginResourcesResolver : find skywalking plugin define in jar:file:D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-jetty-client-9.x-plugin-8.6.0.jar!/skywalking-plugin.def 
+INFO 2023-08-29 17:06:23:322 main PluginResourcesResolver : find skywalking plugin define in jar:file:D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-jetty-server-9.x-plugin-8.6.0.jar!/skywalking-plugin.def 
+INFO 2023-08-29 17:06:23:323 main PluginResourcesResolver : find skywalking plugin define in jar:file:D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-kafka-plugin-8.6.0.jar!/skywalking-plugin.def 
+INFO 2023-08-29 17:06:23:323 main PluginResourcesResolver : find skywalking plugin define in jar:file:D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-lettuce-5.x-plugin-8.6.0.jar!/skywalking-plugin.def 
+INFO 2023-08-29 17:06:23:323 main PluginResourcesResolver : find skywalking plugin define in jar:file:D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-light4j-plugin-8.6.0.jar!/skywalking-plugin.def 
+INFO 2023-08-29 17:06:23:323 main PluginResourcesResolver : find skywalking plugin define in jar:file:D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-mariadb-2.x-plugin-8.6.0.jar!/skywalking-plugin.def 
+INFO 2023-08-29 17:06:23:323 main PluginResourcesResolver : find skywalking plugin define in jar:file:D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-mongodb-2.x-plugin-8.6.0.jar!/skywalking-plugin.def 
+INFO 2023-08-29 17:06:23:323 main PluginResourcesResolver : find skywalking plugin define in jar:file:D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-mongodb-3.x-plugin-8.6.0.jar!/skywalking-plugin.def 
+INFO 2023-08-29 17:06:23:324 main PluginResourcesResolver : find skywalking plugin define in jar:file:D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-mongodb-4.x-plugin-8.6.0.jar!/skywalking-plugin.def 
+INFO 2023-08-29 17:06:23:324 main PluginResourcesResolver : find skywalking plugin define in jar:file:D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-mssql-jdbc-plugin-8.6.0.jar!/skywalking-plugin.def 
+INFO 2023-08-29 17:06:23:324 main PluginResourcesResolver : find skywalking plugin define in jar:file:D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-mssql-jtds-1.x-plugin-8.6.0.jar!/skywalking-plugin.def 
+INFO 2023-08-29 17:06:23:324 main PluginResourcesResolver : find skywalking plugin define in jar:file:D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-mysql-5.x-plugin-8.6.0.jar!/skywalking-plugin.def 
+INFO 2023-08-29 17:06:23:324 main PluginResourcesResolver : find skywalking plugin define in jar:file:D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-mysql-6.x-plugin-8.6.0.jar!/skywalking-plugin.def 
+INFO 2023-08-29 17:06:23:325 main PluginResourcesResolver : find skywalking plugin define in jar:file:D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-mysql-8.x-plugin-8.6.0.jar!/skywalking-plugin.def 
+INFO 2023-08-29 17:06:23:325 main PluginResourcesResolver : find skywalking plugin define in jar:file:D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-netty-socketio-plugin-8.6.0.jar!/skywalking-plugin.def 
+INFO 2023-08-29 17:06:23:325 main PluginResourcesResolver : find skywalking plugin define in jar:file:D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-nutz-http-1.x-plugin-8.6.0.jar!/skywalking-plugin.def 
+INFO 2023-08-29 17:06:23:325 main PluginResourcesResolver : find skywalking plugin define in jar:file:D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-nutz-mvc-annotation-1.x-plugin-8.6.0.jar!/skywalking-plugin.def 
+INFO 2023-08-29 17:06:23:325 main PluginResourcesResolver : find skywalking plugin define in jar:file:D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-okhttp-3.x-plugin-8.6.0.jar!/skywalking-plugin.def 
+INFO 2023-08-29 17:06:23:325 main PluginResourcesResolver : find skywalking plugin define in jar:file:D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-okhttp-4.x-plugin-8.6.0.jar!/skywalking-plugin.def 
+INFO 2023-08-29 17:06:23:326 main PluginResourcesResolver : find skywalking plugin define in jar:file:D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-play-2.x-plugin-8.6.0.jar!/skywalking-plugin.def 
+INFO 2023-08-29 17:06:23:326 main PluginResourcesResolver : find skywalking plugin define in jar:file:D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-postgresql-8.x-plugin-8.6.0.jar!/skywalking-plugin.def 
+INFO 2023-08-29 17:06:23:326 main PluginResourcesResolver : find skywalking plugin define in jar:file:D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-pulsar-plugin-8.6.0.jar!/skywalking-plugin.def 
+INFO 2023-08-29 17:06:23:326 main PluginResourcesResolver : find skywalking plugin define in jar:file:D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-quasar-plugin-8.6.0.jar!/skywalking-plugin.def 
+INFO 2023-08-29 17:06:23:326 main PluginResourcesResolver : find skywalking plugin define in jar:file:D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-rabbitmq-5.x-plugin-8.6.0.jar!/skywalking-plugin.def 
+INFO 2023-08-29 17:06:23:326 main PluginResourcesResolver : find skywalking plugin define in jar:file:D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-redisson-3.x-plugin-8.6.0.jar!/skywalking-plugin.def 
+INFO 2023-08-29 17:06:23:327 main PluginResourcesResolver : find skywalking plugin define in jar:file:D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-resttemplate-4.3.x-plugin-8.6.0.jar!/skywalking-plugin.def 
+INFO 2023-08-29 17:06:23:327 main PluginResourcesResolver : find skywalking plugin define in jar:file:D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-rocketmq-3.x-plugin-8.6.0.jar!/skywalking-plugin.def 
+INFO 2023-08-29 17:06:23:327 main PluginResourcesResolver : find skywalking plugin define in jar:file:D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-rocketmq-4.x-plugin-8.6.0.jar!/skywalking-plugin.def 
+INFO 2023-08-29 17:06:23:327 main PluginResourcesResolver : find skywalking plugin define in jar:file:D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-servicecomb-java-chassis-0.x-plugin-8.6.0.jar!/skywalking-plugin.def 
+INFO 2023-08-29 17:06:23:327 main PluginResourcesResolver : find skywalking plugin define in jar:file:D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-servicecomb-java-chassis-1.x-plugin-8.6.0.jar!/skywalking-plugin.def 
+INFO 2023-08-29 17:06:23:328 main PluginResourcesResolver : find skywalking plugin define in jar:file:D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-sharding-jdbc-1.5.x-plugin-8.6.0.jar!/skywalking-plugin.def 
+INFO 2023-08-29 17:06:23:328 main PluginResourcesResolver : find skywalking plugin define in jar:file:D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-sharding-sphere-3.x-plugin-8.6.0.jar!/skywalking-plugin.def 
+INFO 2023-08-29 17:06:23:328 main PluginResourcesResolver : find skywalking plugin define in jar:file:D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-sharding-sphere-4.1.0-plugin-8.6.0.jar!/skywalking-plugin.def 
+INFO 2023-08-29 17:06:23:328 main PluginResourcesResolver : find skywalking plugin define in jar:file:D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-sharding-sphere-4.x-plugin-8.6.0.jar!/skywalking-plugin.def 
+INFO 2023-08-29 17:06:23:328 main PluginResourcesResolver : find skywalking plugin define in jar:file:D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-sharding-sphere-4.x-rc3-plugin-8.6.0.jar!/skywalking-plugin.def 
+INFO 2023-08-29 17:06:23:328 main PluginResourcesResolver : find skywalking plugin define in jar:file:D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-shardingsphere-4.0.x-plugin-8.6.0.jar!/skywalking-plugin.def 
+INFO 2023-08-29 17:06:23:329 main PluginResourcesResolver : find skywalking plugin define in jar:file:D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-solrj-7.x-plugin-8.6.0.jar!/skywalking-plugin.def 
+INFO 2023-08-29 17:06:23:329 main PluginResourcesResolver : find skywalking plugin define in jar:file:D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-spring-async-annotation-plugin-8.6.0.jar!/skywalking-plugin.def 
+INFO 2023-08-29 17:06:23:329 main PluginResourcesResolver : find skywalking plugin define in jar:file:D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-spring-cloud-feign-1.x-plugin-8.6.0.jar!/skywalking-plugin.def 
+INFO 2023-08-29 17:06:23:329 main PluginResourcesResolver : find skywalking plugin define in jar:file:D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-spring-cloud-feign-2.x-plugin-8.6.0.jar!/skywalking-plugin.def 
+INFO 2023-08-29 17:06:23:329 main PluginResourcesResolver : find skywalking plugin define in jar:file:D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-spring-concurrent-util-4.x-plugin-8.6.0.jar!/skywalking-plugin.def 
+INFO 2023-08-29 17:06:23:330 main PluginResourcesResolver : find skywalking plugin define in jar:file:D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-spring-core-patch-8.6.0.jar!/skywalking-plugin.def 
+INFO 2023-08-29 17:06:23:330 main PluginResourcesResolver : find skywalking plugin define in jar:file:D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-spring-kafka-1.x-plugin-8.6.0.jar!/skywalking-plugin.def 
+INFO 2023-08-29 17:06:23:330 main PluginResourcesResolver : find skywalking plugin define in jar:file:D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-spring-kafka-2.x-plugin-8.6.0.jar!/skywalking-plugin.def 
+INFO 2023-08-29 17:06:23:330 main PluginResourcesResolver : find skywalking plugin define in jar:file:D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-spring-scheduled-annotation-plugin-8.6.0.jar!/skywalking-plugin.def 
+INFO 2023-08-29 17:06:23:330 main PluginResourcesResolver : find skywalking plugin define in jar:file:D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-springmvc-annotation-3.x-plugin-8.6.0.jar!/skywalking-plugin.def 
+INFO 2023-08-29 17:06:23:330 main PluginResourcesResolver : find skywalking plugin define in jar:file:D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-springmvc-annotation-4.x-plugin-8.6.0.jar!/skywalking-plugin.def 
+INFO 2023-08-29 17:06:23:331 main PluginResourcesResolver : find skywalking plugin define in jar:file:D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-springmvc-annotation-5.x-plugin-8.6.0.jar!/skywalking-plugin.def 
+INFO 2023-08-29 17:06:23:331 main PluginResourcesResolver : find skywalking plugin define in jar:file:D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-springmvc-annotation-commons-8.6.0.jar!/skywalking-plugin.def 
+INFO 2023-08-29 17:06:23:331 main PluginResourcesResolver : find skywalking plugin define in jar:file:D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-spymemcached-2.x-plugin-8.6.0.jar!/skywalking-plugin.def 
+INFO 2023-08-29 17:06:23:331 main PluginResourcesResolver : find skywalking plugin define in jar:file:D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-struts2-2.x-plugin-8.6.0.jar!/skywalking-plugin.def 
+INFO 2023-08-29 17:06:23:331 main PluginResourcesResolver : find skywalking plugin define in jar:file:D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-undertow-2.x-plugin-8.6.0.jar!/skywalking-plugin.def 
+INFO 2023-08-29 17:06:23:331 main PluginResourcesResolver : find skywalking plugin define in jar:file:D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-vertx-core-3.x-plugin-8.6.0.jar!/skywalking-plugin.def 
+INFO 2023-08-29 17:06:23:332 main PluginResourcesResolver : find skywalking plugin define in jar:file:D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-xmemcached-2.x-plugin-8.6.0.jar!/skywalking-plugin.def 
+INFO 2023-08-29 17:06:23:332 main PluginResourcesResolver : find skywalking plugin define in jar:file:D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-xxl-job-2.x-plugin-8.6.0.jar!/skywalking-plugin.def 
+INFO 2023-08-29 17:06:23:332 main PluginResourcesResolver : find skywalking plugin define in jar:file:D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\baidu-brpc-plugin-8.6.0.jar!/skywalking-plugin.def 
+INFO 2023-08-29 17:06:23:332 main PluginResourcesResolver : find skywalking plugin define in jar:file:D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\dbcp-2.x-plugin-8.6.0.jar!/skywalking-plugin.def 
+INFO 2023-08-29 17:06:23:332 main PluginResourcesResolver : find skywalking plugin define in jar:file:D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\dubbo-2.7.x-conflict-patch-8.6.0.jar!/skywalking-plugin.def 
+INFO 2023-08-29 17:06:23:333 main PluginResourcesResolver : find skywalking plugin define in jar:file:D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\dubbo-conflict-patch-8.6.0.jar!/skywalking-plugin.def 
+INFO 2023-08-29 17:06:23:333 main PluginResourcesResolver : find skywalking plugin define in jar:file:D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\graphql-12.x-plugin-8.6.0.jar!/skywalking-plugin.def 
+INFO 2023-08-29 17:06:23:333 main PluginResourcesResolver : find skywalking plugin define in jar:file:D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\graphql-8.x-plugin-8.6.0.jar!/skywalking-plugin.def 
+INFO 2023-08-29 17:06:23:333 main PluginResourcesResolver : find skywalking plugin define in jar:file:D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\graphql-9.x-plugin-8.6.0.jar!/skywalking-plugin.def 
+INFO 2023-08-29 17:06:23:333 main PluginResourcesResolver : find skywalking plugin define in jar:file:D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\jsonrpc4j-1.x-plugin-8.6.0.jar!/skywalking-plugin.def 
+INFO 2023-08-29 17:06:23:333 main PluginResourcesResolver : find skywalking plugin define in jar:file:D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\motan-plugin-8.6.0.jar!/skywalking-plugin.def 
+INFO 2023-08-29 17:06:23:334 main PluginResourcesResolver : find skywalking plugin define in jar:file:D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\resteasy-server-3.x-plugin-8.6.0.jar!/skywalking-plugin.def 
+INFO 2023-08-29 17:06:23:334 main PluginResourcesResolver : find skywalking plugin define in jar:file:D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\sofa-rpc-plugin-8.6.0.jar!/skywalking-plugin.def 
+INFO 2023-08-29 17:06:23:334 main PluginResourcesResolver : find skywalking plugin define in jar:file:D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\spring-webflux-5.x-webclient-plugin-8.6.0.jar!/skywalking-plugin.def 
+INFO 2023-08-29 17:06:23:334 main PluginResourcesResolver : find skywalking plugin define in jar:file:D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\thrift-plugin-8.6.0.jar!/skywalking-plugin.def 
+INFO 2023-08-29 17:06:23:334 main PluginResourcesResolver : find skywalking plugin define in jar:file:D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\tomcat-7.x-8.x-plugin-8.6.0.jar!/skywalking-plugin.def 
+INFO 2023-08-29 17:06:23:334 main PluginResourcesResolver : find skywalking plugin define in jar:file:D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\activations\apm-toolkit-kafka-activation-8.6.0.jar!/skywalking-plugin.def 
+INFO 2023-08-29 17:06:23:335 main PluginResourcesResolver : find skywalking plugin define in jar:file:D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\activations\apm-toolkit-log4j-1.x-activation-8.6.0.jar!/skywalking-plugin.def 
+INFO 2023-08-29 17:06:23:335 main PluginResourcesResolver : find skywalking plugin define in jar:file:D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\activations\apm-toolkit-log4j-2.x-activation-8.6.0.jar!/skywalking-plugin.def 
+INFO 2023-08-29 17:06:23:335 main PluginResourcesResolver : find skywalking plugin define in jar:file:D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\activations\apm-toolkit-logback-1.x-activation-8.6.0.jar!/skywalking-plugin.def 
+INFO 2023-08-29 17:06:23:335 main PluginResourcesResolver : find skywalking plugin define in jar:file:D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\activations\apm-toolkit-meter-activation-8.6.0.jar!/skywalking-plugin.def 
+INFO 2023-08-29 17:06:23:335 main PluginResourcesResolver : find skywalking plugin define in jar:file:D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\activations\apm-toolkit-opentracing-activation-8.6.0.jar!/skywalking-plugin.def 
+INFO 2023-08-29 17:06:23:336 main PluginResourcesResolver : find skywalking plugin define in jar:file:D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\activations\apm-toolkit-trace-activation-8.6.0.jar!/skywalking-plugin.def 
+INFO 2023-08-29 17:06:28:695 Thread-2 AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-activemq-5.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:28:695 Thread-2 AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-armeria-0.84.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:28:696 Thread-2 AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-armeria-0.85.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:28:696 Thread-2 AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-asynchttpclient-2.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:28:696 Thread-2 AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-avro-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:28:696 Thread-2 AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-canal-1.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:28:696 Thread-2 AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-cassandra-java-driver-3.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:28:696 Thread-2 AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-cxf-3.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:28:696 Thread-2 AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-dubbo-2.7.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:28:697 Thread-2 AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-dubbo-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:28:697 Thread-2 AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-ehcache-2.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:28:697 Thread-2 AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-elastic-job-2.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:28:697 Thread-2 AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-elastic-job-3.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:28:697 Thread-2 AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-elasticsearch-5.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:28:697 Thread-2 AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-elasticsearch-6.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:28:697 Thread-2 AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-elasticsearch-7.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:28:698 Thread-2 AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-feign-default-http-9.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:28:698 Thread-2 AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-finagle-6.25.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:28:698 Thread-2 AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-grpc-1.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:28:698 Thread-2 AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-h2-1.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:28:698 Thread-2 AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-hbase-1.x-2.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:28:698 Thread-2 AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-httpasyncclient-4.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:28:698 Thread-2 AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-httpclient-3.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:28:699 Thread-2 AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-httpClient-4.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:28:699 Thread-2 AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-httpclient-commons-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:28:699 Thread-2 AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-hystrix-1.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:28:699 Thread-2 AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-influxdb-2.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:28:699 Thread-2 AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-jdbc-commons-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:28:699 Thread-2 AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-jedis-2.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:28:699 Thread-2 AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-jetty-client-9.0-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:28:700 Thread-2 AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-jetty-client-9.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:28:700 Thread-2 AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-jetty-server-9.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:28:700 Thread-2 AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-kafka-commons-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:28:700 Thread-2 AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-kafka-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:28:700 Thread-2 AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-lettuce-5.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:28:700 Thread-2 AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-light4j-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:28:700 Thread-2 AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-mariadb-2.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:28:700 Thread-2 AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-mongodb-2.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:28:701 Thread-2 AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-mongodb-3.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:28:701 Thread-2 AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-mongodb-4.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:28:701 Thread-2 AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-mssql-commons-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:28:701 Thread-2 AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-mssql-jdbc-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:28:701 Thread-2 AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-mssql-jtds-1.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:28:701 Thread-2 AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-mysql-5.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:28:701 Thread-2 AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-mysql-6.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:28:701 Thread-2 AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-mysql-8.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:28:702 Thread-2 AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-mysql-commons-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:28:702 Thread-2 AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-netty-socketio-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:28:702 Thread-2 AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-nutz-http-1.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:28:702 Thread-2 AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-nutz-mvc-annotation-1.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:28:702 Thread-2 AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-okhttp-3.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:28:702 Thread-2 AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-okhttp-4.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:28:702 Thread-2 AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-okhttp-common-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:28:702 Thread-2 AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-play-2.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:28:703 Thread-2 AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-postgresql-8.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:28:703 Thread-2 AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-pulsar-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:28:703 Thread-2 AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-quasar-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:28:703 Thread-2 AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-rabbitmq-5.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:28:703 Thread-2 AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-redisson-3.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:28:703 Thread-2 AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-resttemplate-4.3.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:28:703 Thread-2 AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-rocketmq-3.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:28:703 Thread-2 AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-rocketmq-4.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:28:704 Thread-2 AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-servicecomb-java-chassis-0.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:28:704 Thread-2 AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-servicecomb-java-chassis-1.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:28:704 Thread-2 AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-sharding-jdbc-1.5.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:28:704 Thread-2 AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-sharding-sphere-3.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:28:704 Thread-2 AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-sharding-sphere-4.1.0-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:28:704 Thread-2 AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-sharding-sphere-4.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:28:704 Thread-2 AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-sharding-sphere-4.x-rc3-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:28:704 Thread-2 AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-shardingsphere-4.0.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:28:704 Thread-2 AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-solrj-7.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:28:705 Thread-2 AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-spring-async-annotation-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:28:705 Thread-2 AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-spring-cloud-feign-1.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:28:705 Thread-2 AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-spring-cloud-feign-2.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:28:705 Thread-2 AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-spring-concurrent-util-4.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:28:705 Thread-2 AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-spring-core-patch-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:28:705 Thread-2 AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-spring-kafka-1.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:28:705 Thread-2 AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-spring-kafka-2.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:28:705 Thread-2 AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-spring-scheduled-annotation-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:28:705 Thread-2 AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-springmvc-annotation-3.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:28:706 Thread-2 AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-springmvc-annotation-4.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:28:706 Thread-2 AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-springmvc-annotation-5.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:28:706 Thread-2 AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-springmvc-annotation-commons-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:28:706 Thread-2 AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-spymemcached-2.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:28:706 Thread-2 AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-struts2-2.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:28:706 Thread-2 AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-undertow-2.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:28:706 Thread-2 AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-vertx-core-3.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:28:706 Thread-2 AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-xmemcached-2.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:28:706 Thread-2 AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-xxl-job-2.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:28:707 Thread-2 AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\baidu-brpc-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:28:707 Thread-2 AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\dbcp-2.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:28:707 Thread-2 AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\dubbo-2.7.x-conflict-patch-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:28:707 Thread-2 AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\dubbo-conflict-patch-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:28:707 Thread-2 AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\graphql-12.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:28:707 Thread-2 AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\graphql-8.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:28:707 Thread-2 AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\graphql-9.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:28:707 Thread-2 AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\jsonrpc4j-1.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:28:707 Thread-2 AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\motan-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:28:708 Thread-2 AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\resteasy-server-3.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:28:708 Thread-2 AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\sofa-rpc-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:28:708 Thread-2 AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\spring-commons-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:28:708 Thread-2 AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\spring-webflux-5.x-webclient-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:28:708 Thread-2 AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\thrift-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:28:708 Thread-2 AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\tomcat-7.x-8.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:28:708 Thread-2 AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\activations\apm-toolkit-kafka-activation-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:28:708 Thread-2 AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\activations\apm-toolkit-log4j-1.x-activation-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:28:709 Thread-2 AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\activations\apm-toolkit-log4j-2.x-activation-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:28:709 Thread-2 AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\activations\apm-toolkit-logback-1.x-activation-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:28:709 Thread-2 AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\activations\apm-toolkit-logging-common-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:28:709 Thread-2 AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\activations\apm-toolkit-meter-activation-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:28:709 Thread-2 AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\activations\apm-toolkit-opentracing-activation-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:28:709 Thread-2 AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\activations\apm-toolkit-trace-activation-8.6.0.jar loaded. 
+WARN 2023-08-29 17:06:31:257 restartedMain AbstractClassEnhancePluginDefine : enhance class com.xiaoyu.provider.user.controller.CoreController by plugin org.apache.skywalking.apm.plugin.spring.mvc.v4.define.RestControllerInstrumentation is not working. Because witness class org.springframework.cache.interceptor.DefaultKeyGenerator is not existed. 
+WARN 2023-08-29 17:06:31:257 restartedMain AbstractClassEnhancePluginDefine : enhance class com.xiaoyu.provider.user.controller.CoreController by plugin org.apache.skywalking.apm.plugin.spring.mvc.v4.define.RestControllerForLowVersionInstrumentation is not working. Because witness class org.springframework.cache.interceptor.DefaultKeyGenerator is not existed. 
+INFO 2023-08-29 17:06:31:261 restartedMain AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-activemq-5.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:31:261 restartedMain AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-armeria-0.84.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:31:261 restartedMain AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-armeria-0.85.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:31:261 restartedMain AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-asynchttpclient-2.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:31:261 restartedMain AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-avro-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:31:261 restartedMain AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-canal-1.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:31:261 restartedMain AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-cassandra-java-driver-3.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:31:261 restartedMain AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-cxf-3.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:31:261 restartedMain AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-dubbo-2.7.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:31:261 restartedMain AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-dubbo-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:31:261 restartedMain AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-ehcache-2.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:31:261 restartedMain AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-elastic-job-2.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:31:261 restartedMain AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-elastic-job-3.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:31:262 restartedMain AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-elasticsearch-5.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:31:262 restartedMain AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-elasticsearch-6.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:31:262 restartedMain AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-elasticsearch-7.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:31:262 restartedMain AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-feign-default-http-9.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:31:262 restartedMain AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-finagle-6.25.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:31:262 restartedMain AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-grpc-1.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:31:262 restartedMain AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-h2-1.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:31:262 restartedMain AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-hbase-1.x-2.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:31:262 restartedMain AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-httpasyncclient-4.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:31:262 restartedMain AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-httpclient-3.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:31:262 restartedMain AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-httpClient-4.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:31:262 restartedMain AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-httpclient-commons-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:31:262 restartedMain AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-hystrix-1.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:31:262 restartedMain AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-influxdb-2.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:31:263 restartedMain AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-jdbc-commons-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:31:263 restartedMain AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-jedis-2.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:31:263 restartedMain AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-jetty-client-9.0-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:31:263 restartedMain AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-jetty-client-9.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:31:263 restartedMain AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-jetty-server-9.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:31:263 restartedMain AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-kafka-commons-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:31:263 restartedMain AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-kafka-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:31:263 restartedMain AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-lettuce-5.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:31:263 restartedMain AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-light4j-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:31:263 restartedMain AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-mariadb-2.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:31:263 restartedMain AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-mongodb-2.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:31:263 restartedMain AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-mongodb-3.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:31:263 restartedMain AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-mongodb-4.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:31:263 restartedMain AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-mssql-commons-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:31:263 restartedMain AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-mssql-jdbc-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:31:264 restartedMain AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-mssql-jtds-1.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:31:264 restartedMain AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-mysql-5.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:31:264 restartedMain AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-mysql-6.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:31:264 restartedMain AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-mysql-8.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:31:264 restartedMain AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-mysql-commons-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:31:264 restartedMain AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-netty-socketio-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:31:264 restartedMain AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-nutz-http-1.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:31:264 restartedMain AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-nutz-mvc-annotation-1.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:31:264 restartedMain AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-okhttp-3.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:31:264 restartedMain AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-okhttp-4.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:31:264 restartedMain AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-okhttp-common-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:31:264 restartedMain AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-play-2.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:31:265 restartedMain AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-postgresql-8.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:31:265 restartedMain AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-pulsar-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:31:265 restartedMain AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-quasar-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:31:265 restartedMain AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-rabbitmq-5.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:31:265 restartedMain AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-redisson-3.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:31:265 restartedMain AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-resttemplate-4.3.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:31:265 restartedMain AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-rocketmq-3.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:31:265 restartedMain AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-rocketmq-4.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:31:265 restartedMain AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-servicecomb-java-chassis-0.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:31:265 restartedMain AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-servicecomb-java-chassis-1.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:31:265 restartedMain AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-sharding-jdbc-1.5.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:31:265 restartedMain AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-sharding-sphere-3.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:31:265 restartedMain AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-sharding-sphere-4.1.0-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:31:265 restartedMain AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-sharding-sphere-4.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:31:265 restartedMain AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-sharding-sphere-4.x-rc3-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:31:265 restartedMain AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-shardingsphere-4.0.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:31:266 restartedMain AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-solrj-7.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:31:266 restartedMain AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-spring-async-annotation-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:31:266 restartedMain AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-spring-cloud-feign-1.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:31:266 restartedMain AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-spring-cloud-feign-2.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:31:266 restartedMain AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-spring-concurrent-util-4.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:31:266 restartedMain AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-spring-core-patch-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:31:266 restartedMain AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-spring-kafka-1.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:31:266 restartedMain AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-spring-kafka-2.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:31:266 restartedMain AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-spring-scheduled-annotation-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:31:266 restartedMain AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-springmvc-annotation-3.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:31:266 restartedMain AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-springmvc-annotation-4.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:31:266 restartedMain AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-springmvc-annotation-5.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:31:266 restartedMain AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-springmvc-annotation-commons-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:31:266 restartedMain AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-spymemcached-2.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:31:266 restartedMain AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-struts2-2.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:31:266 restartedMain AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-undertow-2.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:31:267 restartedMain AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-vertx-core-3.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:31:267 restartedMain AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-xmemcached-2.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:31:267 restartedMain AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\apm-xxl-job-2.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:31:267 restartedMain AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\baidu-brpc-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:31:267 restartedMain AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\dbcp-2.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:31:267 restartedMain AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\dubbo-2.7.x-conflict-patch-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:31:267 restartedMain AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\dubbo-conflict-patch-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:31:267 restartedMain AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\graphql-12.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:31:267 restartedMain AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\graphql-8.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:31:267 restartedMain AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\graphql-9.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:31:267 restartedMain AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\jsonrpc4j-1.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:31:267 restartedMain AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\motan-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:31:267 restartedMain AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\resteasy-server-3.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:31:267 restartedMain AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\sofa-rpc-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:31:267 restartedMain AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\spring-commons-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:31:267 restartedMain AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\spring-webflux-5.x-webclient-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:31:268 restartedMain AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\thrift-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:31:268 restartedMain AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\plugins\tomcat-7.x-8.x-plugin-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:31:268 restartedMain AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\activations\apm-toolkit-kafka-activation-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:31:268 restartedMain AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\activations\apm-toolkit-log4j-1.x-activation-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:31:268 restartedMain AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\activations\apm-toolkit-log4j-2.x-activation-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:31:268 restartedMain AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\activations\apm-toolkit-logback-1.x-activation-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:31:268 restartedMain AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\activations\apm-toolkit-logging-common-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:31:268 restartedMain AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\activations\apm-toolkit-meter-activation-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:31:268 restartedMain AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\activations\apm-toolkit-opentracing-activation-8.6.0.jar loaded. 
+INFO 2023-08-29 17:06:31:268 restartedMain AgentClassLoader : D:\IdeaProjects\xiaoyu\provider-user\src\main\java\com\xiaoyu\provider\user\skywalking\agent\activations\apm-toolkit-trace-activation-8.6.0.jar loaded. 
+WARN 2023-08-29 17:06:31:274 restartedMain AbstractClassEnhancePluginDefine : enhance class com.xiaoyu.provider.user.controller.CoreController by plugin org.apache.skywalking.apm.plugin.spring.mvc.v5.define.reactive.ReactiveRestControllerInstrumentation is not working. Because witness class org.springframework.web.reactive.result.method.InvocableHandlerMethod is not existed. 
+WARN 2023-08-29 17:06:31:291 restartedMain AbstractClassEnhancePluginDefine : enhance class com.xiaoyu.provider.user.controller.DeptController by plugin org.apache.skywalking.apm.plugin.spring.mvc.v4.define.RestControllerInstrumentation is not working. Because witness class org.springframework.cache.interceptor.DefaultKeyGenerator is not existed. 
+WARN 2023-08-29 17:06:31:291 restartedMain AbstractClassEnhancePluginDefine : enhance class com.xiaoyu.provider.user.controller.DeptController by plugin org.apache.skywalking.apm.plugin.spring.mvc.v4.define.RestControllerForLowVersionInstrumentation is not working. Because witness class org.springframework.cache.interceptor.DefaultKeyGenerator is not existed. 
+WARN 2023-08-29 17:06:31:292 restartedMain AbstractClassEnhancePluginDefine : enhance class com.xiaoyu.provider.user.controller.DeptController by plugin org.apache.skywalking.apm.plugin.spring.mvc.v5.define.reactive.ReactiveRestControllerInstrumentation is not working. Because witness class org.springframework.web.reactive.result.method.InvocableHandlerMethod is not existed. 
+WARN 2023-08-29 17:06:31:299 restartedMain AbstractClassEnhancePluginDefine : enhance class com.xiaoyu.provider.user.controller.LinksController by plugin org.apache.skywalking.apm.plugin.spring.mvc.v4.define.RestControllerInstrumentation is not working. Because witness class org.springframework.cache.interceptor.DefaultKeyGenerator is not existed. 
+WARN 2023-08-29 17:06:31:299 restartedMain AbstractClassEnhancePluginDefine : enhance class com.xiaoyu.provider.user.controller.LinksController by plugin org.apache.skywalking.apm.plugin.spring.mvc.v4.define.RestControllerForLowVersionInstrumentation is not working. Because witness class org.springframework.cache.interceptor.DefaultKeyGenerator is not existed. 
+WARN 2023-08-29 17:06:31:299 restartedMain AbstractClassEnhancePluginDefine : enhance class com.xiaoyu.provider.user.controller.LinksController by plugin org.apache.skywalking.apm.plugin.spring.mvc.v5.define.reactive.ReactiveRestControllerInstrumentation is not working. Because witness class org.springframework.web.reactive.result.method.InvocableHandlerMethod is not existed. 
+WARN 2023-08-29 17:06:31:310 restartedMain AbstractClassEnhancePluginDefine : enhance class com.xiaoyu.provider.user.controller.NoticeController by plugin org.apache.skywalking.apm.plugin.spring.mvc.v4.define.RestControllerInstrumentation is not working. Because witness class org.springframework.cache.interceptor.DefaultKeyGenerator is not existed. 
+WARN 2023-08-29 17:06:31:310 restartedMain AbstractClassEnhancePluginDefine : enhance class com.xiaoyu.provider.user.controller.NoticeController by plugin org.apache.skywalking.apm.plugin.spring.mvc.v4.define.RestControllerForLowVersionInstrumentation is not working. Because witness class org.springframework.cache.interceptor.DefaultKeyGenerator is not existed. 
+WARN 2023-08-29 17:06:31:310 restartedMain AbstractClassEnhancePluginDefine : enhance class com.xiaoyu.provider.user.controller.NoticeController by plugin org.apache.skywalking.apm.plugin.spring.mvc.v5.define.reactive.ReactiveRestControllerInstrumentation is not working. Because witness class org.springframework.web.reactive.result.method.InvocableHandlerMethod is not existed. 
+WARN 2023-08-29 17:06:31:327 restartedMain AbstractClassEnhancePluginDefine : enhance class com.xiaoyu.provider.user.controller.PicturesController by plugin org.apache.skywalking.apm.plugin.spring.mvc.v4.define.RestControllerInstrumentation is not working. Because witness class org.springframework.cache.interceptor.DefaultKeyGenerator is not existed. 
+WARN 2023-08-29 17:06:31:327 restartedMain AbstractClassEnhancePluginDefine : enhance class com.xiaoyu.provider.user.controller.PicturesController by plugin org.apache.skywalking.apm.plugin.spring.mvc.v4.define.RestControllerForLowVersionInstrumentation is not working. Because witness class org.springframework.cache.interceptor.DefaultKeyGenerator is not existed. 
+WARN 2023-08-29 17:06:31:327 restartedMain AbstractClassEnhancePluginDefine : enhance class com.xiaoyu.provider.user.controller.PicturesController by plugin org.apache.skywalking.apm.plugin.spring.mvc.v5.define.reactive.ReactiveRestControllerInstrumentation is not working. Because witness class org.springframework.web.reactive.result.method.InvocableHandlerMethod is not existed. 
+WARN 2023-08-29 17:06:31:339 restartedMain AbstractClassEnhancePluginDefine : enhance class com.xiaoyu.provider.user.controller.ResourcesController by plugin org.apache.skywalking.apm.plugin.spring.mvc.v4.define.RestControllerInstrumentation is not working. Because witness class org.springframework.cache.interceptor.DefaultKeyGenerator is not existed. 
+WARN 2023-08-29 17:06:31:340 restartedMain AbstractClassEnhancePluginDefine : enhance class com.xiaoyu.provider.user.controller.ResourcesController by plugin org.apache.skywalking.apm.plugin.spring.mvc.v4.define.RestControllerForLowVersionInstrumentation is not working. Because witness class org.springframework.cache.interceptor.DefaultKeyGenerator is not existed. 
+WARN 2023-08-29 17:06:31:340 restartedMain AbstractClassEnhancePluginDefine : enhance class com.xiaoyu.provider.user.controller.ResourcesController by plugin org.apache.skywalking.apm.plugin.spring.mvc.v5.define.reactive.ReactiveRestControllerInstrumentation is not working. Because witness class org.springframework.web.reactive.result.method.InvocableHandlerMethod is not existed. 
+WARN 2023-08-29 17:06:31:352 restartedMain AbstractClassEnhancePluginDefine : enhance class com.xiaoyu.provider.user.controller.SysOrgColtroller by plugin org.apache.skywalking.apm.plugin.spring.mvc.v4.define.RestControllerInstrumentation is not working. Because witness class org.springframework.cache.interceptor.DefaultKeyGenerator is not existed. 
+WARN 2023-08-29 17:06:31:352 restartedMain AbstractClassEnhancePluginDefine : enhance class com.xiaoyu.provider.user.controller.SysOrgColtroller by plugin org.apache.skywalking.apm.plugin.spring.mvc.v4.define.RestControllerForLowVersionInstrumentation is not working. Because witness class org.springframework.cache.interceptor.DefaultKeyGenerator is not existed. 
+WARN 2023-08-29 17:06:31:352 restartedMain AbstractClassEnhancePluginDefine : enhance class com.xiaoyu.provider.user.controller.SysOrgColtroller by plugin org.apache.skywalking.apm.plugin.spring.mvc.v5.define.reactive.ReactiveRestControllerInstrumentation is not working. Because witness class org.springframework.web.reactive.result.method.InvocableHandlerMethod is not existed. 
+WARN 2023-08-29 17:06:31:365 restartedMain AbstractClassEnhancePluginDefine : enhance class com.xiaoyu.provider.user.controller.SysRoleController by plugin org.apache.skywalking.apm.plugin.spring.mvc.v4.define.RestControllerInstrumentation is not working. Because witness class org.springframework.cache.interceptor.DefaultKeyGenerator is not existed. 
+WARN 2023-08-29 17:06:31:365 restartedMain AbstractClassEnhancePluginDefine : enhance class com.xiaoyu.provider.user.controller.SysRoleController by plugin org.apache.skywalking.apm.plugin.spring.mvc.v4.define.RestControllerForLowVersionInstrumentation is not working. Because witness class org.springframework.cache.interceptor.DefaultKeyGenerator is not existed. 
+WARN 2023-08-29 17:06:31:365 restartedMain AbstractClassEnhancePluginDefine : enhance class com.xiaoyu.provider.user.controller.SysRoleController by plugin org.apache.skywalking.apm.plugin.spring.mvc.v5.define.reactive.ReactiveRestControllerInstrumentation is not working. Because witness class org.springframework.web.reactive.result.method.InvocableHandlerMethod is not existed. 
+WARN 2023-08-29 17:06:31:386 restartedMain AbstractClassEnhancePluginDefine : enhance class com.xiaoyu.provider.user.controller.SysUserController by plugin org.apache.skywalking.apm.plugin.spring.mvc.v4.define.RestControllerInstrumentation is not working. Because witness class org.springframework.cache.interceptor.DefaultKeyGenerator is not existed. 
+WARN 2023-08-29 17:06:31:386 restartedMain AbstractClassEnhancePluginDefine : enhance class com.xiaoyu.provider.user.controller.SysUserController by plugin org.apache.skywalking.apm.plugin.spring.mvc.v4.define.RestControllerForLowVersionInstrumentation is not working. Because witness class org.springframework.cache.interceptor.DefaultKeyGenerator is not existed. 
+WARN 2023-08-29 17:06:31:386 restartedMain AbstractClassEnhancePluginDefine : enhance class com.xiaoyu.provider.user.controller.SysUserController by plugin org.apache.skywalking.apm.plugin.spring.mvc.v5.define.reactive.ReactiveRestControllerInstrumentation is not working. Because witness class org.springframework.web.reactive.result.method.InvocableHandlerMethod is not existed. 
+WARN 2023-08-29 17:06:32:186 restartedMain AbstractClassEnhancePluginDefine : enhance class org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController by plugin org.apache.skywalking.apm.plugin.spring.mvc.v3.define.ControllerInstrumentation is not working. Because witness class org.springframework.web.servlet.view.xslt.AbstractXsltView is not existed. 
+WARN 2023-08-29 17:06:32:187 restartedMain AbstractClassEnhancePluginDefine : enhance class org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController by plugin org.apache.skywalking.apm.plugin.spring.mvc.v4.define.ControllerInstrumentation is not working. Because witness class org.springframework.cache.interceptor.DefaultKeyGenerator is not existed. 
+WARN 2023-08-29 17:06:32:187 restartedMain AbstractClassEnhancePluginDefine : enhance class org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController by plugin org.apache.skywalking.apm.plugin.spring.mvc.v4.define.ControllerForLowVersionInstrumentation is not working. Because witness class org.springframework.cache.interceptor.DefaultKeyGenerator is not existed. 
+WARN 2023-08-29 17:06:32:192 restartedMain AbstractClassEnhancePluginDefine : enhance class org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController by plugin org.apache.skywalking.apm.plugin.spring.mvc.v5.define.reactive.ReactiveControllerInstrumentation is not working. Because witness class org.springframework.web.reactive.result.method.InvocableHandlerMethod is not existed. 
+ERROR 2023-08-29 17:06:32:515 grpc-default-executor-1 GRPCLogReportServiceClient : Send log to gRPC server fail with an internal exception. 
+org.apache.skywalking.apm.dependencies.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+	at org.apache.skywalking.apm.dependencies.io.grpc.Status.asRuntimeException(Status.java:533)
+	at org.apache.skywalking.apm.dependencies.io.grpc.stub.ClientCalls$StreamObserverToCallListenerAdapter.onClose(ClientCalls.java:478)
+	at org.apache.skywalking.apm.dependencies.io.grpc.internal.ClientCallImpl.closeObserver(ClientCallImpl.java:413)
+	at org.apache.skywalking.apm.dependencies.io.grpc.internal.ClientCallImpl.access$500(ClientCallImpl.java:66)
+	at org.apache.skywalking.apm.dependencies.io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInternal(ClientCallImpl.java:742)
+	at org.apache.skywalking.apm.dependencies.io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInContext(ClientCallImpl.java:721)
+	at org.apache.skywalking.apm.dependencies.io.grpc.internal.ContextRunnable.run(ContextRunnable.java:37)
+	at org.apache.skywalking.apm.dependencies.io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:123)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.skywalking.apm.dependencies.io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: /127.0.0.1:11800
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.skywalking.apm.dependencies.io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:330)
+	at org.apache.skywalking.apm.dependencies.io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at org.apache.skywalking.apm.dependencies.io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:702)
+	at org.apache.skywalking.apm.dependencies.io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	at org.apache.skywalking.apm.dependencies.io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	at org.apache.skywalking.apm.dependencies.io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at org.apache.skywalking.apm.dependencies.io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at org.apache.skywalking.apm.dependencies.io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at org.apache.skywalking.apm.dependencies.io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+
+ERROR 2023-08-29 17:06:32:515 grpc-default-executor-1 GRPCLogReportServiceClient : Try to send 2 log data to collector, with unexpected exception. 
+org.apache.skywalking.apm.dependencies.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+	at org.apache.skywalking.apm.dependencies.io.grpc.Status.asRuntimeException(Status.java:533)
+	at org.apache.skywalking.apm.dependencies.io.grpc.stub.ClientCalls$StreamObserverToCallListenerAdapter.onClose(ClientCalls.java:478)
+	at org.apache.skywalking.apm.dependencies.io.grpc.internal.ClientCallImpl.closeObserver(ClientCallImpl.java:413)
+	at org.apache.skywalking.apm.dependencies.io.grpc.internal.ClientCallImpl.access$500(ClientCallImpl.java:66)
+	at org.apache.skywalking.apm.dependencies.io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInternal(ClientCallImpl.java:742)
+	at org.apache.skywalking.apm.dependencies.io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInContext(ClientCallImpl.java:721)
+	at org.apache.skywalking.apm.dependencies.io.grpc.internal.ContextRunnable.run(ContextRunnable.java:37)
+	at org.apache.skywalking.apm.dependencies.io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:123)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.skywalking.apm.dependencies.io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: /127.0.0.1:11800
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.skywalking.apm.dependencies.io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:330)
+	at org.apache.skywalking.apm.dependencies.io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at org.apache.skywalking.apm.dependencies.io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:702)
+	at org.apache.skywalking.apm.dependencies.io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	at org.apache.skywalking.apm.dependencies.io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	at org.apache.skywalking.apm.dependencies.io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at org.apache.skywalking.apm.dependencies.io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at org.apache.skywalking.apm.dependencies.io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at org.apache.skywalking.apm.dependencies.io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+
+ERROR 2023-08-29 17:06:33:251 grpc-default-executor-0 EventReportServiceClient : Failed to report starting event. 
+org.apache.skywalking.apm.dependencies.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+	at org.apache.skywalking.apm.dependencies.io.grpc.Status.asRuntimeException(Status.java:533)
+	at org.apache.skywalking.apm.dependencies.io.grpc.stub.ClientCalls$StreamObserverToCallListenerAdapter.onClose(ClientCalls.java:478)
+	at org.apache.skywalking.apm.dependencies.io.grpc.internal.ClientCallImpl.closeObserver(ClientCallImpl.java:413)
+	at org.apache.skywalking.apm.dependencies.io.grpc.internal.ClientCallImpl.access$500(ClientCallImpl.java:66)
+	at org.apache.skywalking.apm.dependencies.io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInternal(ClientCallImpl.java:742)
+	at org.apache.skywalking.apm.dependencies.io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInContext(ClientCallImpl.java:721)
+	at org.apache.skywalking.apm.dependencies.io.grpc.internal.ContextRunnable.run(ContextRunnable.java:37)
+	at org.apache.skywalking.apm.dependencies.io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:123)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.skywalking.apm.dependencies.io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: localhost/0:0:0:0:0:0:0:1:11800
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.skywalking.apm.dependencies.io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:330)
+	at org.apache.skywalking.apm.dependencies.io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at org.apache.skywalking.apm.dependencies.io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:702)
+	at org.apache.skywalking.apm.dependencies.io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	at org.apache.skywalking.apm.dependencies.io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	at org.apache.skywalking.apm.dependencies.io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at org.apache.skywalking.apm.dependencies.io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at org.apache.skywalking.apm.dependencies.io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at org.apache.skywalking.apm.dependencies.io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+
+ERROR 2023-08-29 17:06:33:254 SkywalkingAgent-6-JVMService-consume-0 JVMMetricsSender : send JVM metrics to Collector fail. 
+org.apache.skywalking.apm.dependencies.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+	at org.apache.skywalking.apm.dependencies.io.grpc.stub.ClientCalls.toStatusRuntimeException(ClientCalls.java:262)
+	at org.apache.skywalking.apm.dependencies.io.grpc.stub.ClientCalls.getUnchecked(ClientCalls.java:243)
+	at org.apache.skywalking.apm.dependencies.io.grpc.stub.ClientCalls.blockingUnaryCall(ClientCalls.java:156)
+	at org.apache.skywalking.apm.network.language.agent.v3.JVMMetricReportServiceGrpc$JVMMetricReportServiceBlockingStub.collect(JVMMetricReportServiceGrpc.java:181)
+	at org.apache.skywalking.apm.agent.core.jvm.JVMMetricsSender.run(JVMMetricsSender.java:82)
+	at org.apache.skywalking.apm.util.RunnableWithExceptionProtection.run(RunnableWithExceptionProtection.java:33)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.skywalking.apm.dependencies.io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: localhost/0:0:0:0:0:0:0:1:11800
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.skywalking.apm.dependencies.io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:330)
+	at org.apache.skywalking.apm.dependencies.io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at org.apache.skywalking.apm.dependencies.io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:702)
+	at org.apache.skywalking.apm.dependencies.io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	at org.apache.skywalking.apm.dependencies.io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	at org.apache.skywalking.apm.dependencies.io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at org.apache.skywalking.apm.dependencies.io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at org.apache.skywalking.apm.dependencies.io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at org.apache.skywalking.apm.dependencies.io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+
+WARN 2023-08-29 17:06:34:000 restartedMain AbstractClassEnhancePluginDefine : enhance class com.mysql.cj.jdbc.Driver by plugin org.apache.skywalking.apm.plugin.jdbc.mysql.v6.define.DriverInstrumentation is not working. Because witness class com.mysql.cj.api.MysqlConnection is not existed. 
+WARN 2023-08-29 17:06:34:002 restartedMain AbstractClassEnhancePluginDefine : enhance class com.mysql.cj.jdbc.NonRegisteringDriver by plugin org.apache.skywalking.apm.plugin.jdbc.mysql.v6.define.CacheIpsInstrumentation is not working. Because witness class com.mysql.cj.api.MysqlConnection is not existed. 
+ERROR 2023-08-29 17:06:34:518 grpc-default-executor-1 GRPCLogReportServiceClient : Try to send 6 log data to collector, with unexpected exception. 
+org.apache.skywalking.apm.dependencies.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+	at org.apache.skywalking.apm.dependencies.io.grpc.Status.asRuntimeException(Status.java:533)
+	at org.apache.skywalking.apm.dependencies.io.grpc.stub.ClientCalls$StreamObserverToCallListenerAdapter.onClose(ClientCalls.java:478)
+	at org.apache.skywalking.apm.dependencies.io.grpc.internal.ClientCallImpl.closeObserver(ClientCallImpl.java:413)
+	at org.apache.skywalking.apm.dependencies.io.grpc.internal.ClientCallImpl.access$500(ClientCallImpl.java:66)
+	at org.apache.skywalking.apm.dependencies.io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInternal(ClientCallImpl.java:742)
+	at org.apache.skywalking.apm.dependencies.io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInContext(ClientCallImpl.java:721)
+	at org.apache.skywalking.apm.dependencies.io.grpc.internal.ContextRunnable.run(ContextRunnable.java:37)
+	at org.apache.skywalking.apm.dependencies.io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:123)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.skywalking.apm.dependencies.io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: /127.0.0.1:11800
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.skywalking.apm.dependencies.io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:330)
+	at org.apache.skywalking.apm.dependencies.io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at org.apache.skywalking.apm.dependencies.io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:702)
+	at org.apache.skywalking.apm.dependencies.io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	at org.apache.skywalking.apm.dependencies.io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	at org.apache.skywalking.apm.dependencies.io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at org.apache.skywalking.apm.dependencies.io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at org.apache.skywalking.apm.dependencies.io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at org.apache.skywalking.apm.dependencies.io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+
+WARN 2023-08-29 17:06:35:371 restartedMain AbstractClassEnhancePluginDefine : enhance class org.springframework.web.method.HandlerMethod by plugin org.apache.skywalking.apm.plugin.spring.mvc.v3.define.HandlerMethodInstrumentation is not working. Because witness class org.springframework.web.servlet.view.xslt.AbstractXsltView is not existed. 
+WARN 2023-08-29 17:06:35:371 restartedMain AbstractClassEnhancePluginDefine : enhance class org.springframework.web.method.HandlerMethod by plugin org.apache.skywalking.apm.plugin.spring.mvc.v4.define.HandlerMethodInstrumentation is not working. Because witness class org.springframework.cache.interceptor.DefaultKeyGenerator is not existed. 
+WARN 2023-08-29 17:06:35:499 restartedMain AbstractClassEnhancePluginDefine : enhance class org.springframework.web.method.support.InvocableHandlerMethod by plugin org.apache.skywalking.apm.plugin.spring.mvc.v3.define.InvocableHandlerInstrumentation is not working. Because witness class org.springframework.web.servlet.view.xslt.AbstractXsltView is not existed. 
+WARN 2023-08-29 17:06:35:499 restartedMain AbstractClassEnhancePluginDefine : enhance class org.springframework.web.method.support.InvocableHandlerMethod by plugin org.apache.skywalking.apm.plugin.spring.mvc.v4.define.InvocableHandlerInstrumentation is not working. Because witness class org.springframework.cache.interceptor.DefaultKeyGenerator is not existed. 
+ERROR 2023-08-29 17:06:36:525 grpc-default-executor-0 GRPCLogReportServiceClient : Try to send 10 log data to collector, with unexpected exception. 
+org.apache.skywalking.apm.dependencies.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+	at org.apache.skywalking.apm.dependencies.io.grpc.Status.asRuntimeException(Status.java:533)
+	at org.apache.skywalking.apm.dependencies.io.grpc.stub.ClientCalls$StreamObserverToCallListenerAdapter.onClose(ClientCalls.java:478)
+	at org.apache.skywalking.apm.dependencies.io.grpc.internal.ClientCallImpl.closeObserver(ClientCallImpl.java:413)
+	at org.apache.skywalking.apm.dependencies.io.grpc.internal.ClientCallImpl.access$500(ClientCallImpl.java:66)
+	at org.apache.skywalking.apm.dependencies.io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInternal(ClientCallImpl.java:742)
+	at org.apache.skywalking.apm.dependencies.io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInContext(ClientCallImpl.java:721)
+	at org.apache.skywalking.apm.dependencies.io.grpc.internal.ContextRunnable.run(ContextRunnable.java:37)
+	at org.apache.skywalking.apm.dependencies.io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:123)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.skywalking.apm.dependencies.io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: /127.0.0.1:11800
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.skywalking.apm.dependencies.io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:330)
+	at org.apache.skywalking.apm.dependencies.io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at org.apache.skywalking.apm.dependencies.io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:702)
+	at org.apache.skywalking.apm.dependencies.io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	at org.apache.skywalking.apm.dependencies.io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	at org.apache.skywalking.apm.dependencies.io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at org.apache.skywalking.apm.dependencies.io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at org.apache.skywalking.apm.dependencies.io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at org.apache.skywalking.apm.dependencies.io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+

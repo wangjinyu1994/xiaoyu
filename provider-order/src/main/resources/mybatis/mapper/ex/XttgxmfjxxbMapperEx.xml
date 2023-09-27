@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.xiaoyu.provider.order.dao.ex.XttgxmfjxxbMapperEx" >
+
+    <select id="selectXttgxmfjxxbByXmzj" resultType="com.xiaoyu.provider.order.resp.ProjectEnclosureData">
+        select `ZJ` as zj,`TGXMBZJ` as projectId,`FJBT` as title,
+        `FJDX` as ram,`FJDZ` as address
+        from `xttgxmfjxxb`
+        where `SCBZ` = ${@com.xiaoyu.common.base.constants.DeleteFlagEnum@NOT_DELETE.delFlagCode}
+        and `TGXMBZJ` = #{data}
+    </select>
+
+    <insert id="insertXttgxmfjxxbBath">
+        insert into `xttgxmfjxxb`
+        (
+          `TGXMBZJ`,
+          `FJBT`,
+          `FJDX`,
+          `FJDZ`,
+          `CJRZJ`,
+          `CJSJ`,
+          `XGSJ`,
+          `XGRZJ`,
+          `SCBZ`,
+          `BZ`
+        )
+        values
+        <foreach collection="data" item="data" separator=",">
+            (
+            #{data.tgxmbzj},
+            #{data.fjbt},
+            #{data.fjdx},
+            #{data.fjdz},
+            #{data.cjrzj},
+            #{data.cjsj},
+            #{data.xgsj},
+            #{data.xgrzj},
+            #{data.scbz},
+            #{data.bz}
+            )
+        </foreach>
+    </insert>
+
+    <insert id="insertXttgxmfjxxb" useGeneratedKeys="true" parameterType="com.xiaoyu.provider.order.entity.Xttgxmfjxxb"
+            keyProperty="data.zj" keyColumn="ZJ">
+        insert into `xttgxmfjxxb`
+        (
+          `TGXMBZJ`,
+          `FJBT`,
+          `FJDX`,
+          `FJDZ`,
+          `CJRZJ`,
+          `CJSJ`,
+          `XGSJ`,
+          `XGRZJ`,
+          `SCBZ`,
+          `BZ`
+        )
+        values
+        (
+          #{data.tgxmbzj},
+          #{data.fjbt},
+          #{data.fjdx},
+          #{data.fjdz},
+          #{data.cjrzj},
+          #{data.cjsj},
+          #{data.xgsj},
+          #{data.xgrzj},
+          #{data.scbz},
+          #{data.bz}
+        )
+    </insert>
+</mapper>

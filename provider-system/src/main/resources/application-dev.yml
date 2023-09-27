@@ -36,17 +36,20 @@ spring:
     nacos:
       discovery:
         server-addr: http://localhost:8850/nacos
-#  redis:
-#    cluster:
-#      nodes: 192.168.0.102:6379,192.168.0.102:6380,192.168.0.102:6381,192.168.0.102:6382,192.168.0.102:6383,192.168.0.102:6384
-#    password:
-#    connect-timeout: 10s
-#    lettuce:
-#      pool:
-#        min-idle: 0
-#        max-idle: 8
-#        max-active: 8
-#        max-wait: -1ms
+  redis:
+    cluster:
+      nodes: 192.168.189.121:6379,192.168.189.121:6380,192.168.189.121:6381,192.168.189.121:6382,192.168.189.121:6383,192.168.189.121:6384
+      #    database: 0
+      #    host: 127.0.0.1
+      #    port: 6379
+      password:
+      connect-timeout: 10s
+      lettuce:
+        pool:
+          min-idle: 0
+          max-idle: 8
+          max-active: 8
+          max-wait: -1ms
 
 #springboot监控暴漏端口
 management:

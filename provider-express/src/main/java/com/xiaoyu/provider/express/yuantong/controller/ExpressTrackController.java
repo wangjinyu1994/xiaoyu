@@ -17,7 +17,7 @@ import javax.servlet.http.HttpServletResponse;
  * WJY
  */
 @RestController
-@RequestMapping("/yuantong")
+@RequestMapping("/sys/xiaoyu/express/yuantong")
 @Api(tags = "圆通快递信息查询控制器",description = "主要提供圆通快递信息查询相关接口")
 public class ExpressTrackController {
 

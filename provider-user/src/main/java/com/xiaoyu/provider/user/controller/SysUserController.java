@@ -2,8 +2,11 @@ package com.xiaoyu.provider.user.controller;
 
 
 import com.xiaoyu.common.base.resp.CommonResult;
+import com.xiaoyu.common.base.resp.TableResult;
 import com.xiaoyu.provider.user.req.*;
 import com.xiaoyu.provider.user.resp.*;
+import com.xiaoyu.provider.user.service.SysUserOrgService;
+import com.xiaoyu.provider.user.service.SysUserRoleService;
 import com.xiaoyu.provider.user.service.SysUserService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -29,6 +32,10 @@ public class SysUserController {
 
     @Autowired
     private SysUserService sysUserService;
+    @Autowired
+    private SysUserRoleService sysUserRoleService;
+    @Autowired
+    private SysUserOrgService sysUserOrgService;
 
     @PostMapping(value = "/updateSysUserPassword")
     @ApiOperation(value = "系统人员修改密码请求接口", httpMethod = "POST",notes = "系统人员修改密码请求接口")
@@ -131,5 +138,55 @@ public class SysUserController {
     public CommonResult<AddUserWorkExperienceInfoResp> addUserWorkExperienceInfo(@RequestBody @Valid AddUserWorkExperienceInfoReq req,HttpServletRequest request, HttpServletResponse response) throws ParseException {
         return sysUserService.addUserWorkExperienceInfo(req,request);
     }
+
+    @PostMapping(value = "/addUserRoleInfo")
+    @ApiOperation(value = "添加人员角色请求接口", httpMethod = "POST",notes = "添加人员角色请求接口")
+    public CommonResult<AddUserRoleInfoResp> addUserRoleInfo(@RequestBody @Valid AddUserRoleInfoReq req,HttpServletRequest request, HttpServletResponse response){
+        return sysUserRoleService.addUserRoleInfo(req,request);
+    }
+
+    @PostMapping(value = "/updateUserRoleInfo")
+    @ApiOperation(value = "修改人员角色请求接口", httpMethod = "POST",notes = "修改人员角色请求接口")
+    public CommonResult<UpdateUserRoleInfoResp> updateUserRoleInfo(@RequestBody @Valid UpdateUserRoleInfoReq req,HttpServletRequest request, HttpServletResponse response){
+        return sysUserRoleService.updateUserRoleInfo(req,request);
+    }
+
+    @PostMapping(value = "/deleteUserRoleInfo")
+    @ApiOperation(value = "删除人员角色请求接口", httpMethod = "POST",notes = "删除人员角色请求接口")
+    public CommonResult<DeleteUserRoleInfoResp> deleteUserRoleInfo(@RequestBody @Valid DeleteUserRoleInfoReq req,HttpServletRequest request, HttpServletResponse response){
+        return sysUserRoleService.deleteUserRoleInfo(req,request);
+    }
+
+    @PostMapping(value = "/selectUserByOrgIdResp")
+    @ApiOperation(value = "根据机构主键分页查询人员请求接口", httpMethod = "POST",notes = "根据机构主键分页查询人员请求接口")
+    public TableResult<SelectUserByOrgIdResp> selectUserByOrgIdResp(@RequestBody @Valid SelectUserByOrgIdReq req,HttpServletRequest request, HttpServletResponse response){
+        return sysUserOrgService.selectUserByOrgIdResp(req);
+    }
+
+    @PostMapping(value = "/addUserOrgInfo")
+    @ApiOperation(value = "添加人员机构请求接口", httpMethod = "POST",notes = "添加人员机构请求接口")
+    public CommonResult<AddUserOrgInfoResp> addUserOrgInfo(@RequestBody @Valid AddUserOrgInfoReq req,HttpServletRequest request, HttpServletResponse response){
+        return sysUserOrgService.addUserOrgInfo(req,request);
+    }
+
+    @PostMapping(value = "/updateUserOrgInfo")
+    @ApiOperation(value = "修改人员机构请求接口", httpMethod = "POST",notes = "修改人员机构请求接口")
+    public CommonResult<UpdateUserOrgInfoResp> updateUserOrgInfo(@RequestBody @Valid UpdateUserOrgInfoReq req,HttpServletRequest request, HttpServletResponse response){
+        return sysUserOrgService.updateUserOrgInfo(req,request);
+    }
+
+    @PostMapping(value = "/deleteUserOrgInfo")
+    @ApiOperation(value = "删除人员机构请求接口", httpMethod = "POST",notes = "删除人员机构请求接口")
+    public CommonResult<DeleteUserOrgInfoResp> deleteUserOrgInfo(@RequestBody @Valid DeleteUserOrgInfoReq req,HttpServletRequest request, HttpServletResponse response){
+        return sysUserOrgService.deleteUserOrgInfo(req,request);
+    }
+
+    @PostMapping(value = "/selectUserRoleByUserId")
+    @ApiOperation(value = "根据人员主键查询角色信息请求接口", httpMethod = "POST",notes = "根据人员主键查询角色信息请求接口")
+    public CommonResult<List<SelectUserRoleByUserIdResp>> selectUserRoleByUserId(@RequestBody @Valid SelectUserRoleByUserIdReq req,HttpServletRequest request, HttpServletResponse response){
+        return sysUserRoleService.selectUserRoleByUserId(req);
+    }
+
+
 
 }

@@ -2,6 +2,45 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.xiaoyu.provider.user.dao.ex.XtxxtzfjxxbMapperEx" >
 
+    <select id="selectXtxxtzfjxxbByXxtzzj" resultType="com.xiaoyu.provider.user.resp.NoticEnclosureResp">
+        select `ZJ` as zj,`FJBT` as title,`FJDX` as ram,
+        `FJDZ` as address
+        from `xtxxtzfjxxb`
+        where `SCBZ` = ${@com.xiaoyu.common.base.constants.DeleteFlagEnum@NOT_DELETE.delFlagCode}
+        and `XXTZBZJ` = #{data}
+    </select>
+
+    <insert id="insertXtxxtzfjxxbBath">
+        insert into `xtxxtzfjxxb`
+        (
+          `XXTZBZJ`,
+          `FJBT`,
+          `FJDX`,
+          `FJDZ`,
+          `CJRZJ`,
+          `CJSJ`,
+          `XGSJ`,
+          `XGRZJ`,
+          `SCBZ`,
+          `BZ`
+        )
+        values
+        <foreach collection="data" separator="," item="data">
+            (
+            #{data.xxtzbzj},
+            #{data.fjbt},
+            #{data.fjdx},
+            #{data.fjdz},
+            #{data.cjrzj},
+            #{data.cjsj},
+            #{data.xgsj},
+            #{data.xgrzj},
+            #{data.scbz},
+            #{data.bz}
+            )
+        </foreach>
+    </insert>
+
     <insert id="insertXtxxtzfjxxb" useGeneratedKeys="true" parameterType="com.xiaoyu.provider.user.entity.Xtxxtzfjxxb"
             keyProperty="data.zj" keyColumn="ZJ">
         insert into `xtxxtzfjxxb`

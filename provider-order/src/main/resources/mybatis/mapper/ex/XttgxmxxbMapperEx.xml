@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.xiaoyu.provider.order.dao.ex.XttgxmxxbMapperEx" >
+
+    <select id="selectProjectById" resultType="com.xiaoyu.provider.order.resp.SelectProjectByIdResp">
+        select `ZJ` as zj,`XMMC` as `name`,`ZY` as summary,
+        `XMMS` as `describe`,`SFXG` as quota,`ZDGMSL` as `max`,
+        `SPDJ` as `number`,`DQZT` as `status`,DATE_FORMAT(`CJSJ`,'%Y-%m-%d %H:%i:%s') as releaseDate
+        from `xttgxmxxb`
+        where `SCBZ` = ${@com.xiaoyu.common.base.constants.DeleteFlagEnum@NOT_DELETE.delFlagCode}
+        and `ZJ` = #{data.zj}
+    </select>
+
+    <select id="selectAllProject" resultType="com.xiaoyu.provider.order.resp.SelectAllProjectResp">
+        select `ZJ` as zj,`XMMC` as `name`,`ZY` as summary,
+        `SFXG` as quota,`ZDGMSL` as `max`,`SPDJ` as `number`,
+        `DQZT` as `status`,DATE_FORMAT(`CJSJ`,'%Y-%m-%d %H:%i:%s') as releaseDate
+        from `xttgxmxxb`
+        where `SCBZ` = ${@com.xiaoyu.common.base.constants.DeleteFlagEnum@NOT_DELETE.delFlagCode}
+    </select>
+
+    <select id="countSelectProjectTable" resultType="java.lang.Integer">
+        select count(0)
+        from `xttgxmxxb`
+        where `SCBZ` = ${@com.xiaoyu.common.base.constants.DeleteFlagEnum@NOT_DELETE.delFlagCode}
+    </select>
+
+    <select id="selectProjectTable" resultType="com.xiaoyu.provider.order.resp.SelectProjectTableResp">
+        select `ZJ` as zj,`XMMC` as `name`,`ZY` as summary,
+        `SFXG` as quota,`ZDGMSL` as `max`,`SPDJ` as `number`,
+        `DQZT` as `status`,DATE_FORMAT(`CJSJ`,'%Y-%m-%d %H:%i:%s') as releaseDate
+        from `xttgxmxxb`
+        where `SCBZ` = ${@com.xiaoyu.common.base.constants.DeleteFlagEnum@NOT_DELETE.delFlagCode}
+        order by `PX` desc
+        limit ${data.startIndex},${data.limit}
+    </select>
+
+    <insert id="insertXttgxmxxb" useGeneratedKeys="true" parameterType="com.xiaoyu.provider.order.entity.Xttgxmxxb"
+            keyColumn="ZJ" keyProperty="data.zj">
+        insert into `xttgxmxxb`
+        (
+          `XMMC`,
+          `ZY`,
+          `XMMS`,
+          `SFXG`,
+          `ZDGMSL`,
+          `SPDJ`,
+          `DQZT`,
+          `CJRZJ`,
+          `CJSJ`,
+          `XGSJ`,
+          `XGRZJ`,
+          `SCBZ`,
+          `BZ`
+        )
+        values
+        (
+          #{data.xmmc},
+          #{data.zy},
+          #{data.xmms},
+          #{data.sfxg},
+          #{data.zdgmsl},
+          #{data.spdj},
+          #{data.dqzt},
+          #{data.cjrzj},
+          #{data.cjsj},
+          #{data.xgsj},
+          #{data.xgrzj},
+          #{data.scbz},
+          #{data.bz}
+        )
+    </insert>
+</mapper>

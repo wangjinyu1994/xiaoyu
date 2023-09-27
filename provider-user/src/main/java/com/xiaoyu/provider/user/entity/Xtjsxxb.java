@@ -27,6 +27,9 @@ public class Xtjsxxb implements Serializable {
     @ApiModelProperty(value = "角色描述", name="jsms")
     private String jsms;
 
+    @ApiModelProperty(value = "排序（数字越大越考前）", name="px")
+    private Integer px;
+
     @ApiModelProperty(value = "角色代码", name="jsdm")
     private String jsdm;
 
